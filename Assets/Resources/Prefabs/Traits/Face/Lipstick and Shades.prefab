@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 38707010535618417}
   - component: {fileID: 2062774996754728077}
   m_Layer: 0
-  m_Name: Lipstick and Shades(Clone)
+  m_Name: Lipstick and Shades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9edef3e2a674a374482fef175003c440, type: 2}
-  - {fileID: 2100000, guid: abe7584a3a7d7894da66441029b5675e, type: 2}
+  - {fileID: 2100000, guid: a7c0a5756dc78634cbed99f9b47bfb23, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
