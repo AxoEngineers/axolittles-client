@@ -3,7 +3,37 @@ guid: ee79be2ebb3bd3841a5c961dfb32d898
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 37c0069500bca154ca98c52fca00a8df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nurse Suit
+    second: {fileID: 2100000, guid: 785f7d1d3b2941048b03cf915aa06452, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5f29961a686fcbc4faaf203ab8fcfdc8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_Normal
+    second: {fileID: 2800000, guid: 72d98ac2f6b1322449875e1aea860b9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nurse Suit_AlbedoTransparency
+    second: {fileID: 2800000, guid: 889a2160f8145664f934997b38d7b947, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nurse Suit_Normal
+    second: {fileID: 2800000, guid: 9ac3e96776664ed44bd75ea3e5fdf423, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

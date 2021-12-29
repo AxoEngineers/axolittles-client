@@ -11,17 +11,20 @@ public class AxoModelGenerator : MonoBehaviour
         {"number", "0"},
         {"iswoman", "y"},
         {"hue", "168"},
-        {"top", "Nurse"},
-        {"face", "Lipstick and Shades"},
+        {"top", "Explorer"},
+        {"face", "Eyelashes and Tongue"},
         {"outfit", "Flowers Shirt"},
         {"bodytype", "normal"}
     };
 
     public void GenerateFromTraits(Dictionary<string, string> traits)
     {
+        var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
+        
         var face = traits["face"];
         var outfit = traits["outfit"];
         var top = traits["top"];
+        var color = Color.HSVToRGB(int.Parse(traits["hue"])/360.0f, 0.3f, 1f);
         
         var gender = traits["iswoman"] == "y" ? "female" : "male";
 
@@ -30,15 +33,21 @@ public class AxoModelGenerator : MonoBehaviour
         Debug.Log(baseModelPath);
         GameObject baseModel = Instantiate(Resources.Load<GameObject>(baseModelPath), transform);
         baseModel.GetComponent<Animator>().runtimeAnimatorController = AnimatorController;
+        baseModel.GetComponentInChildren<SkinnedMeshRenderer>().material.color = color;
         
         // CREATE FACE
-        var faceModelPath = $"Prefabs/Traits/Face/{face}";
-        GameObject faceModel = Instantiate(Resources.Load<GameObject>(faceModelPath), baseModel.transform.Find("Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end"), false);
-        
+        if (face.Length > 0)
+        {
+            var faceModelPath = $"Prefabs/Traits/Face/{face}";
+            GameObject faceModel = Instantiate(Resources.Load<GameObject>(faceModelPath), baseModel.transform.Find(rootFaceNode), false);
+        }
+
         // CREATE HAT
-        var topModelPath = $"Prefabs/Traits/Top/{top}";
-        GameObject topModel = Instantiate(Resources.Load<GameObject>(topModelPath), baseModel.transform.Find("Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end"), false);
-        
+        if (top.Length > 0)
+        {
+            var topModelPath = $"Prefabs/Traits/Top/{top}";
+            GameObject topModel = Instantiate(Resources.Load<GameObject>(topModelPath),baseModel.transform.Find(rootFaceNode), false);
+        }
     }
     
     // Start is called before the first frame update
