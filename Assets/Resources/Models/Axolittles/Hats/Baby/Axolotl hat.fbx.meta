@@ -3,7 +3,17 @@ guid: 59fca947fa438664082d3d9929076e0c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Axololt Hat
+    second: {fileID: 2100000, guid: f25a2c8b4d212bd4db5027bab85c4e92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faces 1
+    second: {fileID: 2100000, guid: a7c0a5756dc78634cbed99f9b47bfb23, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

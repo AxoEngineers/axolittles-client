@@ -3,7 +3,17 @@ guid: bb16f884ed640814696580c940339977
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Devil shirt
+    second: {fileID: 2100000, guid: 99c56ed3479492b4eb0562ef1fb92d1e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

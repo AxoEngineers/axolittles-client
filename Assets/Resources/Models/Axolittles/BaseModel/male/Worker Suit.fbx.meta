@@ -3,7 +3,17 @@ guid: 7a0c27367e208ae4fb54e3ad1dc60f74
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Worker suit
+    second: {fileID: 2100000, guid: d69ac1e944bc9234194087adb6274861, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

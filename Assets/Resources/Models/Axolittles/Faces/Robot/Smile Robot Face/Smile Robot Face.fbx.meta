@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ROBOT Faces
-    second: {fileID: 2100000, guid: 4733019f13f4706419c01ddc3401be18, type: 2}
+    second: {fileID: 2100000, guid: d11df67ec8bc42e40b51b8dfcddd1661, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

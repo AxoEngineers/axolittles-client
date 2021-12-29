@@ -3,7 +3,17 @@ guid: 9759f9913f5ec3541ab329e4eb6dbfbe
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poncho_
+    second: {fileID: 2100000, guid: 1a644af3c19c7c04bb4b51bc1f6ffd39, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

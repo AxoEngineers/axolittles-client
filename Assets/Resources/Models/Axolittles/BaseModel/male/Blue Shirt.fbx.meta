@@ -3,7 +3,32 @@ guid: 7e2a67a2dc2ec0e40b2aaee4a66c9f2c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Flower shirt
+    second: {fileID: 2100000, guid: 9e81664159f3de54e925dc7610568050, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blue Shirt_AlbedoTransparency
+    second: {fileID: 2800000, guid: 17d1bfe65b420aa40bf2badb0e6a3aae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_AlbedoTransparency
+    second: {fileID: 2800000, guid: bac94a3121c975443a3a52c72b65ed18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_Normal
+    second: {fileID: 2800000, guid: 5fe3fd105c4721b47808e44af39ba3a2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: e3609ad2b0b274c41af77d09860b7ccb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nerd shirt
+    second: {fileID: 2100000, guid: 728c2dcb635051440a535f3eb6c073ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

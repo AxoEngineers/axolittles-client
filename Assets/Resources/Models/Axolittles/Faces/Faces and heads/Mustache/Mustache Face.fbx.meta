@@ -3,7 +3,17 @@ guid: b5b3eccd6c511ac45b6fd0f42317c8a9
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faces 1
+    second: {fileID: 2100000, guid: a7c0a5756dc78634cbed99f9b47bfb23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monocle
+    second: {fileID: 2100000, guid: 3f02945bedfd91e4cad0b488b7e4d3f0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

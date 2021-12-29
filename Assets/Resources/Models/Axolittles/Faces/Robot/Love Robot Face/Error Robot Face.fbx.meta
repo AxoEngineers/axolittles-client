@@ -3,7 +3,12 @@ guid: b058e99eb17627d4a8a26b720d032dd1
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ROBOT Faces
+    second: {fileID: 2100000, guid: d11df67ec8bc42e40b51b8dfcddd1661, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

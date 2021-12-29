@@ -3,7 +3,17 @@ guid: dfd05a3ebb3ec3542b6429c2a1626676
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: King Suit
+    second: {fileID: 2100000, guid: 87fe9dd650111db499afadd06dbe8d2c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: 184bc1ed50a6de24390bccc4259dabf3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hot-Top2
+    second: {fileID: 2100000, guid: dbf432a41acf00d4eb69bfa37b5cc0c1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

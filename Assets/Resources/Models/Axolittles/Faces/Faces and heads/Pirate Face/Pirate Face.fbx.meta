@@ -3,7 +3,17 @@ guid: fc97e7a577d681049937acbda7a8e597
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faces 2
+    second: {fileID: 2100000, guid: 592cc58d9b9026a42a121ba57259d0f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pirate patch
+    second: {fileID: 2100000, guid: 0f89b76fdf086b640bcfbeacef6184f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

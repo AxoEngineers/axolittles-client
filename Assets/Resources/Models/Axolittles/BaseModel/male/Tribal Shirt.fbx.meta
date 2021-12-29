@@ -3,7 +3,17 @@ guid: 4af8c62d3a8d46f42989466952811e78
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tribal Shirt
+    second: {fileID: 2100000, guid: 6ec21b10b69231c4e9d557a2b025c0b2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

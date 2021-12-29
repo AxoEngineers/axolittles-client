@@ -3,7 +3,17 @@ guid: ad32c533a94c2ca4c83f548cb1fb59d5
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Joke Suit
+    second: {fileID: 2100000, guid: 3c7abc8723dcb0d42bcfc702ec245332, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

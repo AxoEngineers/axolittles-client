@@ -3,7 +3,12 @@ guid: d01dfb0f28e860243912ab18f52d3851
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fox Mask
+    second: {fileID: 2100000, guid: 7e192a565cd09b54dbee8678bc225b21, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

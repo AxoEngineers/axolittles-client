@@ -3,7 +3,12 @@ guid: d6195aa6be8a7274f85f6bad33d17f07
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ninja
+    second: {fileID: 2100000, guid: 2894c8c7d76ff0f44bd9b9008f18ed65, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

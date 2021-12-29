@@ -8,32 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Body.001
-    second: {fileID: 2100000, guid: 37c0069500bca154ca98c52fca00a8df, type: 2}
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hot-Top
-    second: {fileID: 2100000, guid: aecc4dcd16bc1ff40854849a291f736c, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_AlbedoTransparency
-    second: {fileID: 2800000, guid: b64dfdf7d39594a45a6b28bef8529a14, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_Normal
-    second: {fileID: 2800000, guid: 80dd5e80d753c894b89c5685dc9729ac, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: hot-top_AlbedoTransparency
-    second: {fileID: 2800000, guid: 9f07b69c14e263941824c28e30e70c8f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: hot-top_Normal
-    second: {fileID: 2800000, guid: e77e5a6e823f2864bbd93e26a4a3f54f, type: 3}
+    second: {fileID: 2100000, guid: 58cc938e667ed204ab1fed58c22d6967, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

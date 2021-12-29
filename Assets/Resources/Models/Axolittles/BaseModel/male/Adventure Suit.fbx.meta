@@ -3,7 +3,42 @@ guid: 179e1b078a429b6419b297c8123c2ee3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Adventure Suit
+    second: {fileID: 2100000, guid: de185dff62011cf47bdbae7fea686014, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Adventure Suit_AlbedoTransparency
+    second: {fileID: 2800000, guid: 9d687a5ff1bf9a9438c2c81b6a75bc10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Adventure Suit_MetallicSmoothness
+    second: {fileID: 2800000, guid: f16fd015438d14c439c4677c1f488039, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Adventure Suit_Normal
+    second: {fileID: 2800000, guid: fca677a41cffa894c91b6cf915bfbc97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 63c20d65a6d355d4fae46400a63c11a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_Normal
+    second: {fileID: 2800000, guid: 4513ee027cbaf5b4ca206db0c600bb41, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

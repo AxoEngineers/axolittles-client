@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Faces 1
-    second: {fileID: 2100000, guid: abe7584a3a7d7894da66441029b5675e, type: 2}
+    second: {fileID: 2100000, guid: a7c0a5756dc78634cbed99f9b47bfb23, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -3,7 +3,42 @@ guid: 3e38d9aebbafcc34399f219e032bf8bf
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bowtie Suit
+    second: {fileID: 2100000, guid: 2d6ea60667eeb3d4183b0c171a7d3611, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_AlbedoTransparency
+    second: {fileID: 2800000, guid: d6d9065c7159d494cb732eb03d98ee38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_Normal
+    second: {fileID: 2800000, guid: f9edf30c673e9f74784873fe8d9622e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bowtie Suit_AlbedoTransparency
+    second: {fileID: 2800000, guid: 2d62c8cf3246f184e825b516458f8490, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bowtie Suit_MetallicSmoothness
+    second: {fileID: 2800000, guid: 1cb8237a42c77a640b5318cf4b200d1b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bowtie Suit_Normal
+    second: {fileID: 2800000, guid: 9b4dc18d1483d4543860fb7a22ea3bc3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

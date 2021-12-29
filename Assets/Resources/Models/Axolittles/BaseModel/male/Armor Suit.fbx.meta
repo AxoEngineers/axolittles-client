@@ -3,7 +3,42 @@ guid: 90e51b87a9e25ce4daf45e0213613d57
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armor suit
+    second: {fileID: 2100000, guid: c318f577dbe1af0428df83820a2153ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Armor suit_AlbedoTransparency
+    second: {fileID: 2800000, guid: 9241929b96fd6514ebcaf6a0769e50ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Armor suit_MetallicSmoothness
+    second: {fileID: 2800000, guid: e1c14c0a8f8181f44ab55a894b1197ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Armor suit_Normal
+    second: {fileID: 2800000, guid: 109538654dde6df47a5153832adc1235, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 8bbe9fa60575f64439538d96c00577c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Body_Normal
+    second: {fileID: 2800000, guid: 34d55e682643c424e81e42c37a9a3ae3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: 1f6919b0b36f52a43abc6a3a7edba581
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pirate shirt
+    second: {fileID: 2100000, guid: 4448dd0892726b94cbe07dcf3a0775c3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

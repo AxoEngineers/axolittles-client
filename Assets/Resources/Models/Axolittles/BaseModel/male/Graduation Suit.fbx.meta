@@ -3,7 +3,17 @@ guid: 266d27895a61f6e4cb4a6d096b496d62
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Graduation
+    second: {fileID: 2100000, guid: 44a8fb44010a5b543a3e8e941b499d69, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

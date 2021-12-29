@@ -3,7 +3,17 @@ guid: 99c6bb0060cae2c478b5769d5560e3ae
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faces 1
+    second: {fileID: 2100000, guid: a7c0a5756dc78634cbed99f9b47bfb23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mouth Mask
+    second: {fileID: 2100000, guid: 6a1c5db557e80e34f9651276336ced6b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: 88799294b819a4b4b8b774da54038ca6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sorcere Robe_
+    second: {fileID: 2100000, guid: 40ee4bd11cd4d3d46be7af7a41a1c7c7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

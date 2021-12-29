@@ -3,7 +3,17 @@ guid: 59311ef60d973394ca0329b2d9915cd3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.001
+    second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plimp
+    second: {fileID: 2100000, guid: bdf88b8b5756a04409f5939fa1ba37bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
