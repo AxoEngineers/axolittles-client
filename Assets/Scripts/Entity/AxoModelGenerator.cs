@@ -10,12 +10,12 @@ public class AxoModelGenerator : MonoBehaviour
     public Dictionary<string, string> Data = new Dictionary<string, string>()
     {
         {"number", "0"},
-        {"iswoman", "y"},
+        {"iswoman", "n"},
         {"hue", "168"},
-        {"top", "Explorer"},
-        {"face", "Eyelashes and Tongue"},
-        {"outfit", "Flowers Shirt"},
-        {"bodytype", "cosmic"}
+        {"top", "Witch"},
+        {"face", "Robot Smile"},
+        {"outfit", "Overalls"},
+        {"bodytype", "robot"}
     };
 
     public void GenerateFromTraits(Dictionary<string, string> traits)
