@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AxoModelGenerator : MonoBehaviour
 {
     public RuntimeAnimatorController AnimatorController;
-    
+
     public Dictionary<string, string> Data = new Dictionary<string, string>()
     {
         {"number", "0"},
@@ -14,7 +15,7 @@ public class AxoModelGenerator : MonoBehaviour
         {"top", "Explorer"},
         {"face", "Eyelashes and Tongue"},
         {"outfit", "Flowers Shirt"},
-        {"bodytype", "normal"}
+        {"bodytype", "cosmic"}
     };
 
     public void GenerateFromTraits(Dictionary<string, string> traits)
@@ -33,8 +34,24 @@ public class AxoModelGenerator : MonoBehaviour
         Debug.Log(baseModelPath);
         GameObject baseModel = Instantiate(Resources.Load<GameObject>(baseModelPath), transform);
         baseModel.GetComponent<Animator>().runtimeAnimatorController = AnimatorController;
-        baseModel.GetComponentInChildren<SkinnedMeshRenderer>().material.color = color;
+        var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
         
+        // ADJUST TO ROBOT/COSMIC?
+        if (traits["bodytype"] == "robot")
+        {
+            meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Robot/Body/Material"));
+        }
+        if (traits["bodytype"] == "cosmic")
+        {
+            meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Cosmic/Body/Material"));
+        }
+        else
+        {
+            meshRenderer.sharedMaterial = meshRenderer.material;
+        }
+        
+        meshRenderer.sharedMaterial.color = color;
+
         // CREATE FACE
         if (face.Length > 0)
         {
