@@ -3,7 +3,17 @@ guid: e965f454f441cd6489bdeb9f720cce2c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Faces 1
+    second: {fileID: 2100000, guid: abe7584a3a7d7894da66441029b5675e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lipstick
+    second: {fileID: 2100000, guid: 9edef3e2a674a374482fef175003c440, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
