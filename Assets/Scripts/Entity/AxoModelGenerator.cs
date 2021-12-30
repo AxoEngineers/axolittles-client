@@ -28,7 +28,7 @@ public class AxoModelGenerator : MonoBehaviour
 
         if (modelAsset == null)
         {
-            Debug.LogError($"#{traits.id} Could not find base model {gender}: " + baseModelPath + " or " + traits.routfit);
+            Debug.LogError($"#{traits.id} Could not find base model {traits.type} {gender}: " + baseModelPath + " or " + traits.routfit);
             return;
         }
         
@@ -57,7 +57,7 @@ public class AxoModelGenerator : MonoBehaviour
             meshRenderer.sharedMaterial.color = color;
         }
 
-        bool useInverseScale = baseModel.transform.Find("Armature").localScale.x != 1;
+        bool useInverseScale = baseModel.transform.Find("Armature") && baseModel.transform.Find("Armature").localScale.x != 1;
         
         // CREATE FACE
         if (face.Length > 0 && face != "None")
@@ -104,7 +104,7 @@ public class AxoModelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 200; i <= 210; i++)
+        for (int i = 0; i <= 9999; i++)
         {
             GenerateFromTraits(AxoDatabase.Data[i]);
         }

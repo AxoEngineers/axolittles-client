@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 514e27ca75e566b479f9ef07c64e2066
+guid: bb16f884ed640814696580c940339977
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,38 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Angel
-    second: {fileID: 2100000, guid: 91e003de5eba5bf4d85bf326fc38eccc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Body.001
     second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
   - first:
-      type: UnityEngine:Texture2D
+      type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Angel_AlbedoTransparency
-    second: {fileID: 2800000, guid: 7989f457920b8f647959d241bb2e1cde, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Angel_MetallicSmoothness
-    second: {fileID: 2800000, guid: 3f0b8da9a4851c04c9794b017b90d921, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Angel_Normal
-    second: {fileID: 2800000, guid: 8ef1c30c6e2b45b4fb9715626dbb6994, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_AlbedoTransparency
-    second: {fileID: 2800000, guid: 055a8b8397ebf80469e0f539b6ef8f90, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_Normal
-    second: {fileID: 2800000, guid: 1a47ad9de81a95149bc470aa43ec422d, type: 3}
+      name: Devil shirt
+    second: {fileID: 2100000, guid: 99c56ed3479492b4eb0562ef1fb92d1e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,7 +33,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -108,7 +83,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -123,13 +98,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
