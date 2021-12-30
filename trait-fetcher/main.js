@@ -48,6 +48,11 @@ const intervalMax = 400;
 		}
 	}
 	
+	let orderedSet = []
+	for (let i = 0; i < 10000; i++) {
+		orderedSet.push(sealDict[i]);
+	}
+	
 	const myPromise = new Promise((resolve, reject) => {
 		let timer = setInterval(() => {
 			if (fetched >= 9999) {
@@ -59,7 +64,7 @@ const intervalMax = 400;
 			
 	await myPromise;
 			
-	fs.writeFile("axolittles.json", JSON.stringify(sealDict), function(err, result) {
+	fs.writeFile("axolittles.json", JSON.stringify(orderedSet), function(err, result) {
 		if(err) console.log('error', err);
 	});
 	
