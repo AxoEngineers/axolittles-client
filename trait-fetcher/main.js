@@ -12,24 +12,25 @@ async function fetch(id) {
 	}
 }
 
-const intervalMax = 400;
+const intervalMax = 300;
+const collectionStart = 0;
+const collectionEnd = 9999;
 
 (async function () {
 	let sealDict = {}
 	
 	let fetched = 0;
-	for (let i = 0; i < 10000; i++) {
+	for (let i = collectionStart; i <= collectionEnd; i++) {
 		fetch(i).then(axo => {
-			sealDict[fetched] = { 
-				"id": axo.title.substring(axo.title.indexOf('#') + 1),
+			let index = axo.title.substring(axo.title.indexOf('#') + 1);
+			sealDict[index] = { 
+				"id": index,
 				"background": axo.attributes[0].value,
 				"top":axo.attributes[1].value,
 				"face":axo.attributes[2].value,
 				"outfit":axo.attributes[3].value,
 				"type":axo.attributes[4].value
 			};
-			console.log(sealDict[fetched])
-			console.log(fetched);
 			fetched++;
 		});
 		
@@ -45,12 +46,13 @@ const intervalMax = 400;
 			
 			console.log("Waiting for " + intervalMax + " to finish.");
 			await taskWait;
+			console.log("Done " + fetched);
 		}
 	}
 		
 	const myPromise = new Promise((resolve, reject) => {
 		let timer = setInterval(() => {
-			if (fetched >= 9999) {
+			if (fetched >= collectionEnd) {
 				clearInterval(timer);
 				resolve();
 			}
@@ -60,21 +62,21 @@ const intervalMax = 400;
 	await myPromise;
 			
 	let orderedSet = []
-	for (let i = 0; i < 10000; i++) {
+	for (let i = collectionStart; i < collectionEnd; i++) {
 		orderedSet.push(sealDict[i]);
 	}
 	
 	console.log("IMPORTING EXISTING TRAITS");
 	// IMPORT EXISTING TRAITS
 	var obj = JSON.parse(fs.readFileSync('raw_attributes.json', 'utf8'));
-	for (let i = 0; i < 10000; i++) {
+	for (let i = collectionStart; i < collectionEnd; i++) {
 		if (orderedSet[i] != undefined) {
 			orderedSet[i]["rhue"] = obj[i].hue;
 			orderedSet[i]["rtop"] = obj[i].top;
 			orderedSet[i]["rface"] = obj[i].face;
 			orderedSet[i]["routfit"] = obj[i].outfit;
 			orderedSet[i]["rbodytype"] = obj[i].bodytype;
-			console.log(i);
+			console.log(obj[i].number);
 		}
 	}
 	console.log("DONE..");

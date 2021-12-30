@@ -104,7 +104,7 @@ public class AxoModelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i <= 9999; i++)
+        for (int i = 7800; i <= 10000; i++)
         {
             GenerateFromTraits(AxoDatabase.Data[i]);
         }
