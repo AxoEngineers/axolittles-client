@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class AxoModelGenerator : MonoBehaviour
 {
-    public int TargetAxoId = -1;
+    public static int instanceCount = 0;
     
     public RuntimeAnimatorController AnimatorController;
 
@@ -28,11 +28,15 @@ public class AxoModelGenerator : MonoBehaviour
 
         if (modelAsset == null)
         {
-            Debug.LogError($"Could not find base model {gender}: " + baseModelPath + " or " + traits.routfit);
+            Debug.LogError($"#{traits.id} Could not find base model {gender}: " + baseModelPath + " or " + traits.routfit);
             return;
         }
         
         GameObject baseModel = Instantiate(modelAsset, transform);
+        baseModel.name = traits.id;
+        
+        Transform rootFaceBone = baseModel.transform.Find(rootFaceNode);
+        baseModel.transform.localPosition = new Vector3(instanceCount++ * -1.0f, 0, 0);
         baseModel.GetComponent<Animator>().runtimeAnimatorController = AnimatorController;
         var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
         
@@ -52,6 +56,8 @@ public class AxoModelGenerator : MonoBehaviour
             meshRenderer.sharedMaterial = meshRenderer.material;
             meshRenderer.sharedMaterial.color = color;
         }
+
+        bool useInverseScale = baseModel.transform.Find("Armature").localScale.x != 1;
         
         // CREATE FACE
         if (face.Length > 0 && face != "None")
@@ -60,11 +66,16 @@ public class AxoModelGenerator : MonoBehaviour
             GameObject faceAsset = Resources.Load<GameObject>(faceModelPath);
             if (faceAsset == null)
             {
-                Debug.LogError($"Could not find face {gender}: " + face + " or " + traits.rface);
+                Debug.LogError($"#{traits.id} Could not find face {gender}: " + face + " or " + traits.rface);
             }
             else
             {
-                GameObject faceModel = Instantiate(faceAsset,baseModel.transform.Find(rootFaceNode), false);
+                GameObject faceModel = Instantiate(faceAsset, rootFaceBone, useInverseScale);
+                if (useInverseScale)
+                {
+                    faceModel.transform.localPosition = faceAsset.transform.localPosition * faceAsset.transform.localScale.x;
+                    faceModel.transform.localRotation = faceAsset.transform.localRotation;
+                }
             }
         }
 
@@ -75,11 +86,16 @@ public class AxoModelGenerator : MonoBehaviour
             GameObject topAsset = Resources.Load<GameObject>(topModelPath);
             if (topAsset == null)
             {
-                Debug.LogError($"Could not find top {gender}: " + top + " or " + traits.rtop);
+                Debug.LogError($"#{traits.id} Could not find top {gender}: " + top + " or " + traits.rtop);
             }
             else
             {
-                GameObject topModel = Instantiate(topAsset,baseModel.transform.Find(rootFaceNode), false);
+                GameObject topModel = Instantiate(topAsset,rootFaceBone, useInverseScale);
+                if (useInverseScale)
+                {
+                    topModel.transform.localPosition = topAsset.transform.localPosition * topAsset.transform.localScale.x;
+                    topModel.transform.localRotation = topAsset.transform.localRotation;
+                }
             }
         }
         
@@ -88,7 +104,10 @@ public class AxoModelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerateFromTraits(AxoDatabase.Data[TargetAxoId]);
+        for (int i = 200; i <= 210; i++)
+        {
+            GenerateFromTraits(AxoDatabase.Data[i]);
+        }
     }
 
     // Update is called once per frame
