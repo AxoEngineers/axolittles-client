@@ -11,9 +11,9 @@ public class AxoModelGenerator : MonoBehaviour
     {
         var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
         
-        var face = traits.rface;
+        var face = traits.face;
         var outfit = traits.outfit;
-        var top = traits.rtop;
+        var top = traits.top;
         var color = Color.HSVToRGB(traits.rhue/360.0f, 0.3f, 1f);
         
         var gender = traits.routfit.StartsWith("woman") ? "female" : "male";
@@ -33,11 +33,11 @@ public class AxoModelGenerator : MonoBehaviour
         var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
         
         // ADJUST TO ROBOT/COSMIC?
-        if (traits.rbodytype == "robot")
+        if (traits.type == "robot")
         {
             meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Robot/Body/Material"));
         }
-        if (traits.rbodytype == "cosmic")
+        if (traits.type == "cosmic")
         {
             meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Cosmic/Body/Material"));
         }
