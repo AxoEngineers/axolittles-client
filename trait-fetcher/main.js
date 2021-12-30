@@ -47,12 +47,7 @@ const intervalMax = 400;
 			await taskWait;
 		}
 	}
-	
-	let orderedSet = []
-	for (let i = 0; i < 10000; i++) {
-		orderedSet.push(sealDict[i]);
-	}
-	
+		
 	const myPromise = new Promise((resolve, reject) => {
 		let timer = setInterval(() => {
 			if (fetched >= 9999) {
@@ -64,6 +59,26 @@ const intervalMax = 400;
 			
 	await myPromise;
 			
+	let orderedSet = []
+	for (let i = 0; i < 10000; i++) {
+		orderedSet.push(sealDict[i]);
+	}
+	
+	console.log("IMPORTING EXISTING TRAITS");
+	// IMPORT EXISTING TRAITS
+	var obj = JSON.parse(fs.readFileSync('raw_attributes.json', 'utf8'));
+	for (let i = 0; i < 10000; i++) {
+		if (orderedSet[i] != undefined) {
+			orderedSet[i]["rhue"] = obj[i].hue;
+			orderedSet[i]["rtop"] = obj[i].top;
+			orderedSet[i]["rface"] = obj[i].face;
+			orderedSet[i]["routfit"] = obj[i].outfit;
+			orderedSet[i]["rbodytype"] = obj[i].bodytype;
+			console.log(i);
+		}
+	}
+	console.log("DONE..");
+	
 	fs.writeFile("axolittles.json", JSON.stringify(orderedSet), function(err, result) {
 		if(err) console.log('error', err);
 	});

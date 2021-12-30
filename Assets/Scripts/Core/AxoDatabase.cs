@@ -1,13 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class AxoDatabase : MonoBehaviour
+public static class AxoDatabase
 {
-    public AxoStruct[] db;
+    public static Dictionary<int, AxoStruct> Data = new Dictionary<int, AxoStruct>();
     
-    private void Start()
+    static AxoDatabase()
     {
         var arr = JsonUtility.FromJson<AxoArray>("{\"data\":" + Resources.Load<TextAsset>("axotraitsdb").text + "}");
-        db = arr.data;
+        foreach (AxoStruct axo in arr.data)
+        {
+            Data.Add(int.Parse(axo.id), axo);
+        }
     }
 }
