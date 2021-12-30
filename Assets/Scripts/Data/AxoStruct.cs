@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 [Serializable]
 public class AxoStruct
@@ -17,6 +18,11 @@ public class AxoStruct
     public string rface;
     public string routfit;
     public string rbodytype;
+
+    public override string ToString()
+    {
+        return JsonUtility.ToJson(this);
+    }
 }
 
 [Serializable]

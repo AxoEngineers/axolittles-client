@@ -5,10 +5,14 @@ using UnityEngine.Rendering;
 
 public class AxoModelGenerator : MonoBehaviour
 {
+    public int TargetAxoId = -1;
+    
     public RuntimeAnimatorController AnimatorController;
 
     public void GenerateFromTraits(AxoStruct traits)
     {
+        Debug.Log(traits);
+        
         var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
         
         var face = traits.face;
@@ -24,7 +28,7 @@ public class AxoModelGenerator : MonoBehaviour
 
         if (modelAsset == null)
         {
-            Debug.LogError("Could not find base model: " + baseModelPath);
+            Debug.LogError($"Could not find base model {gender}: " + baseModelPath + " or " + traits.routfit);
             return;
         }
         
@@ -33,29 +37,30 @@ public class AxoModelGenerator : MonoBehaviour
         var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
         
         // ADJUST TO ROBOT/COSMIC?
-        if (traits.type == "robot")
+        if (traits.type == "Robot")
         {
             meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Robot/Body/Material"));
+            meshRenderer.sharedMaterial.color = Color.white;
         }
-        if (traits.type == "cosmic")
+        else if (traits.type == "Cosmic")
         {
             meshRenderer.sharedMaterial = Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Cosmic/Body/Material"));
+            meshRenderer.sharedMaterial.color = Color.white;
         }
         else
         {
             meshRenderer.sharedMaterial = meshRenderer.material;
+            meshRenderer.sharedMaterial.color = color;
         }
         
-        meshRenderer.sharedMaterial.color = color;
-
         // CREATE FACE
-        if (face.Length > 0)
+        if (face.Length > 0 && face != "None")
         {
             var faceModelPath = $"Prefabs/Traits/Face/{face}";
             GameObject faceAsset = Resources.Load<GameObject>(faceModelPath);
             if (faceAsset == null)
             {
-                Debug.LogError("Could not find face: " + face);
+                Debug.LogError($"Could not find face {gender}: " + face + " or " + traits.rface);
             }
             else
             {
@@ -64,13 +69,13 @@ public class AxoModelGenerator : MonoBehaviour
         }
 
         // CREATE HAT
-        if (top.Length > 0)
+        if (top.Length > 0 && top != "None")
         {
             var topModelPath = $"Prefabs/Traits/Top/{top}";
             GameObject topAsset = Resources.Load<GameObject>(topModelPath);
             if (topAsset == null)
             {
-                Debug.LogError("Could not find top: " + face);
+                Debug.LogError($"Could not find top {gender}: " + top + " or " + traits.rtop);
             }
             else
             {
@@ -83,7 +88,7 @@ public class AxoModelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerateFromTraits(AxoDatabase.Data[0]);
+        GenerateFromTraits(AxoDatabase.Data[TargetAxoId]);
     }
 
     // Update is called once per frame

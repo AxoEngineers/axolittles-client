@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 179e1b078a429b6419b297c8123c2ee3
+guid: 6b085f5cdb1c55c4bafbf94d56caae54
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,38 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Adventure Suit
-    second: {fileID: 2100000, guid: de185dff62011cf47bdbae7fea686014, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Body.001
     second: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
   - first:
-      type: UnityEngine:Texture2D
+      type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Adventure Suit_AlbedoTransparency
-    second: {fileID: 2800000, guid: 9d687a5ff1bf9a9438c2c81b6a75bc10, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Adventure Suit_MetallicSmoothness
-    second: {fileID: 2800000, guid: f16fd015438d14c439c4677c1f488039, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Adventure Suit_Normal
-    second: {fileID: 2800000, guid: fca677a41cffa894c91b6cf915bfbc97, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_AlbedoTransparency
-    second: {fileID: 2800000, guid: 63c20d65a6d355d4fae46400a63c11a8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Body_Normal
-    second: {fileID: 2800000, guid: 4513ee027cbaf5b4ca206db0c600bb41, type: 3}
+      name: E boy shirt.001
+    second: {fileID: 2100000, guid: a9baec905bbdd9a449708c16bec7f883, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,7 +33,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -123,13 +98,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
