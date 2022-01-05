@@ -331,7 +331,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 280833432}
   m_Direction: 0
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5722,7 +5722,6 @@ GameObject:
   m_Component:
   - component: {fileID: 210528139}
   - component: {fileID: 210528138}
-  - component: {fileID: 210528137}
   - component: {fileID: 210528140}
   m_Layer: 0
   m_Name: _CAMERA
@@ -5731,14 +5730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &210528137
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210528136}
-  m_Enabled: 1
 --- !u!20 &210528138
 Camera:
   m_ObjectHideFlags: 0
@@ -22526,7 +22517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1229323985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34307,7 +34298,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343654530}
   m_HandleRect: {fileID: 1343654529}
   m_Direction: 2
-  m_Value: 0.9999995
+  m_Value: 0.9999999
   m_Size: 0.5
   m_NumberOfSteps: 0
   m_OnValueChanged:
