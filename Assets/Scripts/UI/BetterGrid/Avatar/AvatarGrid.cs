@@ -36,14 +36,7 @@ public class AvatarGrid : MonoBehaviour
         for (int i = 0; i < placeholderWallet.Length; i++)
         {
             int id = placeholderWallet[i];
-            AxoInfo avatar = Generator.FindExisting(id);
-            
-            if (!avatar)
-            {
-                avatar = Generator.GenerateFromId(id).GetComponent<AxoInfo>();
-                avatar.gameObject.SetActive(false);
-            }
-            
+            AxoInfo avatar = Generator.Get(id);
             placeholderData.Add(avatar);
         }
         

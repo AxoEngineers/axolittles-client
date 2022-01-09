@@ -7,20 +7,11 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
     
     public RuntimeAnimatorController animatorController;
 
-    public AxoInfo FindExisting(int id)
+    public AxoInfo Get(int id)
     {
         Transform existing = transform.Find($"{id}");
+        if (existing) return existing.gameObject.GetComponent<AxoInfo>();
         
-        if (existing)
-        {
-            return existing.gameObject.GetComponent<AxoInfo>();
-        }
-
-        return null;
-    }
-    
-    public GameObject GenerateFromId(int id)
-    {
         AxoStruct traits = AxoDatabase.Get(id);
         Debug.Log(traits);
         
@@ -113,7 +104,8 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         AxoInfo info = baseModel.AddComponent<AxoInfo>();
         info.id = id;
         info.name = $"AXO #{id}";
-
-        return baseModel;
+        baseModel.SetActive(false);
+        
+        return info;
     }
 }
