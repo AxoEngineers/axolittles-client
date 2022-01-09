@@ -1,16 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-public class AxoModelGenerator : MonoBehaviour
+public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 {
-    public static int instanceCount = 0;
+    //public int instanceCount = 0;
     
-    public RuntimeAnimatorController AnimatorController;
-
-    public void GenerateFromTraits(AxoStruct traits)
+    public RuntimeAnimatorController animatorController;
+    
+    public GameObject GenerateFromID(int id)
     {
+        AxoStruct traits = AxoDatabase.Data[id];
         Debug.Log(traits);
         
         var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
@@ -29,15 +28,15 @@ public class AxoModelGenerator : MonoBehaviour
         if (modelAsset == null)
         {
             Debug.LogError($"#{traits.id} Could not find base model {traits.type} {gender}: " + baseModelPath + " or " + traits.routfit);
-            return;
+            return null;
         }
         
         GameObject baseModel = Instantiate(modelAsset, transform);
         baseModel.name = traits.id;
         
         Transform rootFaceBone = baseModel.transform.Find(rootFaceNode);
-        baseModel.transform.localPosition = new Vector3(instanceCount++ * -1.0f, 0, 0);
-        baseModel.GetComponent<Animator>().runtimeAnimatorController = AnimatorController;
+        //baseModel.transform.localPosition = new Vector3(instanceCount++ * -1.0f, 0, 0);
+        baseModel.GetComponent<Animator>().runtimeAnimatorController = animatorController;
         var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
         
         // ADJUST TO ROBOT/COSMIC?
@@ -98,21 +97,11 @@ public class AxoModelGenerator : MonoBehaviour
                 }
             }
         }
-        
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        for (int i = 7800; i <= 10000; i++)
-        {
-            GenerateFromTraits(AxoDatabase.Data[i]);
-        }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        AxoInfo info = baseModel.AddComponent<AxoInfo>();
+        info.id = id;
+        info.name = $"AXO #{id}";
+
+        return baseModel;
     }
 }

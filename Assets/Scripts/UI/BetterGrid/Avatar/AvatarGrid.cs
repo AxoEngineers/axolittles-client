@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class AvatarGrid : MonoBehaviour
 {
     // INITIALIZERS
-    public List<AvatarInfo> ItemData;
+    public List<AxoInfo> ItemData;
     
     // CORE
     BetterGridElement[,] Map = new BetterGridElement[5, 1];
@@ -21,32 +21,25 @@ public class AvatarGrid : MonoBehaviour
     public Text PageNumber;
     public InputField SearchText;
 
-    public int IterAmt => Map.GetLength(0) * Map.GetLength(1);
-    public bool CanUseNextPage => startIndex + IterAmt < ItemData.Count;
-    public bool CanUsePreviousPage => startIndex - IterAmt >= 0;
-    public string SearchValue => SearchText.text.ToLower();
-    
-    // START PLACEHOLDER CODE
-    // There is also placeholder code in GetAll()
-    public GameObject placeholderAvatar;
-    public Sprite placeholderSprite;
+    private int IterAmt => Map.GetLength(0) * Map.GetLength(1);
+    private bool CanUseNextPage => startIndex + IterAmt < ItemData.Count;
+    private bool CanUsePreviousPage => startIndex - IterAmt >= 0;
+    private string SearchValue => SearchText.text.ToLower();
 
-    public List<AvatarInfo> GeneratePlaceholderItems()
+    private List<AxoInfo> GeneratePlaceholderItems()
     {
-        List<AvatarInfo> placeholderData = new List<AvatarInfo>();
+        int[] placeholderWallet = {541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
+        List<AxoInfo> placeholderData = new List<AxoInfo>();
 
-        for (int i = 0; i <= 500; i++)
+        for (int i = 0; i < placeholderWallet.Length; i++)
         {
-            AvatarInfo avatar = Instantiate(placeholderAvatar).GetComponent<AvatarInfo>();
-            avatar.name = $"AXO #{i}";
-            avatar.sprite = placeholderSprite;
+            AxoInfo avatar = AxoModelGenerator.Instance.GenerateFromID(placeholderWallet[i]).GetComponent<AxoInfo>();
             placeholderData.Add(avatar);
         }
         
         return placeholderData;
     }
-    // END PLACEHOLDER CODE
-    
+
     void Start()
     {
         ItemData = GeneratePlaceholderItems();
@@ -117,9 +110,9 @@ public class AvatarGrid : MonoBehaviour
         RefreshGrid();
     }
 
-    public List<AvatarInfo> GetAll()
+    public List<AxoInfo> GetAll()
     {
-        var newData = new List<AvatarInfo>();
+        var newData = new List<AxoInfo>();
         foreach (var avatar in GeneratePlaceholderItems() /* PLACEHOLDER */)
         {
             if (avatar.name.ToLower().Contains(SearchValue))

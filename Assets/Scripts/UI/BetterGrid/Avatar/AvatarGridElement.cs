@@ -1,22 +1,31 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class AvatarGridElement : BetterGridElement
 {
+    private EventTrigger trigger;
+    
     public override void SetData(params object[] args)
     {
-        if (args[0] is AvatarInfo)
+        if (args[0] is AxoInfo)
         {
-            AvatarInfo avatar = (AvatarInfo) args[0];
+            AxoInfo avatar = (AxoInfo) args[0];
+            trigger = GetComponent<EventTrigger>();
 
-            this.Text.text = avatar.name;
-            this.Icon.sprite = avatar.sprite;
+            Text.text = avatar.name;
+            Icon.sprite = avatar.sprite;
+            
+            trigger.AddEvent(EventTriggerType.PointerClick, data =>
+            {
+                AxoPreview.Instance.SetPreview(avatar);
+            });
 
-            this.gameObject.SetActive(true);
+            gameObject.SetActive(true);
         }
         else
         {
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }
