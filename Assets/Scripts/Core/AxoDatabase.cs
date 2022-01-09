@@ -4,7 +4,12 @@ using UnityEngine;
 
 public static class AxoDatabase
 {
-    public static Dictionary<int, AxoStruct> Data = new Dictionary<int, AxoStruct>();
+    public static AxoStruct Get(int id)
+    {
+        return Data[id];
+    }
+    
+    static Dictionary<int, AxoStruct> Data = new Dictionary<int, AxoStruct>();
     
     static AxoDatabase()
     {

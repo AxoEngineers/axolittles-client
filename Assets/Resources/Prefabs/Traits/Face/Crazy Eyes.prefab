@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7422285457254996619}
   - component: {fileID: 4676343923087224385}
   m_Layer: 0
-  m_Name: Crazy
+  m_Name: Crazy Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6621780696602251156}
   m_LocalRotation: {x: -0.49583897, y: 0.5041269, z: 0.49583888, w: 0.50412667}
-  m_LocalPosition: {x: 0, y: -1.4489999, z: 0}
+  m_LocalPosition: {x: 0, y: -1.4, z: 0}
   m_LocalScale: {x: 100, y: 100.000015, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
