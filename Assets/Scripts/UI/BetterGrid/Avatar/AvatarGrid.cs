@@ -25,6 +25,8 @@ public class AvatarGrid : MonoBehaviour
     private bool CanUseNextPage => startIndex + IterAmt < ItemData.Count;
     private bool CanUsePreviousPage => startIndex - IterAmt >= 0;
     private string SearchValue => SearchText.text.ToLower();
+    
+    private AxoModelGenerator Generator => AxoModelGenerator.Instance;
 
     private List<AxoInfo> GeneratePlaceholderItems()
     {
@@ -33,22 +35,15 @@ public class AvatarGrid : MonoBehaviour
 
         for (int i = 0; i < placeholderWallet.Length; i++)
         {
-            AxoInfo avatar;
             int id = placeholderWallet[i];
+            AxoInfo avatar = Generator.FindExisting(id);
             
-            Transform existing = AxoModelGenerator.Instance.transform.Find($"{id}");
-            
-            if (existing)
+            if (!avatar)
             {
-                avatar = existing.gameObject.GetComponent<AxoInfo>();
-            }
-            else
-            {
-                avatar = AxoModelGenerator.Instance.GenerateFromID(id).GetComponent<AxoInfo>();
-                
+                avatar = Generator.GenerateFromId(id).GetComponent<AxoInfo>();
+                avatar.gameObject.SetActive(false);
             }
             
-            avatar.gameObject.SetActive(false);
             placeholderData.Add(avatar);
         }
         

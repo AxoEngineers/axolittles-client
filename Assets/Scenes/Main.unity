@@ -331,7 +331,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 280833432}
   m_Direction: 0
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -33203,7 +33203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be0b41686ae27438395476a4e5946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 48de837a1c850f441a84012750750d12, type: 2}
 --- !u!4 &1512088655
 Transform:
   m_ObjectHideFlags: 0
@@ -34264,7 +34264,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343654530}
   m_HandleRect: {fileID: 1343654529}
   m_Direction: 2
-  m_Value: 0.9999995
+  m_Value: 0.9999999
   m_Size: 0.5
   m_NumberOfSteps: 0
   m_OnValueChanged:
