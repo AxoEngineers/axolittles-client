@@ -9,7 +9,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
     
     public GameObject GenerateFromID(int id)
     {
-        AxoStruct traits = AxoDatabase.Data[id];
+        AxoStruct traits = AxoDatabase.Get(id);
         Debug.Log(traits);
         
         var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
