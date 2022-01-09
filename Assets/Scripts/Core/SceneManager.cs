@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Infteract;
-using LwNetworking;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
@@ -19,9 +18,6 @@ public class SceneManager : Mingleton<SceneManager>
     }
     
     // OPTIONS
-    
-    // CORE
-    public SocketClient Client;
     
     // PANELS
     public GameObject LoadingPanel;
@@ -52,7 +48,7 @@ public class SceneManager : Mingleton<SceneManager>
     {
         #if UNITY_EDITOR
         Application.targetFrameRate = 120;
-        Debug.LogError("You cannot run this project in editor due to inability to use socket.io in editor."
+        Debug.LogError("You cannot run this project in editor due to inability to use Metamask in editor."
                        + "\r\nYou must built the WebGL project and host it somewhere.");
         Status = "WebGL Build Required";
         LoadingPanel.gameObject.SetActive(false);
@@ -63,14 +59,9 @@ public class SceneManager : Mingleton<SceneManager>
 
         Application.runInBackground = true;
         
-        Client.Listener.AddListener(NetworkEventEnum.AuthFailure, arg0 => { Status = $"Authentication Failed ({(string)arg0})"; });
-        Client.Listener.AddListener(NetworkEventEnum.AuthVerify, arg0 => { Status = $"Authentication Pending"; });
-        Client.Listener.AddListener(NetworkEventEnum.AuthSuccess, arg0 => { Status = $"Authentication Success"; identity = JsonUtility.FromJson<SappyIdentity>((string)arg0); });
-        Client.Listener.AddListener(NetworkEventEnum.Error, arg0 => { ShowErrorMessage((string)arg0); });
-        
         MetamaskAuth.Instance.onLoginData.AddListener(wallet =>
         {
-            _AuthInformationTxt.text = $"LOGGED INTO {Configuration.GetEnvName()}\r\nETH-ADDRESS: {wallet.eth_address}\r\nAVATARS OWNED: {MetamaskAuth.Instance.Wallet.avatars.Length}";
+            _AuthInformationTxt.text = $"LOGGED INTO {Configuration.GetEnvName()}\r\nETH-ADDRESS: {wallet.eth_address}\r\nAXOLITTLES OWNED: {MetamaskAuth.Instance.Wallet.avatars.Length}";
         });
         
         MetamaskAuth.Instance.onLoginFail.AddListener((code, message) =>
@@ -152,52 +143,6 @@ public class SceneManager : Mingleton<SceneManager>
         string ip = address;
         Status = "Connecting to\r\n " + gameName;
         yield return new WaitForSeconds(0.25f);
-        Client.TryConnect(ip, room, Nickname, MetamaskAuth.Instance.SelectedAvatar.ToString());
-
-        var timeout = Time.time + 5.0f;
-        while (Time.time < timeout && !Client.Connected)
-        {
-            yield return new WaitForSeconds(0.1f);
-        }
-
-        if (!Client.Connected)
-        {
-            Status = "Failed to connect to server";
-            if (failAction != null)
-            {
-                yield return new WaitForSeconds(3.0f);
-                failAction.Invoke(Status);
-            }
-            yield break;
-        }
-        
-        Status = "Auth Check Pending..";
-        yield return new WaitForSeconds(0.1f);
-
-        timeout = Time.time + 30.0f;
-        while (identity.IsNull && Time.time < timeout)
-        {
-            yield return new WaitForEndOfFrame();
-        }
-        
-        if (!Client.Connected || identity.IsNull)
-        {
-            // error message hasnt come in
-            if (Status.StartsWith("Auth Check Pending"))
-            {
-                SocketClient.Instance.DisconnectFromServer();
-                Status = "Auth Check Failure";
-            }
-            
-            if (failAction != null)
-            {
-                yield return new WaitForSeconds(3.0f);
-                failAction.Invoke(Status);
-            }
-            yield break;
-        }
-        
-        yield return new WaitForSeconds(0.25f);
 
         Status = "Entering Game...";
         yield return new WaitForSeconds(0.25f);
@@ -210,7 +155,6 @@ public class SceneManager : Mingleton<SceneManager>
 
     public void ExitGame(IEnumerator beginAction=null)
     {
-        SocketClient.Instance.DisconnectFromServer();
         SetLoadingScreen(true);
         StartCoroutine(UnloadOperation(beginAction));
     }

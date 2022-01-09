@@ -1,6 +1,5 @@
 ﻿using System;
 using Infteract;
-using LwNetworking;
 using UnityEngine;
 
 [Serializable]
