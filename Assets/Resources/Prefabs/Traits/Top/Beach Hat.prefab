@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7878148536347359772}
   - component: {fileID: 5381864310331903702}
   m_Layer: 0
-  m_Name: Summerhat2
+  m_Name: Beach Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1942111231883866196, guid: 2856cdc70ab76584c8f50065cdb3cfd2, type: 3}
+  - {fileID: 2100000, guid: 7f3563875f6d67f4f83d12d196e7debe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -85,6 +85,11 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             // CREATE HAT
             if (top.Length > 0 && top != "None")
             {
+                // LOAD APPROPRIATE ASSET FILES
+                var hatAssetPath = $"Hat_{top}";
+                handle = Addressables.LoadAssetAsync<GameObject>(hatAssetPath);
+                yield return handle;
+                
                 var topModelPath = $"Prefabs/Traits/Top/{top}";
                 GameObject topAsset = Resources.Load<GameObject>(topModelPath);
                 if (topAsset == null)
@@ -100,6 +105,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                         topModel.transform.localRotation = topAsset.transform.localRotation;
                     }
                 }
+                Addressables.Release(handle);
             }
             
             AxoInfo info = baseModel.AddComponent<AxoInfo>();

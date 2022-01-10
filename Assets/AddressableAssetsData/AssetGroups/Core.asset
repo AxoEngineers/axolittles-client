@@ -50,7 +50,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 617a271c9469c154290bb1e0c031d309
-    m_Address: Assets/BundleAssets/Core/None.fbx
+    m_Address: Hat_Pirate
     m_ReadOnly: 0
     m_SerializedLabels:
     - basemodel
