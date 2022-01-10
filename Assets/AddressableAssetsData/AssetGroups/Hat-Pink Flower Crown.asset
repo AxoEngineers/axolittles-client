@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Pink Flower Crown
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Pink Flower Crown
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 48c1c38bfc8f5e54b9551d7622916921
+  m_SerializeEntries:
+  - m_GUID: 7da7fec6fa2021147a2a8f1bf61e5c59
+    m_Address: Hat_Pink Flower Crown
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 7da7fec6fa2021147a2a8f1bf61e5c59, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 7da7fec6fa2021147a2a8f1bf61e5c59, type: 3}
+  - m_GUID: 48d27f7f60ec40d4aa6156ad56ef63a2
+    m_Address: Assets/BundleAssets/Hats/Pink Flower Crown/Flower.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1ef91b7e17d2f304d85e1111aa4cf04d
+    m_Address: Assets/BundleAssets/Hats/Pink Flower Crown/Flower_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f54e73e7ce138548972f53bfb06a44d
+    m_Address: Assets/BundleAssets/Hats/Pink Flower Crown/Flower_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e7c4c95357412934c9f819309b99681a
+    m_Address: Assets/BundleAssets/Hats/Pink Flower Crown/Flower_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fe1a8811ad6f96946926615e09f8b19f, type: 2}
+    - {fileID: 11400000, guid: df07a13a7dbe35942b421eb5bf0a0ce9, type: 2}

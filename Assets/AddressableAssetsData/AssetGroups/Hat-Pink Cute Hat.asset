@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Pink Cute Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Pink Cute Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 347f2be17755d3343a19573e6768b8ac
+  m_SerializeEntries:
+  - m_GUID: a00840e4f94e5ea4286d7372dbeca2cc
+    m_Address: Hat_Pink Cute Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: a00840e4f94e5ea4286d7372dbeca2cc, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: a00840e4f94e5ea4286d7372dbeca2cc, type: 3}
+  - m_GUID: f72df529fa5c8db438953c92391fedc2
+    m_Address: "Assets/BundleAssets/Hats/P\xEFnk Cute Hat/Cutehat Pink.mat"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 571a9f82e7e8de749af331f9eaeddcec
+    m_Address: "Assets/BundleAssets/Hats/P\xEFnk Cute Hat/Cutehat_AlbedoTransparency.png"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 68ff50143a1b8b24698ed8b5271df657
+    m_Address: "Assets/BundleAssets/Hats/P\xEFnk Cute Hat/Cutehat_MetallicSmoothness.png"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 66bafb09ecd40274fbf5996ff345feda
+    m_Address: "Assets/BundleAssets/Hats/P\xEFnk Cute Hat/Cutehat_Normal.png"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 24f90b2dda7a32344b1cfc23692c8ec9, type: 2}
+    - {fileID: 11400000, guid: 620cdadbb8ac1284297baef861291bd4, type: 2}

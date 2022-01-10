@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Top Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Top Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8fb3beb8739fbea4c9139bdb87853edf
+  m_SerializeEntries:
+  - m_GUID: 9dd4dd6f00fb935479b62132a0e0507c
+    m_Address: Assets/BundleAssets/Hats/Top Hat/TOP HAT.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c67a626b7811963478fb72ba545d2fed
+    m_Address: Assets/BundleAssets/Hats/Top Hat/TOP HAT_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ea8124edaeb0d1542b60d0ec774fb5f5
+    m_Address: Assets/BundleAssets/Hats/Top Hat/TOP HAT_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1ca64544a01dd624cacf989b83e68859
+    m_Address: Assets/BundleAssets/Hats/Top Hat/TOP HAT_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 051b1e8afa4aecc4da21e2fa7c527545
+    m_Address: Hat_Top Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 051b1e8afa4aecc4da21e2fa7c527545, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 051b1e8afa4aecc4da21e2fa7c527545, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 71eed71ebda3e22429e32a1591cf0545, type: 2}
+    - {fileID: 11400000, guid: 762d0019bbc646c48b988b2789cd04e4, type: 2}

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Triple Horns
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Triple Horns
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7da613e06b0591f45ae406656918c847
+  m_SerializeEntries:
+  - m_GUID: 2a6069083abb72c41b692f5a08c23bae
+    m_Address: Hat_Triple Horns
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 2a6069083abb72c41b692f5a08c23bae, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 2a6069083abb72c41b692f5a08c23bae, type: 3}
+  - m_GUID: 125b3a087a74818468d7c65620b50bc1
+    m_Address: Assets/BundleAssets/Hats/Triple Horns/Triplecorn.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e0d590b9e429a3144a05f07817affd1f
+    m_Address: Assets/BundleAssets/Hats/Triple Horns/Triplecorn_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9d2835a97fe952b428f6fa6212194182
+    m_Address: Assets/BundleAssets/Hats/Triple Horns/Triplecorn_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9a8efe4a9f499bf42b96419143cdb57e
+    m_Address: Assets/BundleAssets/Hats/Triple Horns/Triplecorn_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b331efc47638988439e8e21ef5ee7510, type: 2}
+    - {fileID: 11400000, guid: 096f98a871a3da8469e87ec302e31f23, type: 2}

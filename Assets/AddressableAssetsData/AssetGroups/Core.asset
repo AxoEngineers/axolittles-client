@@ -23,24 +23,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - material
     - default
-    m_MainAsset: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: 484e72d252f13c84894fac82c342e611, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: a529f93b5c99d364389517d70f9d6aa0
     m_Address: Assets/BundleAssets/Core/Textures/Body_AlbedoTransparency.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
     - default
-    m_MainAsset: {fileID: 2800000, guid: a529f93b5c99d364389517d70f9d6aa0, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: a529f93b5c99d364389517d70f9d6aa0, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 3ad28d6ef0e1d604eb0bb7ba7bc4213e
     m_Address: Assets/BundleAssets/Core/Textures/Body_MetallicSmoothness.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - texture
     - default
-    m_MainAsset: {fileID: 2800000, guid: 3ad28d6ef0e1d604eb0bb7ba7bc4213e, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 3ad28d6ef0e1d604eb0bb7ba7bc4213e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: be11d22ce36e34849ae38c45d00fbcb4
     m_Address: Assets/BundleAssets/Core/Textures/Body_Normal.png
     m_ReadOnly: 0
@@ -71,24 +71,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     - texture
-    m_MainAsset: {fileID: 2800000, guid: 02ec171c52a1e3c49bf9346ea129b36c, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 02ec171c52a1e3c49bf9346ea129b36c, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 0b4038f69ddecf3468204a3370ba1d6d
     m_Address: Assets/BundleAssets/Core/Textures/Black Flower Shirt_MetallicSmoothness.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
     - texture
-    m_MainAsset: {fileID: 2800000, guid: 0b4038f69ddecf3468204a3370ba1d6d, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 0b4038f69ddecf3468204a3370ba1d6d, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: af50f19a500316045936d02ffd5b0628
     m_Address: Assets/BundleAssets/Core/Textures/Black Flower Shirt_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
     - texture
-    m_MainAsset: {fileID: 2800000, guid: af50f19a500316045936d02ffd5b0628, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: af50f19a500316045936d02ffd5b0628, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4c0b4dfade9254842a883a7ef34d120e
     m_Address: Assets/BundleAssets/Core/None.prefab
     m_ReadOnly: 0
@@ -141,6 +141,30 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: ad4cf1c37ab184340952187a20efebb3
     m_Address: Assets/BundleAssets/Core/Textures/Kerchief _Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a7c0a5756dc78634cbed99f9b47bfb23
+    m_Address: Assets/BundleAssets/Core/Materials/Faces 1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 592cc58d9b9026a42a121ba57259d0f6
+    m_Address: Assets/BundleAssets/Core/Materials/Faces 2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 815b3773dd357a04ba01c40e836453e6
+    m_Address: Assets/BundleAssets/Core/Textures/Faces 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9586e35812e7388408d0df549dceed0a
+    m_Address: Assets/BundleAssets/Core/Textures/Faces 2.png
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}

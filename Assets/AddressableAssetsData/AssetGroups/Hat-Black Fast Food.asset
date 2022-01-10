@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Black Fast Food
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Black Fast Food
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fb10d547f59c04e498837bbf4b7d94d9
+  m_SerializeEntries:
+  - m_GUID: 3e04d715d054ad7478b581c14447085c
+    m_Address: Hat_Black Fast Food
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 3e04d715d054ad7478b581c14447085c, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 3e04d715d054ad7478b581c14447085c, type: 3}
+  - m_GUID: 92f08e8795bc3d94ca213022d3e7f850
+    m_Address: Assets/BundleAssets/Hats/Black Fast Food/McBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1c9ac88ef1835e44fa7d67a0239dd0c9
+    m_Address: Assets/BundleAssets/Hats/Black Fast Food/McBlackHat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5a8eaebdb7e31a543a5db3f60d225025
+    m_Address: Assets/BundleAssets/Hats/Black Fast Food/McBlackHat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0dcfdc6f55e55704e997f65e0d114566
+    m_Address: Assets/BundleAssets/Hats/Black Fast Food/McBlackHat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 19c1f30dd1999e64db0c60668e770696, type: 2}
+    - {fileID: 11400000, guid: 0f8aca890bf8b1548bab7b4fff62b4cf, type: 2}

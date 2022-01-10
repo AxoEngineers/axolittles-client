@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Cream
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Cream
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b2bdc95b9e4d84841b6c83063c038806
+  m_SerializeEntries:
+  - m_GUID: 536705940cfb7464e823c44618ff6d97
+    m_Address: Hat_Cream
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 536705940cfb7464e823c44618ff6d97, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 536705940cfb7464e823c44618ff6d97, type: 3}
+  - m_GUID: 578a100fb22beba4bb5dbcc4c33e0619
+    m_Address: Assets/BundleAssets/Hats/Cream/CREAM HAT.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c6a4ade3b9d95b544ace01c1f42fc394
+    m_Address: Assets/BundleAssets/Hats/Cream/CreamHat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1dfe08ec658dd6d489dc2016762b2b03
+    m_Address: Assets/BundleAssets/Hats/Cream/CreamHat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0dcb433777df88946aa15b888a3146a4
+    m_Address: Assets/BundleAssets/Hats/Cream/CreamHat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d5be156baee63d44e98d3b9476e6b965, type: 2}
+    - {fileID: 11400000, guid: bb047ab1383539c468a8ff92fb851636, type: 2}

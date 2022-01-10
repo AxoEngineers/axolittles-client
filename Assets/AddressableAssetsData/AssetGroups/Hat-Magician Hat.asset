@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Magician Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Magician Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1a5f019c3a933d148ab74fa277004d33
+  m_SerializeEntries:
+  - m_GUID: 4453965dfab706941a5c55edc493d634
+    m_Address: Hat_Magician Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 4453965dfab706941a5c55edc493d634, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 4453965dfab706941a5c55edc493d634, type: 3}
+  - m_GUID: c43d6fab63ad3c046a9232424375cbf2
+    m_Address: Assets/BundleAssets/Hats/Magician Hat/Wizard Night.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d129ec27151e78b48b56264e2d55a104
+    m_Address: Assets/BundleAssets/Hats/Magician Hat/Wizard Night_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9c0da08f03adb06489de311514eaa85e
+    m_Address: Assets/BundleAssets/Hats/Magician Hat/Wizard Night_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e232a6083bca5b34ba881a286564080f
+    m_Address: Assets/BundleAssets/Hats/Magician Hat/Wizard Night_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e1c24c7a03a6bea4a8babad2cb009f55, type: 2}
+    - {fileID: 11400000, guid: 07dc88dc3fea15e4a97516a392303606, type: 2}

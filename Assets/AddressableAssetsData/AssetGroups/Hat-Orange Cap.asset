@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Orange Cap
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Orange Cap
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 70fbede9fd1b38a4d80618c19f65e618
+  m_SerializeEntries:
+  - m_GUID: 46e7246768fcee54ca7b31594bf0937e
+    m_Address: Hat_Orange Cap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 46e7246768fcee54ca7b31594bf0937e, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 46e7246768fcee54ca7b31594bf0937e, type: 3}
+  - m_GUID: 19e161c3aa5362f4c80721376d71c597
+    m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 554829fec92344240a469157265fa696
+    m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ced2cc0009878b94d864b905714bb1ca
+    m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dcea56e43bb47f047bdf6ec77bde4d64
+    m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b03e97316deb97b48a0f23f616f466b4, type: 2}
+    - {fileID: 11400000, guid: f44c3519e7bffd54892813da2a0e2217, type: 2}

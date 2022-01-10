@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-AngelRing
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-AngelRing
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f1e92a746f543b94b8c3b3e2556f326e
+  m_SerializeEntries:
+  - m_GUID: e0f14fe4a6f32954b8666c0f717bb747
+    m_Address: Assets/BundleAssets/Hats/Angel Ring/AngelRing_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 048a9ed37d5b76f48ace4294ad9aa536
+    m_Address: Hats_Angel Ring
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 048a9ed37d5b76f48ace4294ad9aa536, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 048a9ed37d5b76f48ace4294ad9aa536, type: 3}
+  - m_GUID: 1ac6d243eec14814d9351943db7655ce
+    m_Address: Assets/BundleAssets/Hats/Angel Ring/AngelRing.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bd54eae9d2db3c8408b2646f7b51378e
+    m_Address: Assets/BundleAssets/Hats/Angel Ring/AngelRing_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5265ae65746206447a97bcd98fd483a6
+    m_Address: Assets/BundleAssets/Hats/Angel Ring/AngelRing_Emission.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 84cbdab36511bd148ab94fe33ca6f22a
+    m_Address: Assets/BundleAssets/Hats/Angel Ring/AngelRing_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 331e4cb88f01dbf4c89ed37afac24eae, type: 2}
+    - {fileID: 11400000, guid: b5dfeac13e0717348a6f397351d147b8, type: 2}

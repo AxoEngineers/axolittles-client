@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Round Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Round Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 03734501838ec5d448dbd335c4cca12d
+  m_SerializeEntries:
+  - m_GUID: c1e7659d0344e124f8ba023b7d91d191
+    m_Address: Hat_Round Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: c1e7659d0344e124f8ba023b7d91d191, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: c1e7659d0344e124f8ba023b7d91d191, type: 3}
+  - m_GUID: e3b553344d1b342428064d4d85d476dd
+    m_Address: Assets/BundleAssets/Hats/Round Hat/Bombin.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 609556228fede124aac85765e811f16b
+    m_Address: Assets/BundleAssets/Hats/Round Hat/Bombin_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c4821b1d4f7511845a8bb61121c36630
+    m_Address: Assets/BundleAssets/Hats/Round Hat/Bombin_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e4f21edc0d5de6040847e3c102734625
+    m_Address: Assets/BundleAssets/Hats/Round Hat/Bombin_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 864716b0bf77d3d4fa6a6c9481f9a594, type: 2}
+    - {fileID: 11400000, guid: c3d03f20d139ab74489dd040a396a3b2, type: 2}

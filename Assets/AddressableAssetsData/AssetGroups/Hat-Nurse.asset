@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Nurse
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Nurse
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2d7fa4d081406b642bd02411403417ab
+  m_SerializeEntries:
+  - m_GUID: bdb9d923a30f438408df7b95a673cd17
+    m_Address: Hat_Nurse
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: bdb9d923a30f438408df7b95a673cd17, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: bdb9d923a30f438408df7b95a673cd17, type: 3}
+  - m_GUID: ac5cf1d98fc5f6e489a839adb3994961
+    m_Address: Assets/BundleAssets/Hats/Nurse/Nurse hat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f02a19676717c6b48a4d5a4f7e57966a
+    m_Address: Assets/BundleAssets/Hats/Nurse/Nurse hat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b1246c6c28c43c446b2908b1dd2afc78
+    m_Address: Assets/BundleAssets/Hats/Nurse/Nurse hat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cf497ae737be05b4cbc636a9cab98272
+    m_Address: Assets/BundleAssets/Hats/Nurse/Nurse hat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eb4b51cb0407db3498c481b21d40ce40, type: 2}
+    - {fileID: 11400000, guid: 60106e4d432253248bc73c8e376a04a2, type: 2}

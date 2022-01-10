@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Beach Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Beach Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 264e89009e1e4b7429f59b0441e6f540
+  m_SerializeEntries:
+  - m_GUID: 2856cdc70ab76584c8f50065cdb3cfd2
+    m_Address: Hat_Beach Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 2856cdc70ab76584c8f50065cdb3cfd2, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 2856cdc70ab76584c8f50065cdb3cfd2, type: 3}
+  - m_GUID: 7f3563875f6d67f4f83d12d196e7debe
+    m_Address: Assets/BundleAssets/Hats/Beach hat/SUMMERHAT2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8f286e27ec2bc064496e6be8b9554a29
+    m_Address: Assets/BundleAssets/Hats/Beach hat/SUMMERHAT2_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e7c3f9f87c1328049b83157f32bd0d63
+    m_Address: Assets/BundleAssets/Hats/Beach hat/SUMMERHAT2_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 58358951565f556448ee07f4a23878e3
+    m_Address: Assets/BundleAssets/Hats/Beach hat/SUMMERHAT2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c9266ff8f2b2fcd49aa076b7551c77cc, type: 2}
+    - {fileID: 11400000, guid: f54a2f83cccd52644aad6bd259fc709d, type: 2}

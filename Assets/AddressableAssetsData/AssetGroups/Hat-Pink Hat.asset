@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Pink Hat
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Pink Hat
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 49f1eae0bf1b99c478efe9b005ee229c
+  m_SerializeEntries:
+  - m_GUID: 52b742f704d0e8442bf91ce9e0356805
+    m_Address: Hat_Pink Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 52b742f704d0e8442bf91ce9e0356805, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 52b742f704d0e8442bf91ce9e0356805, type: 3}
+  - m_GUID: b9a7fc7b34fa78d4bb7e2fd8557d1e52
+    m_Address: Assets/BundleAssets/Hats/Pink Hat/Female hat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6b429d4862ec0f14f924470b847661b4
+    m_Address: Assets/BundleAssets/Hats/Pink Hat/Female hat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 23cc12154db89ec40adf248bef007af5
+    m_Address: Assets/BundleAssets/Hats/Pink Hat/Female hat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e820cb029b77145479aa3c85f2ad03ad
+    m_Address: Assets/BundleAssets/Hats/Pink Hat/Female hat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 88c7a91a26dc5ac40b9fc4de2aca1489, type: 2}
+    - {fileID: 11400000, guid: b6b8ecb3d760af446863b76873fb2f6a, type: 2}

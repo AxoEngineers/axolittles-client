@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Captain
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Captain
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3a1d5f1fcebff1242a228241a3c4a5de
+  m_SerializeEntries:
+  - m_GUID: b044af09a5c180e42a95e49ca44cf713
+    m_Address: Assets/BundleAssets/Hats/Captain/CAPTAIN HAT.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a2223647dfe71ba418c92eb838c3c0d7
+    m_Address: Assets/BundleAssets/Hats/Captain/CAPTAIN HAT_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 12609911e4963a54a9e4f9e8d930d96e
+    m_Address: Assets/BundleAssets/Hats/Captain/CAPTAIN HAT_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8f17b24c566d6584780abf8bd607c41e
+    m_Address: Assets/BundleAssets/Hats/Captain/CAPTAIN HAT_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 8f17b24c566d6584780abf8bd607c41e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 8f17b24c566d6584780abf8bd607c41e, type: 3}
+  - m_GUID: 4a07ecef9ccc6db4ca3bf727bdda3951
+    m_Address: Hat_Captain
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 4a07ecef9ccc6db4ca3bf727bdda3951, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 4a07ecef9ccc6db4ca3bf727bdda3951, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1006b7f7d4d83aa44a890e02127fbb6b, type: 2}
+    - {fileID: 11400000, guid: 1a567306aba096c4d851ff9b7add3fa7, type: 2}

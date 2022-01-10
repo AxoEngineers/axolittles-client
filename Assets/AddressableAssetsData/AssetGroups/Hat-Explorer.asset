@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Explorer
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Explorer
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 97a64237a788ab140bb6c615e097c71a
+  m_SerializeEntries:
+  - m_GUID: 3d38fd1afb16bdc4c8ad3f8f59d5089a
+    m_Address: Hat_Explorer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 3d38fd1afb16bdc4c8ad3f8f59d5089a, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 3d38fd1afb16bdc4c8ad3f8f59d5089a, type: 3}
+  - m_GUID: b059f0f33cb90994f8ec931d7ec7d10b
+    m_Address: Assets/BundleAssets/Hats/Explorer/Explorerhat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c9aec988e94fc7e4bb23ad384c61e4f2
+    m_Address: Assets/BundleAssets/Hats/Explorer/Explorerhat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dd18f72b5fdfbb0478e047885268c1d4
+    m_Address: Assets/BundleAssets/Hats/Explorer/Explorerhat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dd5db04f957372f4aa5459a3c63b6ce7
+    m_Address: Assets/BundleAssets/Hats/Explorer/Explorerhat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4371b542a0b33ec46a11717a6a660f25, type: 2}
+    - {fileID: 11400000, guid: 439ceadbb245f0248bc8bfa9e17e8cd0, type: 2}

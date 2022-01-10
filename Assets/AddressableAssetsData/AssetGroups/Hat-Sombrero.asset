@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-Sombrero
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-Sombrero
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7cf4a6d3e8e781e4b9762db5c49d4e83
+  m_SerializeEntries:
+  - m_GUID: 1f7f9dd866abed3499410464500dddc6
+    m_Address: Hat_Sombrero
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 1f7f9dd866abed3499410464500dddc6, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 1f7f9dd866abed3499410464500dddc6, type: 3}
+  - m_GUID: 619a61aa5189919419c2986424e3d86a
+    m_Address: Assets/BundleAssets/Hats/Sombrero/SOMBRERO.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ebdde160a9f95474fb3ef1a78d5d875a
+    m_Address: Assets/BundleAssets/Hats/Sombrero/SOMBRERO_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 427adb0156fa9a64f916f402296d2820
+    m_Address: Assets/BundleAssets/Hats/Sombrero/SOMBRERO_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fc7a40b77cc855d43a25e2d98b970bab
+    m_Address: Assets/BundleAssets/Hats/Sombrero/SOMBRERO_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b3bc8b7e6955cab4bb75979d48a5ed46, type: 2}
+    - {fileID: 11400000, guid: 7e7ec785b1279af45ad24a8222537455, type: 2}

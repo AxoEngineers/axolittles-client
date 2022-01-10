@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Hat-St Patrick
+  m_EditorClassIdentifier: 
+  m_GroupName: Hat-St Patrick
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8ffb30742affa2c4ea10ae1e7b09e8b6
+  m_SerializeEntries:
+  - m_GUID: 744f14231cdb28b40947cb0b3bb897a5
+    m_Address: Hat_St Patrick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 744f14231cdb28b40947cb0b3bb897a5, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 744f14231cdb28b40947cb0b3bb897a5, type: 3}
+  - m_GUID: 45c3935e5291b814da8af39064bde795
+    m_Address: Assets/BundleAssets/Hats/St Patrick/stpatrick hat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 56ae89b46a4e3294385703ec9b70623e
+    m_Address: Assets/BundleAssets/Hats/St Patrick/Stpatrick hat_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4b6fb32aad6c4a049a2a0b4db8e04706
+    m_Address: Assets/BundleAssets/Hats/St Patrick/Stpatrick hat_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f097e9398e0e94948be2d8f830165531
+    m_Address: Assets/BundleAssets/Hats/St Patrick/Stpatrick hat_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7c35e78076903ab4193da0f779df33ce, type: 2}
+    - {fileID: 11400000, guid: ee6a2beb6a9fc044bb1f26bba5aef859, type: 2}
