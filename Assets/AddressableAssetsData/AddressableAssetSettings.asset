@@ -96,7 +96,7 @@ MonoBehaviour:
       - m_Id: eff6024d71a0287479652a306fc50ca0
         m_Value: ServerData/[BuildTarget]
       - m_Id: 34efc19d98143a247bd4a4f51cc20178
-        m_Value: http://localhost/[BuildTarget]
+        m_Value: http://localhost:3000/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: efc6a7cbb08ab134daba2b979e75d665
       m_Name: BuildTarget

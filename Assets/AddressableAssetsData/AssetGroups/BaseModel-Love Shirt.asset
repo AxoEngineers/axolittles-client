@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Love Shirt
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Love Shirt
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 54eb66a12b54e0f4ab400d5d7b1fcc0b
+  m_SerializeEntries:
+  - m_GUID: dbf432a41acf00d4eb69bfa37b5cc0c1
+    m_Address: Assets/BundleAssets/BaseModel/Love Shirt/Hot-Top2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4d1b5b56327643540acd3bad75736e3a
+    m_Address: Assets/BundleAssets/BaseModel/Love Shirt/hot-top4_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f68b5ca882fc7fd43a505281bd2e8fc8
+    m_Address: Assets/BundleAssets/BaseModel/Love Shirt/hot-top4_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 250fe216c3cfc0743a9b9a016956b2f3
+    m_Address: Assets/BundleAssets/BaseModel/Love Shirt/hot-top4_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 184bc1ed50a6de24390bccc4259dabf3
+    m_Address: Assets/BundleAssets/BaseModel/Love Shirt/Love Shirt.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 608fbb3f6e1fe1640863cc584220728c, type: 2}
+    - {fileID: 11400000, guid: 4716ea63b648f814392d40f5c569b10e, type: 2}

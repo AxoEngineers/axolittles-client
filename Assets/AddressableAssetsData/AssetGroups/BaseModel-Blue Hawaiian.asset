@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Blue Hawaiian
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Blue Hawaiian
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9d92d7125bae335428267835d9d2ca3e
+  m_SerializeEntries:
+  - m_GUID: e48588a3c06a9204da18fea541be51d6
+    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Flower Shirt_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e48588a3c06a9204da18fea541be51d6, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e48588a3c06a9204da18fea541be51d6, type: 3}
+  - m_GUID: 21eb0b0320feb8442a7be682643e5ef0
+    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Flower Shirt_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 21eb0b0320feb8442a7be682643e5ef0, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 21eb0b0320feb8442a7be682643e5ef0, type: 3}
+  - m_GUID: e565deae8827f3140881485f95249a2f
+    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Flower Shirt_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e565deae8827f3140881485f95249a2f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e565deae8827f3140881485f95249a2f, type: 3}
+  - m_GUID: 849900599968788488be8f53d260caea
+    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Hawaiian.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 849900599968788488be8f53d260caea, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 849900599968788488be8f53d260caea, type: 3}
+  - m_GUID: 8afd4577b8de8564697d8344a507f544
+    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Flower shirt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 8afd4577b8de8564697d8344a507f544, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 8afd4577b8de8564697d8344a507f544, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2a7f1b14c06554649b3aa6c05fd89e0b, type: 2}
+    - {fileID: 11400000, guid: 8c8ecbcff9c52794587819e0a3a2c48c, type: 2}

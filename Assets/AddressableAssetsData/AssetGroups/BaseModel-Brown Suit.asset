@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Brown Suit
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Brown Suit
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0c354e90d3a4f8b469321751dc25ca07
+  m_SerializeEntries:
+  - m_GUID: 6e4cd5e4d1edd8e4f96132701a1e2eea
+    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/Brown Suit.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cc2a222dc59b0854d893b4600b196b5e
+    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/costumebrown_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e2ad6496141654046812c9f25fd6943c
+    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/costumebrown_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6a8648ae6fee5b447b0e0f8098309df2
+    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/costumebrown_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c974055211cf16548ab3bc302bfe6ae2
+    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/Smoking.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d4225e857fd0a494d8362c78f05e8dd4, type: 2}
+    - {fileID: 11400000, guid: 6b690b6ff7cb2f04db9079ed2dacdbed, type: 2}

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Stonks Shirt
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Stonks Shirt
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c1994a5103d62bf40885a29be5c6ffb0
+  m_SerializeEntries:
+  - m_GUID: 45c196d5282eb54418b13c314bb836f7
+    m_Address: Assets/BundleAssets/BaseModel/Stonks Shirt/Statistics TShirt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1bf952ff2380d054084245ff13502539
+    m_Address: Assets/BundleAssets/BaseModel/Stonks Shirt/Statistics TShirt_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a8bd9c728601996418227c6339b39490
+    m_Address: Assets/BundleAssets/BaseModel/Stonks Shirt/Statistics TShirt_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3e268e4ddee484d48932562be0b65099
+    m_Address: Assets/BundleAssets/BaseModel/Stonks Shirt/Statistics TShirt_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 159187628e7852247a3475258d14340d
+    m_Address: Assets/BundleAssets/BaseModel/Stonks Shirt/Stonks Shirt.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 02bd05b60d77a614e835ed49fcc98d6f, type: 2}
+    - {fileID: 11400000, guid: d4c7a894a189c4342b0c0db833e37b03, type: 2}

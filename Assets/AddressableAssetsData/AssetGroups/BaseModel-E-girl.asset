@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-E-girl
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-E-girl
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 803dd8eebe147b044b4db64fc7dc0fe8
+  m_SerializeEntries:
+  - m_GUID: a9baec905bbdd9a449708c16bec7f883
+    m_Address: Assets/BundleAssets/BaseModel/E-girl/E girl shirt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6b085f5cdb1c55c4bafbf94d56caae54
+    m_Address: Assets/BundleAssets/BaseModel/E-girl/E-girl.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 218b16e8de0a15941bdcd3aea52808ef
+    m_Address: Assets/BundleAssets/BaseModel/E-girl/Egirl  shirt_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 977bdb6455425d0489638568c226cfb0
+    m_Address: Assets/BundleAssets/BaseModel/E-girl/Egirl  shirt_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 042316fbaa5d8124cbfdb2e5b9a137c5
+    m_Address: Assets/BundleAssets/BaseModel/E-girl/Egirl  shirt_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e83944635d3e0de4cb93c3ba688d1846, type: 2}
+    - {fileID: 11400000, guid: e362815ca29d51a49bfa0a3efa77f75d, type: 2}

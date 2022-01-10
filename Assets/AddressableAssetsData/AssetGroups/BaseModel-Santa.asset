@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Santa
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Santa
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4e0bb99d7dafa3e46bfe6e07fcbdc4bd
+  m_SerializeEntries:
+  - m_GUID: f4f845bbc4815b74e832b0bbcc27909f
+    m_Address: Assets/BundleAssets/BaseModel/Santa/Chrismas Suit.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e9b4235ecbeaf214e8a185755bc2cfae
+    m_Address: Assets/BundleAssets/BaseModel/Santa/Chrismas Suit_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 84c6309abe9cf934f9d05dadd70b1953
+    m_Address: Assets/BundleAssets/BaseModel/Santa/Chrismas Suit_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4c8e8139178902f489aa6b0d27a46084
+    m_Address: Assets/BundleAssets/BaseModel/Santa/Chrismas Suit_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ffb2937cfc0e1964a953417928e4a012
+    m_Address: Assets/BundleAssets/BaseModel/Santa/Santa.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3afa436eb2dd9994ca7cb6687fb61652, type: 2}
+    - {fileID: 11400000, guid: 72da1078b69eba943984e7f41b8bcd19, type: 2}

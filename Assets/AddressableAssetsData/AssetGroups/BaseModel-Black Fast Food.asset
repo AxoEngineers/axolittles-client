@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BaseModel-Black Fast Food
+  m_EditorClassIdentifier: 
+  m_GroupName: BaseModel-Black Fast Food
+  m_Data:
+    m_SerializedData: []
+  m_GUID: dc0c836371a9fe74181ffe55f551dcc0
+  m_SerializeEntries:
+  - m_GUID: 776558acd75baec4588df2049ce35dc4
+    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/Black Fast Food.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 11d685350f332594d9a228e0a8964802
+    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/McBlack Shirt_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4bde139ecb141b24696c6bb7c2fd670f
+    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/McBlack Shirt_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: acf0838f907a35d4e8328c1b1640d214
+    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/McBlack Shirt_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 74f1ed99a1e2b5c4d9ac07356b59d812
+    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/McShirt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 719c58e01e02fa14e8588be696715a50, type: 2}
+    - {fileID: 11400000, guid: 1465115132678314c9989a2eaf49725a, type: 2}
