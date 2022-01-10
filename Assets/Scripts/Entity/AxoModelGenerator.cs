@@ -111,7 +111,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             AxoInfo info = baseModel.AddComponent<AxoInfo>();
             info.id = id;
             info.name = $"AXO #{id}";
-            baseModel.SetActive(true);
+            baseModel.SetActive(false);
 
             if (onFinish != null)
             {
