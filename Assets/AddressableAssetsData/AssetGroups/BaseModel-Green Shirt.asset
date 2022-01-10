@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 72fb692514e71a943a609835ad3a0371
   m_SerializeEntries:
   - m_GUID: 8fd1de2c314be5f4390e3013b53f7682
-    m_Address: Assets/BundleAssets/BaseModel/Green Shirt/Green Shirt.fbx
+    m_Address: BaseModel_Green Shirt
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 8fd1de2c314be5f4390e3013b53f7682, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 8fd1de2c314be5f4390e3013b53f7682, type: 3}
   - m_GUID: bdef97678906ee84796a2400dcb851b3
     m_Address: Assets/BundleAssets/BaseModel/Green Shirt/Green TShirt.mat
     m_ReadOnly: 0

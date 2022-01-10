@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 02c295c60b2757a4b9d96fe8b6eb3b78
   m_SerializeEntries:
   - m_GUID: ad237c4e9dbb13d4ebeeff89c62ceda0
-    m_Address: Assets/BundleAssets/BaseModel/Sweater and Chain/Sweater and Chain.fbx
+    m_Address: BaseModel_Sweater and Chain
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: ad237c4e9dbb13d4ebeeff89c62ceda0, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: ad237c4e9dbb13d4ebeeff89c62ceda0, type: 3}
   - m_GUID: 2be92735c6bdb9c4f8dc64ead81067e8
     m_Address: Assets/BundleAssets/BaseModel/Sweater and Chain/Sweater with Chain_AlbedoTransparency.png
     m_ReadOnly: 0

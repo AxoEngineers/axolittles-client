@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: c4869c3a844553a46874b08cc34dc5df
   m_SerializeEntries:
   - m_GUID: c500bb7e45c8376449c5ee7eced7df51
-    m_Address: Assets/BundleAssets/BaseModel/KGB/KGB.fbx
+    m_Address: BaseModel_KGB
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: c500bb7e45c8376449c5ee7eced7df51, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: c500bb7e45c8376449c5ee7eced7df51, type: 3}
   - m_GUID: 198a39a1b1451f7468bf62fc252ba686
     m_Address: Assets/BundleAssets/BaseModel/KGB/KGBSuit.mat
     m_ReadOnly: 0

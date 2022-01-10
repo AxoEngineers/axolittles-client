@@ -18,17 +18,17 @@ MonoBehaviour:
   m_GUID: 8bf0a5f30fd7e3f4ba7f215dff05fa70
   m_SerializeEntries:
   - m_GUID: 59311ef60d973394ca0329b2d9915cd3
-    m_Address: Assets/BundleAssets/BaseModel/Pimp/Pimp.fbx
+    m_Address: BaseModel_Pimp
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 59311ef60d973394ca0329b2d9915cd3, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 59311ef60d973394ca0329b2d9915cd3, type: 3}
   - m_GUID: c3371f1bb9d00ce42b7f26934f70b7b1
     m_Address: Assets/BundleAssets/BaseModel/Pimp/Plimp Suit_AlbedoTransparency.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: c3371f1bb9d00ce42b7f26934f70b7b1, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: c3371f1bb9d00ce42b7f26934f70b7b1, type: 3}
   - m_GUID: 0a3e43d09bc5d9d48a1b3cfd6d1955c3
     m_Address: Assets/BundleAssets/BaseModel/Pimp/Plimp Suit_MetallicSmoothness.png
     m_ReadOnly: 0

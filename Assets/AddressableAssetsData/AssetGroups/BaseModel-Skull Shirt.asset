@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: ed56a357aef84874f995244850015e49
   m_SerializeEntries:
   - m_GUID: 4a6001c51bf4181448efa81cc772fd59
-    m_Address: Assets/BundleAssets/BaseModel/Skull Shirt/Skull Shirt.fbx
+    m_Address: BaseModel_Skull Shirt
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 4a6001c51bf4181448efa81cc772fd59, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 4a6001c51bf4181448efa81cc772fd59, type: 3}
   - m_GUID: 76f3bb1a11a51e74e9410ae90360530b
     m_Address: Assets/BundleAssets/BaseModel/Skull Shirt/Skull TShirt.mat
     m_ReadOnly: 0

@@ -36,11 +36,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 72205cdd026ddfa4fb8eea306cb1d652
-    m_Address: Assets/BundleAssets/BaseModel/Sweater/Sweater.fbx
+    m_Address: BaseModel_Sweater
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 72205cdd026ddfa4fb8eea306cb1d652, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 72205cdd026ddfa4fb8eea306cb1d652, type: 3}
   - m_GUID: 60504e67f3810ee4289a5a9b1470b812
     m_Address: Assets/BundleAssets/BaseModel/Sweater/Sweater_.mat
     m_ReadOnly: 0

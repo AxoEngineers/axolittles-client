@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 2de34c1d35b389c458afd72aaa4e9735
   m_SerializeEntries:
   - m_GUID: 179e1b078a429b6419b297c8123c2ee3
-    m_Address: Assets/BundleAssets/BaseModel/Adventurer/Adventurer.fbx
+    m_Address: BaseModel_Adventurer
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 179e1b078a429b6419b297c8123c2ee3, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 179e1b078a429b6419b297c8123c2ee3, type: 3}
   - m_GUID: de185dff62011cf47bdbae7fea686014
     m_Address: Assets/BundleAssets/BaseModel/Adventurer/Adventure Suit.mat
     m_ReadOnly: 0

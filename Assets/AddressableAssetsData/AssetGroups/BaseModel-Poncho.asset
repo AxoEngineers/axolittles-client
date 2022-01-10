@@ -36,11 +36,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 9759f9913f5ec3541ab329e4eb6dbfbe
-    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho.fbx
+    m_Address: BaseModel_Poncho
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 9759f9913f5ec3541ab329e4eb6dbfbe, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 9759f9913f5ec3541ab329e4eb6dbfbe, type: 3}
   - m_GUID: 1a644af3c19c7c04bb4b51bc1f6ffd39
     m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho_.mat
     m_ReadOnly: 0

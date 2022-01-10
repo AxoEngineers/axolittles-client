@@ -42,11 +42,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 1f6919b0b36f52a43abc6a3a7edba581
-    m_Address: Assets/BundleAssets/BaseModel/Pirate/Pirate.fbx
+    m_Address: BaseModel_Pirate
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 1f6919b0b36f52a43abc6a3a7edba581, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 1f6919b0b36f52a43abc6a3a7edba581, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

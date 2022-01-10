@@ -24,11 +24,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 6b085f5cdb1c55c4bafbf94d56caae54
-    m_Address: Assets/BundleAssets/BaseModel/E-girl/E-girl.fbx
+    m_Address: BaseModel_E-girl
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 6b085f5cdb1c55c4bafbf94d56caae54, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 6b085f5cdb1c55c4bafbf94d56caae54, type: 3}
   - m_GUID: 218b16e8de0a15941bdcd3aea52808ef
     m_Address: Assets/BundleAssets/BaseModel/E-girl/Egirl  shirt_AlbedoTransparency.png
     m_ReadOnly: 0

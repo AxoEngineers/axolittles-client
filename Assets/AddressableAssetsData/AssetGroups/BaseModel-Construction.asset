@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 9d35ef7109b5af34da0330dfbc63d571
   m_SerializeEntries:
   - m_GUID: 7a0c27367e208ae4fb54e3ad1dc60f74
-    m_Address: Assets/BundleAssets/BaseModel/Construction/Construction.fbx
+    m_Address: BaseModel_Construction
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 7a0c27367e208ae4fb54e3ad1dc60f74, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 7a0c27367e208ae4fb54e3ad1dc60f74, type: 3}
   - m_GUID: d69ac1e944bc9234194087adb6274861
     m_Address: Assets/BundleAssets/BaseModel/Construction/Worker suit.mat
     m_ReadOnly: 0

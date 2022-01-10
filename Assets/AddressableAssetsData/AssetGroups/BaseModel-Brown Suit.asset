@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 0c354e90d3a4f8b469321751dc25ca07
   m_SerializeEntries:
   - m_GUID: 6e4cd5e4d1edd8e4f96132701a1e2eea
-    m_Address: Assets/BundleAssets/BaseModel/Brown Suit/Brown Suit.fbx
+    m_Address: BaseModel_Brown Suit
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 6e4cd5e4d1edd8e4f96132701a1e2eea, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 6e4cd5e4d1edd8e4f96132701a1e2eea, type: 3}
   - m_GUID: cc2a222dc59b0854d893b4600b196b5e
     m_Address: Assets/BundleAssets/BaseModel/Brown Suit/costumebrown_AlbedoTransparency.png
     m_ReadOnly: 0

@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 898e116b27d2bd448b74efce0271acc5
   m_SerializeEntries:
   - m_GUID: c318f577dbe1af0428df83820a2153ab
-    m_Address: Assets/BundleAssets/BaseModel/Armor/Armor suit.mat
+    m_Address: Armor suit Mateiral
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2100000, guid: c318f577dbe1af0428df83820a2153ab, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c318f577dbe1af0428df83820a2153ab, type: 2}
   - m_GUID: d3ec960fa97e8a449abf960e151b206c
     m_Address: Assets/BundleAssets/BaseModel/Armor/Armor suit_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -42,11 +42,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 90e51b87a9e25ce4daf45e0213613d57
-    m_Address: Assets/BundleAssets/BaseModel/Armor/Armor.fbx
+    m_Address: BaseModel_Armor
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 90e51b87a9e25ce4daf45e0213613d57, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 90e51b87a9e25ce4daf45e0213613d57, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

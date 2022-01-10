@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/BaseModel/King/King Suit.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2100000, guid: 87fe9dd650111db499afadd06dbe8d2c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 87fe9dd650111db499afadd06dbe8d2c, type: 2}
   - m_GUID: 6067967de4a95de45a87acd4d2832191
     m_Address: Assets/BundleAssets/BaseModel/King/King Suit_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -42,11 +42,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: dfd05a3ebb3ec3542b6429c2a1626676
-    m_Address: Assets/BundleAssets/BaseModel/King/King.fbx
+    m_Address: BaseModel_King
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: dfd05a3ebb3ec3542b6429c2a1626676, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: dfd05a3ebb3ec3542b6429c2a1626676, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

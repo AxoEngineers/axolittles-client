@@ -55,8 +55,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - basemodel
     - default
-    m_MainAsset: {fileID: 919132149155446097, guid: 617a271c9469c154290bb1e0c031d309, type: 3}
-    m_TargetAsset: {fileID: 919132149155446097, guid: 617a271c9469c154290bb1e0c031d309, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 8bde40244a1522f4f9cf417f03da03fc
     m_Address: Assets/BundleAssets/Core/Materials/Buttons.mat
     m_ReadOnly: 0
@@ -89,6 +89,62 @@ MonoBehaviour:
     - texture
     m_MainAsset: {fileID: 2800000, guid: af50f19a500316045936d02ffd5b0628, type: 3}
     m_TargetAsset: {fileID: 2800000, guid: af50f19a500316045936d02ffd5b0628, type: 3}
+  - m_GUID: 4c0b4dfade9254842a883a7ef34d120e
+    m_Address: Assets/BundleAssets/Core/None.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    - basemodel
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dec2ee8cf7aec934880c587991815d5a
+    m_Address: Assets/BundleAssets/Core/Materials/Clothing.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f3f5e6d405e0fd4990754ef11f06ae8
+    m_Address: Assets/BundleAssets/Core/Materials/Kerchief_.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4b2422b07273c8645a2ad3f963c761ef
+    m_Address: Assets/BundleAssets/Core/Textures/Clothes_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 69223f56d2f9e2840a69d983a2f23626
+    m_Address: Assets/BundleAssets/Core/Textures/Clothes_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f89cccf111882541a58289028141b2b
+    m_Address: Assets/BundleAssets/Core/Textures/Clothes_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0987042a0945ade4eb10e922ab1df3d4
+    m_Address: Assets/BundleAssets/Core/Textures/Kerchief _AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cc0db7322de3d7b4489ccef986654914
+    m_Address: Assets/BundleAssets/Core/Textures/Kerchief _MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ad4cf1c37ab184340952187a20efebb3
+    m_Address: Assets/BundleAssets/Core/Textures/Kerchief _Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

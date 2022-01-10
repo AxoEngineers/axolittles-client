@@ -24,11 +24,11 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 3dbd55c6d96d0b447a240a85b59c6d2f
-    m_Address: Assets/BundleAssets/BaseModel/Red Shirt/Red Shirt.fbx
+    m_Address: BaseModel_Red Shirt
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 3dbd55c6d96d0b447a240a85b59c6d2f, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 3dbd55c6d96d0b447a240a85b59c6d2f, type: 3}
   - m_GUID: a7c34b5e40ff59243891ed41440353bd
     m_Address: Assets/BundleAssets/BaseModel/Red Shirt/Red Shirt_AlbedoTransparency.png
     m_ReadOnly: 0

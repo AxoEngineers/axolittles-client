@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: dc0c836371a9fe74181ffe55f551dcc0
   m_SerializeEntries:
   - m_GUID: 776558acd75baec4588df2049ce35dc4
-    m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/Black Fast Food.fbx
+    m_Address: BaseModel_Black Fast Food
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 776558acd75baec4588df2049ce35dc4, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 776558acd75baec4588df2049ce35dc4, type: 3}
   - m_GUID: 11d685350f332594d9a228e0a8964802
     m_Address: Assets/BundleAssets/BaseModel/Black Fast Food/McBlack Shirt_AlbedoTransparency.png
     m_ReadOnly: 0

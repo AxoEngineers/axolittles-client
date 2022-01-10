@@ -36,7 +36,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 2800000, guid: e565deae8827f3140881485f95249a2f, type: 3}
     m_TargetAsset: {fileID: 2800000, guid: e565deae8827f3140881485f95249a2f, type: 3}
   - m_GUID: 849900599968788488be8f53d260caea
-    m_Address: Assets/BundleAssets/BaseModel/Blue Hawaiian/Blue Hawaiian.fbx
+    m_Address: BaseModel_Blue Hawaiian
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: 849900599968788488be8f53d260caea, type: 3}

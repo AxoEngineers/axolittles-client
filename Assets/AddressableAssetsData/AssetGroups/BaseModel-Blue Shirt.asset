@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: f4debbdd5f7accb459311ed955765f05
   m_SerializeEntries:
   - m_GUID: 5859158e76201a6428ae1029c24a51b8
-    m_Address: Assets/BundleAssets/BaseModel/Blue Shirt/Blue Shirt.fbx
+    m_Address: BaseModel_Blue Shirt
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 5859158e76201a6428ae1029c24a51b8, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 5859158e76201a6428ae1029c24a51b8, type: 3}
   - m_GUID: f270e2b2da0356746b178d435562c915
     m_Address: Assets/BundleAssets/BaseModel/Blue Shirt/Blue TShirt.mat
     m_ReadOnly: 0

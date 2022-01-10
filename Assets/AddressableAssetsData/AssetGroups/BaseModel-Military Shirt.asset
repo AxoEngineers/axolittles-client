@@ -18,11 +18,11 @@ MonoBehaviour:
   m_GUID: 22144d245113776439b7a271ff3f72cb
   m_SerializeEntries:
   - m_GUID: 1ef630f05cbfd8f45a82fd209586ac92
-    m_Address: Assets/BundleAssets/BaseModel/Military Shirt/Military Shirt.fbx
+    m_Address: BaseModel_Military Shirt
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 1ef630f05cbfd8f45a82fd209586ac92, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 1ef630f05cbfd8f45a82fd209586ac92, type: 3}
   - m_GUID: 7653106d734193844a434df4269ca480
     m_Address: Assets/BundleAssets/BaseModel/Military Shirt/Military Shirt.mat
     m_ReadOnly: 0
