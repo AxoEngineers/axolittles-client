@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Devil
+  m_EditorClassIdentifier: 
+  m_GroupName: Devil
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a5d546fd49309374299bed21dc098580
+  m_SerializeEntries:
+  - m_GUID: 99c56ed3479492b4eb0562ef1fb92d1e
+    m_Address: Assets/BundleAssets/BaseModel/Devil/Devil shirt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8699f3e6df6fbd247b00045048b1aa91
+    m_Address: Assets/BundleAssets/BaseModel/Devil/Devil shirt_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4900b4c6ba32e7d49bdb390ef0b0e0b6
+    m_Address: Assets/BundleAssets/BaseModel/Devil/Devil shirt_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: eb7be4ae07e666741ba5322cdde7bf97
+    m_Address: Assets/BundleAssets/BaseModel/Devil/Devil shirt_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bb16f884ed640814696580c940339977
+    m_Address: Assets/BundleAssets/BaseModel/Devil/Devil.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c6dd0d66b76c23a49a311ecf49a1b274, type: 2}
+    - {fileID: 11400000, guid: 82a407401a81e1343810fad4f7bff28b, type: 2}

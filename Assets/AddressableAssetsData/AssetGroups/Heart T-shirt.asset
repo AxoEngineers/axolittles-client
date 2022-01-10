@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Heart T-shirt
+  m_EditorClassIdentifier: 
+  m_GroupName: Heart T-shirt
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e903298bf3c208941b3e3af09abe6f97
+  m_SerializeEntries:
+  - m_GUID: df2dcfdc0cfaf064dbc548e6e060cd02
+    m_Address: Assets/BundleAssets/BaseModel/Heart T-shirt/Heart T-shirt.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8d45b6c9d40f94044b876e6790021848
+    m_Address: Assets/BundleAssets/BaseModel/Heart T-shirt/Hot-Top3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3e6b41ab6631ee64f8de913067d4c88c
+    m_Address: Assets/BundleAssets/BaseModel/Heart T-shirt/hot-top3_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 17156563f96924e4686761aa12949063
+    m_Address: Assets/BundleAssets/BaseModel/Heart T-shirt/hot-top3_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9c09fbf5430c60842a83e94339eafda5
+    m_Address: Assets/BundleAssets/BaseModel/Heart T-shirt/hot-top3_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ec51004ebd0e5c142811d0a7d5e99029, type: 2}
+    - {fileID: 11400000, guid: bd79d921fdf860d4f85a26cc709b5da5, type: 2}

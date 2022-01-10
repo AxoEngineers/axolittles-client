@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Poncho
+  m_EditorClassIdentifier: 
+  m_GroupName: Poncho
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 284f14e714ae1eb4eb87051755ce1d20
+  m_SerializeEntries:
+  - m_GUID: 629dd3a3084ebf242bb4fd2f3b30459b
+    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho _AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b06d06dd015777a468b21bbebca230b9
+    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho _MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ae689fbe4225bfb4ca5f3e9f3fba1258
+    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho _Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9759f9913f5ec3541ab329e4eb6dbfbe
+    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1a644af3c19c7c04bb4b51bc1f6ffd39
+    m_Address: Assets/BundleAssets/BaseModel/Poncho/Poncho_.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3fb01c80e8ca1594f90e41ba0145f51b, type: 2}
+    - {fileID: 11400000, guid: d95215af38a255e40937d9d0f6ede6a7, type: 2}

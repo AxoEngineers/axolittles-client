@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Robin Hood
+  m_EditorClassIdentifier: 
+  m_GroupName: Robin Hood
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 6a563faa2884f3d4892758f15885f126
+  m_SerializeEntries:
+  - m_GUID: 321f90fb23decf740a6022d959c47654
+    m_Address: Assets/BundleAssets/BaseModel/Robin Hood/Robin Hood.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 466cc3fd45a9a8d419179ba5f7e6320f
+    m_Address: Assets/BundleAssets/BaseModel/Robin Hood/Robin Hood.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b4f2d5783fd4f7740b1a22281d2f14ff
+    m_Address: Assets/BundleAssets/BaseModel/Robin Hood/Robin Hood_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4799b616d0c4b244bbae32a55a8b49d5
+    m_Address: Assets/BundleAssets/BaseModel/Robin Hood/Robin Hood_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ef2ca947b61ac0e459b4f85f8a83800c
+    m_Address: Assets/BundleAssets/BaseModel/Robin Hood/Robin Hood_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a06f254155a552647a9cafd2e5430253, type: 2}
+    - {fileID: 11400000, guid: ff76b63cc9a9ffa43b0e9c4944e94bd9, type: 2}
