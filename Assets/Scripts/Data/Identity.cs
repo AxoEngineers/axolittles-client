@@ -3,23 +3,19 @@ using Infteract;
 using UnityEngine;
 
 [Serializable]
-public struct SappyIdentity
+public struct AvatarIdentity
 {
-    public static readonly SappyIdentity Null = new SappyIdentity(-1, "0x0", "Null", "SF_PX24_APE:4869");
+    public static readonly AvatarIdentity Null = new AvatarIdentity(-1, "0x0", "Null", "0XF36446105FF682999A442B003F2224BCB3D82067:1");
 
     public bool IsNull => id == -1;
     
     public int id;
-    public string ethAddress;
-    public string nickname;
     public string avatarUri;
     public NftAddress avatar => NftAddress.ParseNft(avatarUri);
 
-    public SappyIdentity(int id, string ethAddress, string nickname, string avatarUri)
+    public AvatarIdentity(int id, string ethAddress, string nickname, string avatarUri)
     {
         this.id = id;
-        this.nickname = nickname;
-        this.ethAddress = ethAddress;
         this.avatarUri = avatarUri;
     }
     

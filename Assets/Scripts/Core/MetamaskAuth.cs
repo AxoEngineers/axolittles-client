@@ -11,10 +11,7 @@ using UnityEngine.Events;
 public enum NftType
 {
     UNKNOWN,
-    SAPPYSEALS,
-    WINTERBEARS,
-    PX24_CAT,
-    PX24_APE
+    AXOLITTLES
 }
 
 public struct NftAddress : IComparable
@@ -30,10 +27,7 @@ public struct NftAddress : IComparable
         this.contract = contract;
         switch (contract.ToUpperInvariant())
         {
-            case "SF_PX24_CAT": type = NftType.PX24_CAT; break;
-            case "SF_PX24_APE": type = NftType.PX24_APE; break;
-            case "0X364C828EE171616A39897688A831C2499AD972EC": type = NftType.SAPPYSEALS; break;
-            case "0XC8BCBE0E8AE36D8F9238CD320EF6DE88784B1734": type = NftType.WINTERBEARS; break;
+            case "0XF36446105FF682999A442B003F2224BCB3D82067": type = NftType.AXOLITTLES; break;
             default: type = NftType.UNKNOWN; break;
         }
         id = int.Parse(nftId);

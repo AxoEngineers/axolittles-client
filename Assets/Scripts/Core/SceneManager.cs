@@ -21,8 +21,6 @@ public class SceneManager : Mingleton<SceneManager>
     
     // PANELS
     public GameObject LoadingPanel;
-    public GameObject AvatarSelectionPanel;
-    public GameObject BrowserPanel;
     public GameObject ConnectPanel;
     
     // UI
@@ -36,7 +34,7 @@ public class SceneManager : Mingleton<SceneManager>
     private bool loginFailed = false;
     private bool pleaseWait = true;
     private bool errorShown = false;
-    private SappyIdentity identity = SappyIdentity.Null;
+    private AvatarIdentity identity = AvatarIdentity.Null;
     
     public string Status
     {
@@ -53,7 +51,6 @@ public class SceneManager : Mingleton<SceneManager>
         Status = "WebGL Build Required";
         LoadingPanel.gameObject.SetActive(false);
         ConnectPanel.gameObject.SetActive(false);
-        _PixelverseBackground.gameObject.SetActive(false);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Additive);
         #endif
 
@@ -76,8 +73,7 @@ public class SceneManager : Mingleton<SceneManager>
         SetLoadingScreen(true);
         yield return new WaitForSeconds(0.5f);
         SetLoadingScreen(false);
-        AvatarSelectionPanel.gameObject.SetActive(true);
-        _PixelverseBackground.gameObject.SetActive(true);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Additive);
     }
 
     public void MetamaskAuthenticate()
@@ -114,7 +110,7 @@ public class SceneManager : Mingleton<SceneManager>
         {
             SetLoadingScreen(false);
             _MetamaskConnectBtn.interactable = true;
-            Status = $"You must own at least 1 avatar to login.\r\nYou only have {MetamaskAuth.Instance.Wallet.avatars.Length} currently";
+            Status = $"You must own at least 1 axolitle to login.\r\nYou only have {MetamaskAuth.Instance.Wallet.avatars.Length} currently";
             _WalletConnectText.text = Status;
             ConnectPanel.SetActive(true);
             yield break;
@@ -125,19 +121,10 @@ public class SceneManager : Mingleton<SceneManager>
         StartCoroutine(GoToMainMenu());
     }
 
-    public void StartConnectServer(string ip, string room, string gameName)
-    {
-        StartCoroutine(LoginProtocolCoroutine(ip, room, gameName, reason =>
-        {
-            SetLoadingScreen(false);
-            AvatarSelectionPanel.SetActive(true);
-        }));
-    }
-    
     // the best time to know we're securely connected is by the player id (For now)
     IEnumerator LoginProtocolCoroutine(string address, string room, string gameName, UnityAction<string> failAction=null)
     {
-        identity = SappyIdentity.Null;
+        identity = AvatarIdentity.Null;
         SetLoadingScreen(true);
         
         string ip = address;
@@ -169,8 +156,7 @@ public class SceneManager : Mingleton<SceneManager>
         yield return UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync("Main", UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
         
         SetLoadingScreen(false);
-        AvatarSelectionPanel.SetActive(true);
-        _PixelverseBackground.gameObject.SetActive(true);
+        ConnectPanel.SetActive(true);
     }
 
     public void SetLoadingScreen(bool state)
@@ -181,7 +167,6 @@ public class SceneManager : Mingleton<SceneManager>
             Status = "Please Wait...";
         }
         LoadingPanel.gameObject.SetActive(state);
-        _PixelverseBackground.gameObject.SetActive(state);
     }
 
     public void ShowErrorMessage(string msg)
