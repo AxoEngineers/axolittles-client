@@ -11453,13 +11453,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77fdc90b683efbd46b93361435327b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemData: []
-  Template: {fileID: 872062088}
-  ElementRoot: {fileID: 528777669}
-  NextPageBtn: {fileID: 1516779502}
-  PrevPageBtn: {fileID: 231260272}
-  PageNumber: {fileID: 1325986262}
-  SearchText: {fileID: 771172406}
+  template: {fileID: 872062088}
+  elementRoot: {fileID: 528777669}
+  nextPageBtn: {fileID: 1516779502}
+  prevPageBtn: {fileID: 231260272}
+  pageNumber: {fileID: 1325986262}
+  searchText: {fileID: 771172406}
+  ownedAxos: []
+  itemData: []
 --- !u!1 &385403318
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class AvatarGrid : MonoBehaviour
 {
-    public List<AxoInfo> ownedAxos;
-    public List<AxoInfo> itemData;
-
-    readonly BetterGridElement[,] _map = new BetterGridElement[5, 1];
-    int _startIndex;
+    private readonly BetterGridElement[,] _map = new BetterGridElement[5, 1];
+    private int _startIndex;
     
     public GameObject template;
     public Transform elementRoot;
@@ -22,8 +19,11 @@ public class AvatarGrid : MonoBehaviour
     private bool CanUseNextPage => _startIndex + IterAmt < itemData.Count;
     private bool CanUsePreviousPage => _startIndex - IterAmt >= 0;
     private string SearchValue => searchText.text.ToLower();
+
+    private readonly int[] _placeholderWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
     
-    readonly int[] _placeholderWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
+    public List<AxoInfo> ownedAxos;
+    public List<AxoInfo> itemData;
 
     private void Awake()
     {
