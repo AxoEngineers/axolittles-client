@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using FIMSpace.FTail;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AI;
@@ -33,6 +34,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             baseModel.name = traits.id;
             
             var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
+            var tailNode = "Armature/joint6/joint7/joint26";
         
             var face = traits.face;
             var outfit = traits.outfit;
@@ -43,6 +45,8 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             //baseModel.transform.localPosition = new Vector3(instanceCount++ * -1.0f, 0, 0);
             baseModel.GetComponent<Animator>().runtimeAnimatorController = animatorController;
             var meshRenderer = baseModel.GetComponentInChildren<SkinnedMeshRenderer>();
+            
+            TailAnimator2 tail = baseModel.transform.Find(tailNode).gameObject.AddComponent<TailAnimator2>();
         
             // ADJUST TO ROBOT/COSMIC?
             if (traits.type == "Robot")
