@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
@@ -109,8 +110,12 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             }
             
             AxoInfo info = baseModel.AddComponent<AxoInfo>();
+            NavMeshAgent nav = baseModel.AddComponent<NavMeshAgent>();
+            baseModel.AddComponent<Axolittle>();
+            
             info.id = id;
             info.name = $"AXO #{id}";
+            nav.speed = 1.0f;
             baseModel.SetActive(false);
 
             if (onFinish != null)
