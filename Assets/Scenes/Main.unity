@@ -21444,6 +21444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Axolittle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3251825153140707578, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
 --- !u!1001 &644757032
@@ -21500,6 +21504,10 @@ PrefabInstance:
     - target: {fileID: 3251825153140707578, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
       propertyPath: m_Name
       value: Axolittle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251825153140707578, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
@@ -33204,7 +33212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be0b41686ae27438395476a4e5946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorController: {fileID: 9100000, guid: 48de837a1c850f441a84012750750d12, type: 2}
+  animatorController: {fileID: 9100000, guid: ee0921dc400fd61408532f7f29a98a5d, type: 2}
 --- !u!4 &1512088655
 Transform:
   m_ObjectHideFlags: 0
@@ -40517,6 +40525,10 @@ PrefabInstance:
     - target: {fileID: 3251825153140707578, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
       propertyPath: m_Name
       value: Axolittle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251825153140707578, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e4106e4ec48b148973bdd396b2a63c, type: 3}
