@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class AxoModelGenerator : Mingleton<AxoModelGenerator>
@@ -118,6 +119,15 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             info.id = id;
             info.name = $"AXO #{id}";
             nav.speed = 1.0f;
+            
+            // axolittle avatar icon
+            UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{id}.png");
+            yield return www.SendWebRequest();
+            if (www.result == UnityWebRequest.Result.Success) {
+                Texture2D axoTexture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+                info.sprite = Sprite.Create(axoTexture, Rect.MinMaxRect(0, 0, axoTexture.width, axoTexture.height), new Vector2(0.5f, 0.5f) );
+            }
+            
             baseModel.SetActive(false);
 
             if (onFinish != null)

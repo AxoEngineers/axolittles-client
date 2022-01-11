@@ -15,7 +15,7 @@ public static class Configuration
     public static BuildEnvironment GetEnv()
     {
         #if UNITY_EDITOR
-        return BuildEnvironment.Development;
+        return BuildEnvironment.Local;
         #else
         string url = GetURL();
         bool localhost = url.Contains("127.0.0.1") || url.Contains("localhost");
