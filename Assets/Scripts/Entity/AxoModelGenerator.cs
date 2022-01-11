@@ -22,7 +22,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         AxoStruct traits = AxoDatabase.Get(id);
         
         var baseModelPath = $"BaseModel_{traits.outfit}";
-        Debug.Log("Loading addressable " + baseModelPath);
         AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(baseModelPath);
         yield return handle;
         
