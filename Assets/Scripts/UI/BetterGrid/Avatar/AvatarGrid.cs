@@ -1,86 +1,83 @@
 using System.Collections.Generic;
-using System.Linq;
 
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AvatarGrid : MonoBehaviour
 {
-    // INITIALIZERS
-    public List<AxoInfo> ItemData;
+    public List<AxoInfo> ownedAxos;
+    public List<AxoInfo> itemData;
+
+    readonly BetterGridElement[,] _map = new BetterGridElement[5, 1];
+    int _startIndex;
     
-    // CORE
-    BetterGridElement[,] Map = new BetterGridElement[5, 1];
-    int startIndex = 0;
+    public GameObject template;
+    public Transform elementRoot;
+    public Button nextPageBtn;
+    public Button prevPageBtn;
+    public Text pageNumber;
+    public InputField searchText;
 
-    // UI ELEMENTS
-    public GameObject Template;
-    public Transform ElementRoot;
-    public Button NextPageBtn;
-    public Button PrevPageBtn;
-    public Text PageNumber;
-    public InputField SearchText;
+    private int IterAmt => _map.GetLength(0) * _map.GetLength(1);
+    private bool CanUseNextPage => _startIndex + IterAmt < itemData.Count;
+    private bool CanUsePreviousPage => _startIndex - IterAmt >= 0;
+    private string SearchValue => searchText.text.ToLower();
+    
+    readonly int[] _placeholderWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
 
-    private int IterAmt => Map.GetLength(0) * Map.GetLength(1);
-    private bool CanUseNextPage => startIndex + IterAmt < ItemData.Count;
-    private bool CanUsePreviousPage => startIndex - IterAmt >= 0;
-    private string SearchValue => SearchText.text.ToLower();
-
-    private List<AxoInfo> GeneratePlaceholderItems()
+    private void Awake()
     {
-        int[] placeholderWallet = {541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
-        List<AxoInfo> placeholderData = new List<AxoInfo>();
-
-        for (int i = 0; i < placeholderWallet.Length; i++)
+        foreach (var id in _placeholderWallet)
         {
-            int id = placeholderWallet[i];
-            AxoModelGenerator.Instance.Generate(id, avatar => { placeholderData.Add(avatar); });
+            AxoModelGenerator.Instance.Generate(id, avatar => { LoadAxo(avatar); });
         }
-        
-        return placeholderData;
     }
 
-    void Start()
+    private void LoadAxo(AxoInfo info)
     {
-        ItemData = GeneratePlaceholderItems();
+        ownedAxos.Add(info);
+        if (ownedAxos.Count == _placeholderWallet.Length) LoadGrid();
+    }
+
+    private void LoadGrid()
+    {
+        itemData = ownedAxos;
         
-        for (int i = 0; i < Map.GetLength(0) * Map.GetLength(1); i++)
+        for (int i = 0; i < _map.GetLength(0) * _map.GetLength(1); i++)
         {
-            CreateElement(i % Map.GetLength(0), i / Map.GetLength(0));
+            CreateElement(i % _map.GetLength(0), i / _map.GetLength(0));
         }
         
         RefreshGrid();
     }
     
-    private BetterGridElement CreateElement(int x, int y)
+    private void CreateElement(int x, int y)
     {
-        BetterGridElement newGridElement = Instantiate(Template, ElementRoot, false).GetComponent<BetterGridElement>();
+        BetterGridElement newGridElement = Instantiate(template, elementRoot, false).GetComponent<BetterGridElement>();
         newGridElement.name = $"[{x},{y}]";
-        Map[x, y] = newGridElement;
-        
-        return newGridElement;
+        _map[x, y] = newGridElement;
     }
     private void RefreshGrid()
     {
-        for (int y = 0; y < Map.GetLength(1); y++)
+        for (int y = 0; y < _map.GetLength(1); y++)
         {
-            for (int x = 0; x < Map.GetLength(0); x++)
+            for (int x = 0; x < _map.GetLength(0); x++)
             {
-                int i = startIndex + ((x % Map.GetLength(0)) + (y * Map.GetLength(0)));
-                Map[x, y].SetData(i >= 0 && i < ItemData.Count ? ItemData[i] : null);
+                int i = _startIndex + ((x % _map.GetLength(0)) + (y * _map.GetLength(0)));
+                _map[x, y].SetData(i >= 0 && i < itemData.Count ? itemData[i] : null);
             }
         }
 
-        PrevPageBtn.interactable = CanUsePreviousPage;
-        NextPageBtn.interactable = CanUseNextPage;
+        prevPageBtn.interactable = CanUsePreviousPage;
+        nextPageBtn.interactable = CanUseNextPage;
     }
 
     public void SetNextPageIndex()
     {
-        var iterAmt = Map.GetLength(0) * Map.GetLength(1); 
+        var iterAmt = _map.GetLength(0) * _map.GetLength(1); 
         if (!CanUseNextPage)
             return;
-        startIndex += iterAmt;
+        _startIndex += iterAmt;
 
         SetPageNumber();
         RefreshGrid();
@@ -88,32 +85,32 @@ public class AvatarGrid : MonoBehaviour
 
     public void SetPreviousPageIndex()
     {
-        var iterAmt = Map.GetLength(0) * Map.GetLength(1); 
+        var iterAmt = _map.GetLength(0) * _map.GetLength(1); 
         if (!CanUsePreviousPage)
             return;
-        startIndex -= iterAmt;
+        _startIndex -= iterAmt;
         
         SetPageNumber();
         RefreshGrid();
     }
 
-    public void SetPageNumber()
+    private void SetPageNumber()
     {
-        PageNumber.text = $"{1 + (startIndex / IterAmt)}";
+        pageNumber.text = $"{1 + (_startIndex / IterAmt)}";
     }
 
     public void OnSearch()
     {
-        ItemData = GetAll();
-        startIndex = 0;
+        itemData = GetAll();
+        _startIndex = 0;
         SetPageNumber();
         RefreshGrid();
     }
 
-    public List<AxoInfo> GetAll()
+    private List<AxoInfo> GetAll()
     {
         var newData = new List<AxoInfo>();
-        foreach (var avatar in GeneratePlaceholderItems() /* PLACEHOLDER */)
+        foreach (var avatar in ownedAxos)
         {
             if (avatar.name.ToLower().Contains(SearchValue))
             {
@@ -121,6 +118,6 @@ public class AvatarGrid : MonoBehaviour
             }
         }
 
-        return newData; //.OrderBy(x => x.GetComponent<AvatarInfo>().name).ToList(); <- problematic for numerical names
+        return newData;
     }
 }
