@@ -187,6 +187,66 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: cfb955200bf653449bd68d7853a0b602
+    m_Address: Cosmic Material
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: cfb955200bf653449bd68d7853a0b602, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: cfb955200bf653449bd68d7853a0b602, type: 2}
+  - m_GUID: 5902df84d573dce469e7eaa2cf943510
+    m_Address: Robot Material
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 5902df84d573dce469e7eaa2cf943510, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 5902df84d573dce469e7eaa2cf943510, type: 2}
+  - m_GUID: f35c5cf78dee8ee41908e45da9592c45
+    m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Body_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 99a8201c740aa9c4d8a59ac26578414e
+    m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Body_Emission.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a5d57931deb7b1a419756219c8f6e537
+    m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Body_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2d65414a2d56f154b95cf002b812283d
+    m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Body_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 56a7264f50b35f240b6ed291138921ff
+    m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Cosmic Face.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 03275f8e259e1af45a644ac84281e790
+    m_Address: Assets/BundleAssets/Core/Textures/Robot/low_Body_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9fbce155a6f76a2498867ef29b9be9a8
+    m_Address: Assets/BundleAssets/Core/Textures/Robot/low_Body_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 98e0d9ff457b28d43be4e2c4d774f382
+    m_Address: Assets/BundleAssets/Core/Textures/Robot/low_Body_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:
