@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: BaseModel-Magician Robe_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: 1f28bdb976947b54dbc897c596375b48, type: 2}
-  m_Compression: 1
+  m_Compression: 0
   m_IncludeAddressInCatalog: 1
   m_IncludeGUIDInCatalog: 1
   m_IncludeLabelsInCatalog: 1
   m_InternalIdNamingMode: 0
-  m_IncludeInBuild: 0
+  m_IncludeInBuild: 1
   m_BundledAssetProviderType:
     m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider
@@ -33,9 +33,9 @@ MonoBehaviour:
   m_BuildPath:
     m_Id: eff6024d71a0287479652a306fc50ca0
   m_LoadPath:
-    m_Id: eff6024d71a0287479652a306fc50ca0
+    m_Id: 34efc19d98143a247bd4a4f51cc20178
   m_BundleMode: 0
   m_AssetBundleProviderType:
     m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider
-  m_BundleNaming: 1
+  m_BundleNaming: 0

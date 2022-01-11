@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hat-Pirate_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: 5e4b7af6dae7b354fa3b2b372e1a5fcb, type: 2}
-  m_Compression: 1
+  m_Compression: 0
   m_IncludeAddressInCatalog: 1
   m_IncludeGUIDInCatalog: 1
   m_IncludeLabelsInCatalog: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
   m_BuildPath:
     m_Id: eff6024d71a0287479652a306fc50ca0
   m_LoadPath:
-    m_Id: eff6024d71a0287479652a306fc50ca0
+    m_Id: 34efc19d98143a247bd4a4f51cc20178
   m_BundleMode: 0
   m_AssetBundleProviderType:
     m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

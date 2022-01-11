@@ -1,5 +1,4 @@
 ﻿using System;
-using Infteract;
 using UnityEngine;
 
 [Serializable]

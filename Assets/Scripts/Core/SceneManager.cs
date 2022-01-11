@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Infteract;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
