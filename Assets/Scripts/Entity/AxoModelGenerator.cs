@@ -30,6 +30,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         if(handle.Status == AsyncOperationStatus.Succeeded)
         {
             GameObject baseModel = Instantiate(handle.Result, transform);
+            baseModel.SetActive(false);
             Addressables.Release(handle);
             baseModel.name = traits.id;
             
@@ -130,8 +131,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 Texture2D axoTexture = ((DownloadHandlerTexture)www.downloadHandler).texture;
                 info.sprite = Sprite.Create(axoTexture, Rect.MinMaxRect(0, 0, axoTexture.width, axoTexture.height), new Vector2(0.5f, 0.5f) );
             }
-            
-            baseModel.SetActive(false);
 
             if (onFinish != null)
             {
