@@ -27,7 +27,20 @@ public class AvatarGrid : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var id in _placeholderWallet)
+        var targetWallet = _placeholderWallet;
+        
+        if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet.avatars != null)
+        {
+            List<int> avatars = new List<int>();
+            foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
+            {
+                avatars.Add(avatar.id);
+            }
+
+            targetWallet = avatars.ToArray();
+        }
+        
+        foreach (var id in targetWallet)
         {
             AxoModelGenerator.Instance.Generate(id, avatar => { LoadAxo(avatar); });
         }

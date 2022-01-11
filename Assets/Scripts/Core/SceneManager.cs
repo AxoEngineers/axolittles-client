@@ -28,6 +28,7 @@ public class SceneManager : Mingleton<SceneManager>
     public Button _MetamaskConnectBtn;
     public Text _LoadingText;
     public Text _WalletConnectText;
+    public InputField _EthAddressInputField;
     
     // temporary variabes
     private bool loginFailed = false;
@@ -43,16 +44,6 @@ public class SceneManager : Mingleton<SceneManager>
     
     private void Start()
     {
-        #if UNITY_EDITOR
-        Application.targetFrameRate = 120;
-        Debug.LogError("You cannot run this project in editor due to inability to use Metamask in editor."
-                       + "\r\nYou must built the WebGL project and host it somewhere.");
-        Status = "WebGL Build Required";
-        LoadingPanel.gameObject.SetActive(false);
-        ConnectPanel.gameObject.SetActive(false);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Additive);
-        #endif
-
         Application.runInBackground = true;
         
         MetamaskAuth.Instance.onLoginData.AddListener(wallet =>
@@ -75,48 +66,80 @@ public class SceneManager : Mingleton<SceneManager>
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Additive);
     }
 
+    public void ViewRoomByEthAddress()
+    {
+        ConnectPanel.SetActive(false);
+        SetLoadingScreen(true);
+        StartCoroutine(WaitForLogin(_EthAddressInputField.text));
+    }
+    
     public void MetamaskAuthenticate()
     {
         ConnectPanel.SetActive(false);
         SetLoadingScreen(true);
-        StartCoroutine(WaitForLogin());
+        StartCoroutine(WaitForLogin(null));
     }
 
-    IEnumerator WaitForLogin()
+    IEnumerator WaitForLogin(string ethAddress)
     {
         _MetamaskConnectBtn.interactable = false;
         _WalletConnectText.text = "";
-        
-        var auth = MetamaskAuth.Instance;
-        Status = "Asking Metamask to authenticate you";
-        yield return auth.Authenticate();
-        Status = "Waiting for Metamask (check window)";
-        while (!auth.Authenticated && !loginFailed)
-        {
-            yield return new WaitForEndOfFrame();
-        }
 
-        if (loginFailed) // Metamask Authentication Failed
+        var auth = MetamaskAuth.Instance;
+        if (ethAddress == null) // no eth address specified
         {
-            Status = "Metamask Authentication Failed";
-            _MetamaskConnectBtn.interactable = true;
-            SetLoadingScreen(false);
-            ConnectPanel.SetActive(true);
-            loginFailed = false;
-            yield break;
+            Status = "Asking Metamask to authenticate you";
+            yield return auth.Authenticate();
+            Status = "Waiting for Metamask (check window)";
+            while (!auth.Authenticated && !loginFailed)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+
+            if (loginFailed) // Metamask Authentication Failed
+            {
+                Status = "Metamask Authentication Failed";
+                _MetamaskConnectBtn.interactable = true;
+                SetLoadingScreen(false);
+                ConnectPanel.SetActive(true);
+                loginFailed = false;
+                yield break;
+            }
         }
-        else if (MetamaskAuth.Instance.Wallet.avatars.Length < 1) // 1 avatar required at least
+        else // auth by eth address
+        {
+            if (_EthAddressInputField.text == null || _EthAddressInputField.text.Length != 42)
+            {
+                SetLoadingScreen(false);
+                _MetamaskConnectBtn.interactable = true;
+                Status = $"Invalid eth address";
+                _WalletConnectText.text = Status;
+                ConnectPanel.SetActive(true);
+                yield break;
+            }
+            
+            // axolittle avatar icon
+            UnityWebRequest www = UnityWebRequest.Get($"{Configuration.GetWeb3URL()}all/{ethAddress}");
+            yield return www.SendWebRequest();
+            if (www.result == UnityWebRequest.Result.Success) {
+                auth.CompleteMetamaskAuth($"{ethAddress}||{www.downloadHandler.text}");
+            }
+        }
+        
+        if (MetamaskAuth.Instance.Wallet.avatars.Length < 1) // 1 avatar required at least
         {
             SetLoadingScreen(false);
             _MetamaskConnectBtn.interactable = true;
-            Status = $"You must own at least 1 axolitle to login.\r\nYou only have {MetamaskAuth.Instance.Wallet.avatars.Length} currently";
+            Status =
+                $"That address doesn't own any axolittles. Try another.";
             _WalletConnectText.text = Status;
             ConnectPanel.SetActive(true);
             yield break;
         }
-        
-        Status = "Metamask Authentication Successful";
+
+        Status = "Data Retrieval Successful";
         yield return new WaitForSeconds(0.5f);
+
         StartCoroutine(GoToMainMenu());
     }
 

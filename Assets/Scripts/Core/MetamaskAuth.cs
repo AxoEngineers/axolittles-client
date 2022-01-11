@@ -88,7 +88,6 @@ public class WalletInfo
     {
         sealData = sealData.StartsWith("[") && sealData.EndsWith("]") ? sealData.Substring(1, sealData.Length - 2) : sealData;
         sealData = sealData.Replace("\"", "");
-        Debug.Log(sealData);
         
         List<NftAddress> nftAddresses = new List<NftAddress>();
         if (sealData.Length > 0)

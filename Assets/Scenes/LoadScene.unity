@@ -24,9 +24,9 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: e56530cdf5f1afb46b924e5a3b1d3a45, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 95d27f8321e1faf48865a7d9f35f7322, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.086499624, g: 0.13009928, b: 0.19490853, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -287,7 +287,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 382986397}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: MetamaskAuthenticate
+        m_MethodName: ViewRoomByEthAddress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -555,6 +555,7 @@ MonoBehaviour:
   _MetamaskConnectBtn: {fileID: 1084854833}
   _LoadingText: {fileID: 1035217319}
   _WalletConnectText: {fileID: 1228332838}
+  _EthAddressInputField: {fileID: 790211373}
 --- !u!1 &406519940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1048,7 @@ GameObject:
   - component: {fileID: 790211374}
   - component: {fileID: 790211373}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: EthAddressInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,7 +1135,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
+  m_Text: 0x222076B5C0Af13c38DA3aEfB2eAf7F3e5acD4f8B
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1557,7 +1558,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945532518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1772,7 +1773,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0x222076B5C0Af13c38DA3aEfB2eAf7F3e5acD4f8B
 --- !u!222 &983384609
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2066,7 +2067,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: 'Error: That address doesnt have any axolittles'
+  m_Text: 
 --- !u!222 &1228332839
 CanvasRenderer:
   m_ObjectHideFlags: 0
