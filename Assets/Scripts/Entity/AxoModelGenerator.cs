@@ -67,46 +67,48 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             // CREATE FACE
             if (face.Length > 0 && face != "None")
             {
-                var faceModelPath = $"Prefabs/Traits/Face/{face}";
-                GameObject faceAsset = Resources.Load<GameObject>(faceModelPath);
-                if (faceAsset == null)
+                handle = Addressables.LoadAssetAsync<GameObject>($"Prefab_Face_{face}");
+                yield return handle;
+
+                if (handle.Status == AsyncOperationStatus.Succeeded)
                 {
-                    Debug.LogError($"#{traits.id} Could not find face {faceModelPath}: " + face + " or " + traits.rface);
+                    GameObject faceModel = Instantiate(handle.Result, rootFaceBone, useInverseScale);
+                    if (useInverseScale)
+                    {
+                        faceModel.transform.localPosition = handle.Result.transform.localPosition *
+                                                            handle.Result.transform.localScale.x;
+                        faceModel.transform.localRotation = handle.Result.transform.localRotation;
+                    }
+
+                    Addressables.Release(handle);
                 }
                 else
                 {
-                    GameObject faceModel = Instantiate(faceAsset, rootFaceBone, useInverseScale);
-                    if (useInverseScale)
-                    {
-                        faceModel.transform.localPosition = faceAsset.transform.localPosition * faceAsset.transform.localScale.x;
-                        faceModel.transform.localRotation = faceAsset.transform.localRotation;
-                    }
+                    Debug.LogError($"#{traits.id} Could not find face Prefab_Face_{face}: " + face + " or " +
+                                   traits.rface);
                 }
             }
 
             // CREATE HAT
             if (top.Length > 0 && top != "None")
             {
-                // LOAD APPROPRIATE ASSET FILES
-                var hatAssetPath = $"Hat_{top}";
-                handle = Addressables.LoadAssetAsync<GameObject>(hatAssetPath);
+                handle = Addressables.LoadAssetAsync<GameObject>($"Prefab_Hat_{top}");
                 yield return handle;
-                
-                var topModelPath = $"Prefabs/Traits/Top/{top}";
-                GameObject topAsset = Resources.Load<GameObject>(topModelPath);
-                if (topAsset == null)
+
+                if (handle.Status == AsyncOperationStatus.Succeeded)
                 {
-                    Debug.LogError($"#{traits.id} Could not find top {topModelPath}: " + top + " or " + traits.rtop);
+                    GameObject topModel = Instantiate(handle.Result, rootFaceBone, useInverseScale);
+                    if (useInverseScale)
+                    {
+                        topModel.transform.localPosition = handle.Result.transform.localPosition * handle.Result.transform.localScale.x;
+                        topModel.transform.localRotation = handle.Result.transform.localRotation;
+                    }
                 }
                 else
                 {
-                    GameObject topModel = Instantiate(topAsset,rootFaceBone, useInverseScale);
-                    if (useInverseScale)
-                    {
-                        topModel.transform.localPosition = topAsset.transform.localPosition * topAsset.transform.localScale.x;
-                        topModel.transform.localRotation = topAsset.transform.localRotation;
-                    }
+                    Debug.LogError($"#{traits.id} Could not find Prefab_Hat_{face}: " + top + " or " + traits.rtop);
                 }
+
                 Addressables.Release(handle);
             }
             

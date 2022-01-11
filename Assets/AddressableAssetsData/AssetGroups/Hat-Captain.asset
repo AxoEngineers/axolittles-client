@@ -39,10 +39,10 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Captain/CAPTAIN HAT_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2800000, guid: 8f17b24c566d6584780abf8bd607c41e, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 8f17b24c566d6584780abf8bd607c41e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4a07ecef9ccc6db4ca3bf727bdda3951
-    m_Address: Hat_Captain
+    m_Address: Prefab_Hat_Captain
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: 4a07ecef9ccc6db4ca3bf727bdda3951, type: 3}
