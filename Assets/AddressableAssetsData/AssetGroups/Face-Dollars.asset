@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Dollars
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Dollars
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8dfa38204a621864b8c84a7185554391
+  m_SerializeEntries:
+  - m_GUID: 1caf434ff5eb6894c9132ccf30564fbe
+    m_Address: Prefab_Face_Dollars
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8884440394919556979, guid: 1caf434ff5eb6894c9132ccf30564fbe, type: 3}
+    m_TargetAsset: {fileID: 8884440394919556979, guid: 1caf434ff5eb6894c9132ccf30564fbe, type: 3}
+  - m_GUID: 27b13507788cc714c8ec817af9975cfb
+    m_Address: Assets/BundleAssets/Faces/Money Face/Money Eyes.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 50e7d20b3a722b942b372dc03a13dfbb
+    m_Address: Assets/BundleAssets/Faces/Money Face/Money Eyes_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8a068f9d85b415342bb1fe84ca88f208
+    m_Address: Assets/BundleAssets/Faces/Money Face/Money Eyes_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1cffb087a76887c4789fdba7c92cb2d7
+    m_Address: Assets/BundleAssets/Faces/Money Face/Money Eyes_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 71127171f19678b42a6a53223c2dc34a
+    m_Address: Assets/BundleAssets/Faces/Money Face/Money Face .fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 64fa9b01f26955944acfe6be14a62b15, type: 2}
+    - {fileID: 11400000, guid: 16264fe4b5e7d9846b7455145102926e, type: 2}

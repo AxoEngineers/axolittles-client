@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Drugs
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Drugs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2d3fca556a63e4d42ab0fceecf528a25
+  m_SerializeEntries:
+  - m_GUID: bb4f412d96f5ca349a57b41ff63e677c
+    m_Address: Prefab_Face_Drugs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 9215912575783196531, guid: bb4f412d96f5ca349a57b41ff63e677c, type: 3}
+    m_TargetAsset: {fileID: 9215912575783196531, guid: bb4f412d96f5ca349a57b41ff63e677c, type: 3}
+  - m_GUID: 855a40ca994ed4f48b7eac92ecac7fc0
+    m_Address: Assets/BundleAssets/Faces/Drug Face/Drug Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: dfe7036645ea10e4d8f9db60ab6ced18, type: 2}
+    - {fileID: 11400000, guid: b7c46cdecfa671247ab3d76cdde99a9e, type: 2}

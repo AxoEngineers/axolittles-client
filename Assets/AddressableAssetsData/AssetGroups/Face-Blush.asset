@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Blush
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Blush
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cbcb9ddf8cece8e49b12b0b4132bb703
+  m_SerializeEntries:
+  - m_GUID: 55164fbd6dc3807469aa03ff449c1bca
+    m_Address: Prefab_Face_Blush
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4583474995245507227, guid: 55164fbd6dc3807469aa03ff449c1bca, type: 3}
+    m_TargetAsset: {fileID: 4583474995245507227, guid: 55164fbd6dc3807469aa03ff449c1bca, type: 3}
+  - m_GUID: 9d0a0db415ba4fb48be6dc99c9e3ca7c
+    m_Address: Assets/BundleAssets/Faces/Blush Face/Blush Face .fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: acb32e23d62c02c4ea8f0c210281aefe, type: 2}
+    - {fileID: 11400000, guid: 191a4246a5243374882732d413e54bd4, type: 2}

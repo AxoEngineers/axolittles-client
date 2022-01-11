@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Nerd
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Nerd
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5cee1f36fd0db274e9c28b93671101dd
+  m_SerializeEntries:
+  - m_GUID: 986d6987254dbdf4793e728bed4686da
+    m_Address: Assets/BundleAssets/Faces/Nerd Face/Nerd.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0f1362da57dbe234c8820edf5a89a215
+    m_Address: Assets/BundleAssets/Faces/Nerd Face/Nerd.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7757b9f8436a42e4f94dfb6917285c0b
+    m_Address: Prefab_Face_Nerd
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2095766075714822606, guid: 7757b9f8436a42e4f94dfb6917285c0b, type: 3}
+    m_TargetAsset: {fileID: 2095766075714822606, guid: 7757b9f8436a42e4f94dfb6917285c0b, type: 3}
+  - m_GUID: c36588ba79c2fe449b03905b6848f25c
+    m_Address: Assets/BundleAssets/Faces/Nerd Face/Nerd_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e5ed4dfb722c39642a9c461eeeacca61
+    m_Address: Assets/BundleAssets/Faces/Nerd Face/Nerd_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 03bd3e9fc0de68846b235d6a9b5b783e
+    m_Address: Assets/BundleAssets/Faces/Nerd Face/Nerd_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 03bd3e9fc0de68846b235d6a9b5b783e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 03bd3e9fc0de68846b235d6a9b5b783e, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 932bac48ca80c9046a335ae64cab9e40, type: 2}
+    - {fileID: 11400000, guid: 29df3a99dabba794081d280450db20c9, type: 2}

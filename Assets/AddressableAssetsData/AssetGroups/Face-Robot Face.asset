@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Robot Face
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Robot Face
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d504200544f9fd44f9c3414b45544ac1
+  m_SerializeEntries:
+  - m_GUID: d90c4629370e8574c82e683945230455
+    m_Address: Prefab_Face_Robot Sus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5885439498765257338, guid: d90c4629370e8574c82e683945230455, type: 3}
+    m_TargetAsset: {fileID: 5885439498765257338, guid: d90c4629370e8574c82e683945230455, type: 3}
+  - m_GUID: 436f343d519f7e048954a4ce52351e94
+    m_Address: Assets/BundleAssets/Faces/Sus Robot Face/Sus Robot Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: 436f343d519f7e048954a4ce52351e94, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 436f343d519f7e048954a4ce52351e94, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c2cefa3362a37814b8e5f696a9a53f02, type: 2}
+    - {fileID: 11400000, guid: 032cf8be1247c0e4485c4f25f527bf84, type: 2}

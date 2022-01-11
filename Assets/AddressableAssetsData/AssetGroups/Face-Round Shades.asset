@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Round Shades
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Round Shades
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 164c2ba1cb038584a80829581cb8e0ff
+  m_SerializeEntries:
+  - m_GUID: 358f67034fa22bc4d9581ccc83c7332b
+    m_Address: Assets/BundleAssets/Faces/Round Shades Face/Round Shades Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2bf9e35a5ad7aef4d9d70ca56adc79b6
+    m_Address: Assets/BundleAssets/Faces/Round Shades Face/Round Shades.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 064a638c3f5b89844b1c956e4b84c69e
+    m_Address: Prefab_Face_Round Shades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6172368888635370714, guid: 064a638c3f5b89844b1c956e4b84c69e, type: 3}
+    m_TargetAsset: {fileID: 6172368888635370714, guid: 064a638c3f5b89844b1c956e4b84c69e, type: 3}
+  - m_GUID: 7c2d5d1ef82630c4f87960842b1a375a
+    m_Address: Assets/BundleAssets/Faces/Round Shades Face/Round Shades_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1047e000417a46b40b2669d56e1cbef4
+    m_Address: Assets/BundleAssets/Faces/Round Shades Face/Round Shades_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4eee60230c7f6064e86fc437afd80832
+    m_Address: Assets/BundleAssets/Faces/Round Shades Face/Round Shades_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 88509bb7bea13e147831248233745c9c, type: 2}
+    - {fileID: 11400000, guid: 368bbbd4052b42d439c8a347e4cdd53a, type: 2}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Robot Alien
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Robot Alien
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 057f6ed88faf4f94baa6e5d2af283cb2
+  m_SerializeEntries:
+  - m_GUID: 7175fe3d2f61e6c47b5874091936299e
+    m_Address: Assets/BundleAssets/Faces/Robot Alien/Alien Robot Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9394668387138344ea8cdb782d279114
+    m_Address: Prefab_Face_Robot Alien
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 7429466183521375765, guid: 9394668387138344ea8cdb782d279114, type: 3}
+    m_TargetAsset: {fileID: 7429466183521375765, guid: 9394668387138344ea8cdb782d279114, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a781bf4ec20b90542ae6345eb162740d, type: 2}
+    - {fileID: 11400000, guid: 739b7e825bd517f4dbf4888e8d2025f7, type: 2}

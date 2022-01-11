@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Wolf Mask
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Wolf Mask
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ed9d3be747246d84d8107123ab8b1a4d
+  m_SerializeEntries:
+  - m_GUID: d01dfb0f28e860243912ab18f52d3851
+    m_Address: Assets/BundleAssets/Faces/Fox Mask/Fox Mask.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7e192a565cd09b54dbee8678bc225b21
+    m_Address: Assets/BundleAssets/Faces/Fox Mask/Fox Mask.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7dcd4056239c01f4396a1a5048a28964
+    m_Address: Assets/BundleAssets/Faces/Fox Mask/Fox Mask_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f774148aaa858364cbe10268e25e079c
+    m_Address: Assets/BundleAssets/Faces/Fox Mask/Fox Mask_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e09d443d2a0e3a34fbd51f3b6f508b98
+    m_Address: Assets/BundleAssets/Faces/Fox Mask/Fox Mask_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 06fee1aefb5a5c5478ecf6858de73ff2
+    m_Address: Prefab_Face_Wolf Mask
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6555042651834870256, guid: 06fee1aefb5a5c5478ecf6858de73ff2, type: 3}
+    m_TargetAsset: {fileID: 6555042651834870256, guid: 06fee1aefb5a5c5478ecf6858de73ff2, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 45c42ff2761c5a24c9fc25c43be60d30, type: 2}
+    - {fileID: 11400000, guid: 167d5e723330eb94ca94cfb722f662f5, type: 2}

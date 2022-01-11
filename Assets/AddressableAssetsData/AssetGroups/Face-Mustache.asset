@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Mustache
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Mustache
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 92686f6fda4e03c49bf6aaaeb210e757
+  m_SerializeEntries:
+  - m_GUID: 3f02945bedfd91e4cad0b488b7e4d3f0
+    m_Address: Assets/BundleAssets/Faces/Mustache/Monocle.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b5b3eccd6c511ac45b6fd0f42317c8a9
+    m_Address: Assets/BundleAssets/Faces/Mustache/Mustache Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 04716ebae8e9a7a4da0b031f08ae1092
+    m_Address: Prefab_Face_Mustache
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 590842119916446984, guid: 04716ebae8e9a7a4da0b031f08ae1092, type: 3}
+    m_TargetAsset: {fileID: 590842119916446984, guid: 04716ebae8e9a7a4da0b031f08ae1092, type: 3}
+  - m_GUID: 6b8bebcf03c069c4480be3b0a0173130
+    m_Address: Assets/BundleAssets/Faces/Mustache/Mustache_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a4a1bc5fbb2b05f4b95059f17512025f
+    m_Address: Assets/BundleAssets/Faces/Mustache/Mustache_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 653935c76aabbb542859a3c9bb6ca21c
+    m_Address: Assets/BundleAssets/Faces/Mustache/Mustache_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 00c6baa15a021f546a35548964e6371e, type: 2}
+    - {fileID: 11400000, guid: 4e6eebfd3e8ae27438faec57e66363dc, type: 2}

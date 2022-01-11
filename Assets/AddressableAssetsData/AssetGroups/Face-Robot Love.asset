@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Robot Love
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Robot Love
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fc8834252cf8c124daa1be35271b0b48
+  m_SerializeEntries:
+  - m_GUID: b058e99eb17627d4a8a26b720d032dd1
+    m_Address: Assets/BundleAssets/Faces/Love Robot Face/Error Robot Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2877b5749d6e79e4fbe4fec757eed95f
+    m_Address: Prefab_Face_Robot Love
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4569926528534915870, guid: 2877b5749d6e79e4fbe4fec757eed95f, type: 3}
+    m_TargetAsset: {fileID: 4569926528534915870, guid: 2877b5749d6e79e4fbe4fec757eed95f, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ed9898014d3e5674f949d3e984ac54ea, type: 2}
+    - {fileID: 11400000, guid: c9adc16d50c780e43a5df750d7a2731a, type: 2}

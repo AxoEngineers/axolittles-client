@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Wink
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Wink
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ee71e1a8204255b40b6f54ee69d23aa3
+  m_SerializeEntries:
+  - m_GUID: ed0e78d9371d239469a80d2995191935
+    m_Address: Assets/BundleAssets/Faces/Wink Face/Wink Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b152fefb7cb8a474785513cd01654705
+    m_Address: Prefab_Face_Wink
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6758131029742231876, guid: b152fefb7cb8a474785513cd01654705, type: 3}
+    m_TargetAsset: {fileID: 6758131029742231876, guid: b152fefb7cb8a474785513cd01654705, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 235859677c2fc37448bf7f1a8cd357e2, type: 2}
+    - {fileID: 11400000, guid: f50f9ad2a547c9f45b5136a14c26fbe4, type: 2}

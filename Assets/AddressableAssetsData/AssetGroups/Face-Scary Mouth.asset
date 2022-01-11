@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Scary Mouth
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Scary Mouth
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8b82772341030a24eae4fddf844ab5fa
+  m_SerializeEntries:
+  - m_GUID: c22d9ef5d12aecc47bbe1bc5855b5261
+    m_Address: Assets/BundleAssets/Faces/ScaryMouth Face/ScaryMouth Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 89e931c2aefb8ea42b103e3b7bba6438
+    m_Address: Prefab_Face_Scary Mouth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5127333180553444234, guid: 89e931c2aefb8ea42b103e3b7bba6438, type: 3}
+    m_TargetAsset: {fileID: 5127333180553444234, guid: 89e931c2aefb8ea42b103e3b7bba6438, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 019f235a0cd497a45b92dce7a0e0c3c8, type: 2}
+    - {fileID: 11400000, guid: 94ba4a9c11ce9464eb6271238684e49a, type: 2}

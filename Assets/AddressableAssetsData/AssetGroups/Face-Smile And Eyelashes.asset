@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Smile And Eyelashes
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Smile And Eyelashes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: aaf0f051aff9c4b4dae93f5a805de0ba
+  m_SerializeEntries:
+  - m_GUID: 6338cc54566c95940a992831760cdcf8
+    m_Address: Assets/BundleAssets/Faces/Smile And Eyelashes Face/Smile And Eyelashes
+      Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: aa82a60f30a166445b6c5e7fb2facdbc
+    m_Address: Prefab_Face_Smile And Eyelashes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5289918533916035628, guid: aa82a60f30a166445b6c5e7fb2facdbc, type: 3}
+    m_TargetAsset: {fileID: 5289918533916035628, guid: aa82a60f30a166445b6c5e7fb2facdbc, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0d3f7b837cdac274f97bb68714b75294, type: 2}
+    - {fileID: 11400000, guid: cf5e7e72d5cccbc4bb8f63cfaca8c0a5, type: 2}

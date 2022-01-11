@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Hearts
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Hearts
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 65d2c410276b8a046b84a8d2d3bd06cb
+  m_SerializeEntries:
+  - m_GUID: af8ffd7667199d3449218ffd74e13f56
+    m_Address: Assets/BundleAssets/Faces/Hearts Face/Heart Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ef37b3ddbe4ef96418d573867227fa4c
+    m_Address: Assets/BundleAssets/Faces/Hearts Face/Hearts Eyes.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 89dca7696f20d1748ae1137a5a1d2f42
+    m_Address: Assets/BundleAssets/Faces/Hearts Face/Hearts Eyes_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a7f6594c3561e6d418a25ee36656fa51
+    m_Address: Assets/BundleAssets/Faces/Hearts Face/Hearts Eyes_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5015efb1a18def848aa178789e5849a4
+    m_Address: Assets/BundleAssets/Faces/Hearts Face/Hearts Eyes_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 76f84f26ca16be34a82f201a6272ece6
+    m_Address: Prefab_Face_Hearts
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1870363100977230581, guid: 76f84f26ca16be34a82f201a6272ece6, type: 3}
+    m_TargetAsset: {fileID: 1870363100977230581, guid: 76f84f26ca16be34a82f201a6272ece6, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eea8ea28fdcd1ab47b3f08a06b68f708, type: 2}
+    - {fileID: 11400000, guid: 8b73798e9b099c940bd124671b6e5155, type: 2}

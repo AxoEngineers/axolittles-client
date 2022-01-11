@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Robot Wide Eyes
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Robot Wide Eyes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 92b91776b7cdba349a4884f71dd56b09
+  m_SerializeEntries:
+  - m_GUID: 2dfd9d2975cc38549978ee543f9311d3
+    m_Address: Prefab_Face_Robot Wide Eyes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3852310071111132705, guid: 2dfd9d2975cc38549978ee543f9311d3, type: 3}
+    m_TargetAsset: {fileID: 3852310071111132705, guid: 2dfd9d2975cc38549978ee543f9311d3, type: 3}
+  - m_GUID: 063ceab74cdc9b84abc7a1b40d7b8b6c
+    m_Address: Assets/BundleAssets/Faces/OO Robot Face/OORobot Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f6753f88a82ced34a8f5ab7dc9885b37, type: 2}
+    - {fileID: 11400000, guid: ec862f2e520cc1747a24ee9b0f5b0578, type: 2}

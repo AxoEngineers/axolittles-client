@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Tongue
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Tongue
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3ba4c2552f844014e9548d1b060ac568
+  m_SerializeEntries:
+  - m_GUID: 9c621ee7ae6f490428be408573a13587
+    m_Address: Assets/BundleAssets/Faces/Tongue/Tongue.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7b7478f8534933b49afd4134cdb8f263
+    m_Address: Assets/BundleAssets/Faces/Tongue/Tongue.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ebc488eded42aef4ca567e61e3ecb680
+    m_Address: Prefab_Face_Tongue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2166450872178578322, guid: ebc488eded42aef4ca567e61e3ecb680, type: 3}
+    m_TargetAsset: {fileID: 2166450872178578322, guid: ebc488eded42aef4ca567e61e3ecb680, type: 3}
+  - m_GUID: ba5d1d4c1fce08949b62a8d499c07fbe
+    m_Address: Assets/BundleAssets/Faces/Tongue/Tongue_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 81f92fcfc108b2d4280e74c349bb2fbf
+    m_Address: Assets/BundleAssets/Faces/Tongue/Tongue_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 99d13aa18f1a47845a2f9cd59a842e46
+    m_Address: Assets/BundleAssets/Faces/Tongue/Tongue_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: be8a985a311eca444b3a86fe4952c0d9, type: 2}
+    - {fileID: 11400000, guid: 7e616481c7ee5ed40997c76bb13ecca3, type: 2}

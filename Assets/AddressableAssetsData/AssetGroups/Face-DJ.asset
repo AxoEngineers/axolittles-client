@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-DJ
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-DJ
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 312853fdcb6023540a436a3eb236c4fb
+  m_SerializeEntries:
+  - m_GUID: dbc2b761bb30a4a408779ec878ef6bb7
+    m_Address: Assets/BundleAssets/Faces/Dj/DJ Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 87b3eebe694eff742a94bbdd4374aa4c
+    m_Address: Assets/BundleAssets/Faces/Dj/Dj.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 13d8e95f17d2f2647b8c34a6853cc2a6
+    m_Address: Prefab_Face_DJ
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2845382212245222261, guid: 13d8e95f17d2f2647b8c34a6853cc2a6, type: 3}
+    m_TargetAsset: {fileID: 2845382212245222261, guid: 13d8e95f17d2f2647b8c34a6853cc2a6, type: 3}
+  - m_GUID: 632bd6cd1a0bd0d4ca71b09cde1bd574
+    m_Address: Assets/BundleAssets/Faces/Dj/Dj_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c82db04336c43ff49bf7c1f6ecba3c72
+    m_Address: Assets/BundleAssets/Faces/Dj/Dj_Emission.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b8b6d4edd2da6ec4b99f9979191fa1dc
+    m_Address: Assets/BundleAssets/Faces/Dj/Dj_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 124bee58b90c30f4b86581b5057b564c
+    m_Address: Assets/BundleAssets/Faces/Dj/Dj_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 619b768f0c414d64e8bf7aebbea4f7ce, type: 2}
+    - {fileID: 11400000, guid: e3c3a46e9bae2ef468bf8f814465078d, type: 2}

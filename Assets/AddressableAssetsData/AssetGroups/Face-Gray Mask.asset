@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Gray Mask
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Gray Mask
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8bc667debebf0a343974fa9b87ff8baf
+  m_SerializeEntries:
+  - m_GUID: bcb2cfbea5d77ad45aee2035d5206c17
+    m_Address: Assets/BundleAssets/Faces/Gray Mask/Black Mouth Mask.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a177c390cff167045bc6c3fea927fc88
+    m_Address: Assets/BundleAssets/Faces/Gray Mask/Black Mouth Mask_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 49a3acbec101fd04dada132eb93d70fc
+    m_Address: Assets/BundleAssets/Faces/Gray Mask/Black Mouth Mask_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6e67ce6a53f1e0c4390edfc71aaf1349
+    m_Address: Assets/BundleAssets/Faces/Gray Mask/Black Mouth Mask_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 678e8fda46b523640a93d866b8567d8d
+    m_Address: Prefab_Face_Gray Mask
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5092634195141392668, guid: 678e8fda46b523640a93d866b8567d8d, type: 3}
+    m_TargetAsset: {fileID: 5092634195141392668, guid: 678e8fda46b523640a93d866b8567d8d, type: 3}
+  - m_GUID: 7098ac6101a57cb41aa53793d20e4565
+    m_Address: Assets/BundleAssets/Faces/Gray Mask/Mouth Mask.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c2cd9d4ff83c2dd4fa7d8d6676b10ba0, type: 2}
+    - {fileID: 11400000, guid: b8aaefa39b553fe40b202588e279ee51, type: 2}

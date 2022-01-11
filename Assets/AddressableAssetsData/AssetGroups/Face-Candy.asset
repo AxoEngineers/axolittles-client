@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Candy
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Candy
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 96ca047772580a84fb532ad6ec0ca37b
+  m_SerializeEntries:
+  - m_GUID: e3f12f24f69c7894f8bb6eed27d889c5
+    m_Address: Assets/BundleAssets/Faces/Candy Face/Candy Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bca8d42ee45f8234ab8379a428814cac
+    m_Address: Assets/BundleAssets/Faces/Candy Face/Candy.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 61612f54c245d9348b84c4121cbd5cbf
+    m_Address: Prefab_Face_Candy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6191422595205930663, guid: 61612f54c245d9348b84c4121cbd5cbf, type: 3}
+    m_TargetAsset: {fileID: 6191422595205930663, guid: 61612f54c245d9348b84c4121cbd5cbf, type: 3}
+  - m_GUID: 6e3253d2b5d886547a5b588ccc4483b2
+    m_Address: Assets/BundleAssets/Faces/Candy Face/Candy_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 704bdccdc5b4e0b48b5d72e2c10f58b0
+    m_Address: Assets/BundleAssets/Faces/Candy Face/Candy_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4f1aa1dc79845de46aeccd25d19d5f13
+    m_Address: Assets/BundleAssets/Faces/Candy Face/Candy_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f8997927653450a4cbeac95049a908fd, type: 2}
+    - {fileID: 11400000, guid: 4fe06049789ae654b8224b8386f5fac3, type: 2}

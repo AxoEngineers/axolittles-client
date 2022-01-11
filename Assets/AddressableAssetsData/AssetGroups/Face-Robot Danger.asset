@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Robot Danger
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Robot Danger
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b8ca3860fc8511d45943662ad42373c4
+  m_SerializeEntries:
+  - m_GUID: 4c946f094d16e0e42b87ad6b7b31dc0c
+    m_Address: Assets/BundleAssets/Faces/Danger Robot Face/Danger Robot Face.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 50df5e4db6bac7544b0bf03d46ace5b2
+    m_Address: Prefab_Face_Robot Danger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3383433208335345705, guid: 50df5e4db6bac7544b0bf03d46ace5b2, type: 3}
+    m_TargetAsset: {fileID: 3383433208335345705, guid: 50df5e4db6bac7544b0bf03d46ace5b2, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: df27742e71eff21438fe938383c35218, type: 2}
+    - {fileID: 11400000, guid: e70d21a262458d24594629beb0744109, type: 2}

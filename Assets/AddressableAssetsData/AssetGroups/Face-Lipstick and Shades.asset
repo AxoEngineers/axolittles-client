@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Face-Lipstick and Shades
+  m_EditorClassIdentifier: 
+  m_GroupName: Face-Lipstick and Shades
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5d414645c8f73b04a9e55c59c9a4bfb7
+  m_SerializeEntries:
+  - m_GUID: e965f454f441cd6489bdeb9f720cce2c
+    m_Address: Assets/BundleAssets/Faces/Lipstick Face/Lipstick and Shades.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 919132149155446097, guid: e965f454f441cd6489bdeb9f720cce2c, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: e965f454f441cd6489bdeb9f720cce2c, type: 3}
+  - m_GUID: 5ae7b2b300e4b8b4883c4bce276f079c
+    m_Address: Prefab_Face_Lipstick and Shades
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8522274721599838760, guid: 5ae7b2b300e4b8b4883c4bce276f079c, type: 3}
+    m_TargetAsset: {fileID: 8522274721599838760, guid: 5ae7b2b300e4b8b4883c4bce276f079c, type: 3}
+  - m_GUID: 9edef3e2a674a374482fef175003c440
+    m_Address: Assets/BundleAssets/Faces/Lipstick Face/Lipstick.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dabe1e59dfc624b458da147a5c77b7e8
+    m_Address: Assets/BundleAssets/Faces/Lipstick Face/Lipstick_AlbedoTransparency.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fcb23172a0470014180d9152f6de4fc6
+    m_Address: Assets/BundleAssets/Faces/Lipstick Face/Lipstick_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 035d595d4ebb829459fd1712efb7f340
+    m_Address: Assets/BundleAssets/Faces/Lipstick Face/Lipstick_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 25f61e667b1f9d044be2c8cc0e764426, type: 2}
+    - {fileID: 11400000, guid: beb2da3f6c194264aacbbee99881caba, type: 2}
