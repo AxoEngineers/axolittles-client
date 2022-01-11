@@ -191,14 +191,14 @@ MonoBehaviour:
     m_Address: Cosmic Material
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2100000, guid: cfb955200bf653449bd68d7853a0b602, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: cfb955200bf653449bd68d7853a0b602, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 5902df84d573dce469e7eaa2cf943510
     m_Address: Robot Material
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2100000, guid: 5902df84d573dce469e7eaa2cf943510, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: 5902df84d573dce469e7eaa2cf943510, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: f35c5cf78dee8ee41908e45da9592c45
     m_Address: Assets/BundleAssets/Core/Textures/Cosmic/Body_AlbedoTransparency.png
     m_ReadOnly: 0
