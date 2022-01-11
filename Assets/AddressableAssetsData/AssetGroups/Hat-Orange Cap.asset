@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Hat_Orange Cap
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 919132149155446097, guid: 46e7246768fcee54ca7b31594bf0937e, type: 3}
-    m_TargetAsset: {fileID: 919132149155446097, guid: 46e7246768fcee54ca7b31594bf0937e, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 19e161c3aa5362f4c80721376d71c597
     m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange.mat
     m_ReadOnly: 0
@@ -45,8 +45,14 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Orange Cap/Capred Orange_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: dcea56e43bb47f047bdf6ec77bde4d64, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: dcea56e43bb47f047bdf6ec77bde4d64, type: 3}
+  - m_GUID: 7d7fb78cdd4cceb4fabdd0c02e8ba184
+    m_Address: Prefab_Hat_Orange Cap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6605120394275701938, guid: 7d7fb78cdd4cceb4fabdd0c02e8ba184, type: 3}
+    m_TargetAsset: {fileID: 6605120394275701938, guid: 7d7fb78cdd4cceb4fabdd0c02e8ba184, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

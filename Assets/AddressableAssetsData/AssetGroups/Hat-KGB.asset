@@ -27,8 +27,8 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/KGB/Rusian Hat.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2100000, guid: 3f677f4f9fda6a340b5f432267fb63d7, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 3f677f4f9fda6a340b5f432267fb63d7, type: 2}
   - m_GUID: e23895ccf8f3da847901c61c1c2daf8f
     m_Address: Assets/BundleAssets/Hats/KGB/Rusian Hat_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 5c716fde1b7fcfd48a0899c414967f61
+    m_Address: Prefab_Hat_KGB
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3906618491781425365, guid: 5c716fde1b7fcfd48a0899c414967f61, type: 3}
+    m_TargetAsset: {fileID: 3906618491781425365, guid: 5c716fde1b7fcfd48a0899c414967f61, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: 667eb9181bb806b468be6e525514642a, type: 3}
     m_TargetAsset: {fileID: 919132149155446097, guid: 667eb9181bb806b468be6e525514642a, type: 3}
+  - m_GUID: d40694ae9b1686e45a1298e07faf398e
+    m_Address: Prefab_Hat_Robin Hood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4017676380675632434, guid: d40694ae9b1686e45a1298e07faf398e, type: 3}
+    m_TargetAsset: {fileID: 4017676380675632434, guid: d40694ae9b1686e45a1298e07faf398e, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

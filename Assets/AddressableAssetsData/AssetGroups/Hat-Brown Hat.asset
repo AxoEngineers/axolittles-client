@@ -45,8 +45,14 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Brown Hat/Cool hat_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2800000, guid: a525bd43a3cf01145a982d8874083239, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: a525bd43a3cf01145a982d8874083239, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 182a7fdd641e0cb4e97301acd5e721b4
+    m_Address: Prefab_Hat_Brown Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1931373196842636045, guid: 182a7fdd641e0cb4e97301acd5e721b4, type: 3}
+    m_TargetAsset: {fileID: 1931373196842636045, guid: 182a7fdd641e0cb4e97301acd5e721b4, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

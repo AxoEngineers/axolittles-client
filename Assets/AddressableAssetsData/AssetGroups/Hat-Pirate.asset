@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 1dd21e496d1e1684792be9bbc5cb1dfa
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0c58edb4048b475499488d5bdba47b27
+    m_Address: Prefab_Hat_Pirate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2751895305024276477, guid: 0c58edb4048b475499488d5bdba47b27, type: 3}
+    m_TargetAsset: {fileID: 2751895305024276477, guid: 0c58edb4048b475499488d5bdba47b27, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

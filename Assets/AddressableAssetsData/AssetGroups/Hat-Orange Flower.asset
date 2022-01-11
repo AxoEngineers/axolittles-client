@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: 08f015cf9e402a642976c654d5234e31, type: 3}
     m_TargetAsset: {fileID: 919132149155446097, guid: 08f015cf9e402a642976c654d5234e31, type: 3}
+  - m_GUID: c85e1b5666131a54ba0c1fe12f7190ac
+    m_Address: Prefab_Hat_Orange Flower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1589987936763906462, guid: c85e1b5666131a54ba0c1fe12f7190ac, type: 3}
+    m_TargetAsset: {fileID: 1589987936763906462, guid: c85e1b5666131a54ba0c1fe12f7190ac, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

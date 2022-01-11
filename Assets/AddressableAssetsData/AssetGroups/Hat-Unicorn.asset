@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Hat_Unicorn
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 919132149155446097, guid: 2b8e4036b79edbe47ac04b86e3e62a7b, type: 3}
-    m_TargetAsset: {fileID: 919132149155446097, guid: 2b8e4036b79edbe47ac04b86e3e62a7b, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4fc30da921e20994ea162fc95900989e
     m_Address: Assets/BundleAssets/Hats/Unicorn/Unicorn.mat
     m_ReadOnly: 0
@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: eec54d0950a668647a25042ba934fbd6
+    m_Address: Prefab_Hat_Unicorn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3207337288070835882, guid: eec54d0950a668647a25042ba934fbd6, type: 3}
+    m_TargetAsset: {fileID: 3207337288070835882, guid: eec54d0950a668647a25042ba934fbd6, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

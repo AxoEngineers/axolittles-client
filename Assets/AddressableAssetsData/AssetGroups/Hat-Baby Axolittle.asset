@@ -42,11 +42,17 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 59fca947fa438664082d3d9929076e0c
-    m_Address: Assets/BundleAssets/Hats/Baby/Axolotl hat.fbx
+    m_Address: Hat_Baby Axolittle
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 59fca947fa438664082d3d9929076e0c, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 59fca947fa438664082d3d9929076e0c, type: 3}
+  - m_GUID: c420b40bae82ec54aa1992ec8d95e85d
+    m_Address: Prefab_Hat_Baby Axolittle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3703512612955479345, guid: c420b40bae82ec54aa1992ec8d95e85d, type: 3}
+    m_TargetAsset: {fileID: 3703512612955479345, guid: c420b40bae82ec54aa1992ec8d95e85d, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Cowboy/COWBOY HAT.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2100000, guid: afeac5946a6e86647abd30a07abbf9b1, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: afeac5946a6e86647abd30a07abbf9b1, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 93250174202aa07468188e69e0456bb7
     m_Address: Assets/BundleAssets/Hats/Cowboy/COWBOY HAT_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: 409fd81726185464b8dd2c89d29a5670, type: 3}
     m_TargetAsset: {fileID: 919132149155446097, guid: 409fd81726185464b8dd2c89d29a5670, type: 3}
+  - m_GUID: 1949122dd0d3ace4da5400c67c2b9111
+    m_Address: Prefab_Hat_Cowboy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8880481494833715581, guid: 1949122dd0d3ace4da5400c67c2b9111, type: 3}
+    m_TargetAsset: {fileID: 8880481494833715581, guid: 1949122dd0d3ace4da5400c67c2b9111, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

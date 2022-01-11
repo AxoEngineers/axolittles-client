@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 7d3e997dba97a6c4d9ebd64d9eeef9e7
+    m_Address: Prefab_Hat_Witch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4439752270558457026, guid: 7d3e997dba97a6c4d9ebd64d9eeef9e7, type: 3}
+    m_TargetAsset: {fileID: 4439752270558457026, guid: 7d3e997dba97a6c4d9ebd64d9eeef9e7, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

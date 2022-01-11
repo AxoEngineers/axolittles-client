@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Santa/CHRISMAS HAT.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2100000, guid: 3706d312a6e1c3d4b932bd9ff48b5a8e, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: 3706d312a6e1c3d4b932bd9ff48b5a8e, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: a9d71051ea7effe4a8020fcd6dcf4031
     m_Address: Assets/BundleAssets/Hats/Santa/CHRISMAS HAT_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 919132149155446097, guid: fe323abde1267ef4da6400c06ecc0948, type: 3}
     m_TargetAsset: {fileID: 919132149155446097, guid: fe323abde1267ef4da6400c06ecc0948, type: 3}
+  - m_GUID: c1388037e48310848ac84e2d06f80daf
+    m_Address: Prefab_Hat_Santa
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 9171292552113154980, guid: c1388037e48310848ac84e2d06f80daf, type: 3}
+    m_TargetAsset: {fileID: 9171292552113154980, guid: c1388037e48310848ac84e2d06f80daf, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

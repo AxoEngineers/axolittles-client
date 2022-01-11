@@ -27,8 +27,8 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Construction/Workers hat.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2100000, guid: d681b900c157c11418d3265be2eeb9ab, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: d681b900c157c11418d3265be2eeb9ab, type: 2}
   - m_GUID: d0e80b81a6b1fe54ba1496d0b4ff03e4
     m_Address: Assets/BundleAssets/Hats/Construction/Workers hat_AlbedoTransparency.png
     m_ReadOnly: 0
@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: c68190864aaddb94bb6fbae2311189eb
+    m_Address: Prefab_Hat_Construction
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1803120059078730171, guid: c68190864aaddb94bb6fbae2311189eb, type: 3}
+    m_TargetAsset: {fileID: 1803120059078730171, guid: c68190864aaddb94bb6fbae2311189eb, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

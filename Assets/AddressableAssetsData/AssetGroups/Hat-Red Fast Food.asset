@@ -53,6 +53,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: f9f0a12789860ee4bb54718f6e1771a2
+    m_Address: Prefab_Hat_Red Fast Food
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8831766699061630088, guid: f9f0a12789860ee4bb54718f6e1771a2, type: 3}
+    m_TargetAsset: {fileID: 8831766699061630088, guid: f9f0a12789860ee4bb54718f6e1771a2, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

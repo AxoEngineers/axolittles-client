@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: df1e19b7f092910459fb0fa581eaa5ff
+    m_Address: Prefab_Hat_Black Bandana
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3057506878263846570, guid: df1e19b7f092910459fb0fa581eaa5ff, type: 3}
+    m_TargetAsset: {fileID: 3057506878263846570, guid: df1e19b7f092910459fb0fa581eaa5ff, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

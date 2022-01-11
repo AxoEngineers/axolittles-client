@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: fab60fd868155dd408a60690cb7c1ec7
+    m_Address: Prefab_Hat_Red Cap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8989561750549380529, guid: fab60fd868155dd408a60690cb7c1ec7, type: 3}
+    m_TargetAsset: {fileID: 8989561750549380529, guid: fab60fd868155dd408a60690cb7c1ec7, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

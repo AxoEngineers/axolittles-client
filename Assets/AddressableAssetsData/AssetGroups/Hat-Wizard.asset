@@ -45,8 +45,14 @@ MonoBehaviour:
     m_Address: Assets/BundleAssets/Hats/Wizard/Wizard_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2800000, guid: 984da6a66210e024e86adebe7a057fae, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 984da6a66210e024e86adebe7a057fae, type: 3}
+  - m_GUID: b087e367e63ad2841be666ba604ad262
+    m_Address: Prefab_Hat_Wizard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 7803612747866379193, guid: b087e367e63ad2841be666ba604ad262, type: 3}
+    m_TargetAsset: {fileID: 7803612747866379193, guid: b087e367e63ad2841be666ba604ad262, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:

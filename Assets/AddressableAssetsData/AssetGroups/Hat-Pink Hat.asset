@@ -47,6 +47,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: f51df4bd3fca5104986b1d45b34e03fa
+    m_Address: Prefab_Hat_Pink Hat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3106767850779820783, guid: f51df4bd3fca5104986b1d45b34e03fa, type: 3}
+    m_TargetAsset: {fileID: 3106767850779820783, guid: f51df4bd3fca5104986b1d45b34e03fa, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e8b8142ceb167934cb03c3decdb87c4f, type: 2}
   m_SchemaSet:
