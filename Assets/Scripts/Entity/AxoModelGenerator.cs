@@ -107,13 +107,12 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                         topModel.transform.localPosition = handle.Result.transform.localPosition * handle.Result.transform.localScale.x;
                         topModel.transform.localRotation = handle.Result.transform.localRotation;
                     }
+                    Addressables.Release(handle);
                 }
                 else
                 {
                     Debug.LogError($"#{traits.id} Could not find Prefab_Hat_{face}: " + top + " or " + traits.rtop);
                 }
-
-                Addressables.Release(handle);
             }
             
             AxoInfo info = baseModel.AddComponent<AxoInfo>();
@@ -121,7 +120,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             baseModel.AddComponent<Axolittle>();
             
             info.id = id;
-            info.name = $"AXO #{id}";
+            info.name = $"#{id}";
             nav.speed = 1.0f;
             
             // axolittle avatar icon

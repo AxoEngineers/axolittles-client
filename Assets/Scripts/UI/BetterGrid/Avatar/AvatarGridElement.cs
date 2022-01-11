@@ -15,6 +15,7 @@ public class AvatarGridElement : BetterGridElement
 
             Text.text = avatar.name;
             Icon.sprite = avatar.sprite;
+            Icon.color = Icon.sprite ? Color.white : new Color(0, 0, 0, 0);
             
             trigger.AddEvent(EventTriggerType.PointerClick, data =>
             {
