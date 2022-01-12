@@ -35,9 +35,10 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
     IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)
     {
         AxoStruct traits = AxoDatabase.Get(id);
+
+        var assetsRequired = GetAssetsRequired(id);
         
-        var baseModelPath = $"BaseModel_{traits.outfit}";
-        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(baseModelPath);
+        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[0]);
         yield return handle;
         
         if(handle.Status == AsyncOperationStatus.Succeeded)
@@ -84,7 +85,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             // CREATE FACE
             if (face.Length > 0 && face != "None")
             {
-                handle = Addressables.LoadAssetAsync<GameObject>($"Prefab_Face_{face}");
+                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[1]);
                 yield return handle;
 
                 if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -99,7 +100,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 }
                 else
                 {
-                    Debug.LogError($"#{traits.id} Could not find face Prefab_Face_{face}: " + face + " or " +
+                    Debug.LogError($"#{traits.id} Could not find face {assetsRequired[1]}: " + face + " or " +
                                    traits.rface);
                 }
             }
@@ -107,7 +108,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             // CREATE HAT
             if (top.Length > 0 && top != "None")
             {
-                handle = Addressables.LoadAssetAsync<GameObject>($"Prefab_Hat_{top}");
+                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[2]);
                 yield return handle;
 
                 if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -121,7 +122,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 }
                 else
                 {
-                    Debug.LogError($"#{traits.id} Could not find Prefab_Hat_{face}: " + top + " or " + traits.rtop);
+                    Debug.LogError($"#{traits.id} Could not find {assetsRequired[2]}: " + top + " or " + traits.rtop);
                 }
             }
             
@@ -148,7 +149,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         }
         else
         {
-            Debug.LogError($"#{traits.id} Could not find base model {traits.type}: " + baseModelPath + " or " + traits.routfit);
+            Debug.LogError($"#{traits.id} Could not find base model {traits.type}: " + assetsRequired[0] + " or " + traits.routfit);
         }
         
         yield return null;

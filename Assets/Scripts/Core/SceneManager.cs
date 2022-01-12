@@ -102,6 +102,7 @@ public class SceneManager : Mingleton<SceneManager>
             {
                 Status = "Metamask Authentication Failed";
                 _MetamaskConnectBtn.interactable = true;
+                _PixelverseBackground.gameObject.SetActive(true);
                 SetLoadingScreen(false);
                 ConnectPanel.SetActive(true);
                 loginFailed = false;
@@ -113,6 +114,7 @@ public class SceneManager : Mingleton<SceneManager>
             if (_EthAddressInputField.text == null || _EthAddressInputField.text.Length != 42)
             {
                 SetLoadingScreen(false);
+                _PixelverseBackground.gameObject.SetActive(true);
                 _MetamaskConnectBtn.interactable = true;
                 Status = $"Invalid eth address";
                 _WalletConnectText.text = Status;
@@ -131,6 +133,7 @@ public class SceneManager : Mingleton<SceneManager>
         if (MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars.Length < 1) // 1 avatar required at least
         {
             SetLoadingScreen(false);
+            _PixelverseBackground.gameObject.SetActive(true);
             _MetamaskConnectBtn.interactable = true;
             Status =
                 $"That address doesn't own any axolittles. Try another.";
@@ -208,6 +211,7 @@ public class SceneManager : Mingleton<SceneManager>
         {
             Status = "Please Wait...";
         }
+        _PixelverseBackground.gameObject.SetActive(state);
         LoadingPanel.gameObject.SetActive(state);
     }
 
