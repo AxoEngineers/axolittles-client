@@ -19,6 +19,19 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         StartCoroutine(LoadAssets(id, onFinish));
     }
 
+    public static string[] GetAssetsRequired(int id)
+    {
+        AxoStruct traits = AxoDatabase.Get(id);
+        
+        return new string[]
+        {
+            $"BaseModel_{traits.outfit}",
+            $"Prefab_Face_{traits.face}",
+            $"Prefab_Hat_{traits.top}"
+        };
+        
+    }
+    
     IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)
     {
         AxoStruct traits = AxoDatabase.Get(id);
@@ -31,7 +44,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         {
             GameObject baseModel = Instantiate(handle.Result, transform);
             baseModel.SetActive(false);
-            Addressables.Release(handle);
             baseModel.name = traits.id;
             
             var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
@@ -84,8 +96,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                                                             handle.Result.transform.localScale.x;
                         faceModel.transform.localRotation = handle.Result.transform.localRotation;
                     }
-
-                    Addressables.Release(handle);
                 }
                 else
                 {
@@ -108,7 +118,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                         topModel.transform.localPosition = handle.Result.transform.localPosition * handle.Result.transform.localScale.x;
                         topModel.transform.localRotation = handle.Result.transform.localRotation;
                     }
-                    Addressables.Release(handle);
                 }
                 else
                 {

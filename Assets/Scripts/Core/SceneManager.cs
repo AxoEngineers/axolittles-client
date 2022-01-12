@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
 using UnityEngine.Networking;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -138,6 +140,24 @@ public class SceneManager : Mingleton<SceneManager>
         }
 
         Status = "Data Retrieval Successful";
+        yield return new WaitForSeconds(0.5f);
+        
+        Status = "Loading Asset Bundle...";
+
+        if (MetamaskAuth.Instance.Wallet != null)
+        {
+            foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
+            {
+                foreach (var asset in AxoModelGenerator.GetAssetsRequired(avatar.id))
+                {
+                    Status = "Loading " + asset;
+                    AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(asset);
+                    yield return handle;
+                }
+            }
+        }
+
+        Status = "Download Complete.. Launching";
         yield return new WaitForSeconds(0.5f);
 
         StartCoroutine(GoToMainMenu());
