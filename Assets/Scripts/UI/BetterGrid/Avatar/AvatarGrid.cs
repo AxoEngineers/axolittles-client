@@ -20,16 +20,14 @@ public class AvatarGrid : MonoBehaviour
     private bool CanUsePreviousPage => _startIndex - IterAmt >= 0;
     private string SearchValue => searchText.text.ToLower();
 
-    private readonly int[] _placeholderWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
+    private int[] _axoWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
     
     public List<AxoInfo> ownedAxos;
     public List<AxoInfo> itemData;
 
     private void Awake()
     {
-        var targetWallet = _placeholderWallet;
-        
-        if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null) 
+        if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)
         {
             List<int> avatars = new List<int>();
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
@@ -37,10 +35,10 @@ public class AvatarGrid : MonoBehaviour
                 avatars.Add(avatar.id);
             }
 
-            targetWallet = avatars.ToArray();
+            _axoWallet = avatars.ToArray();
         }
         
-        foreach (var id in targetWallet)
+        foreach (var id in _axoWallet)
         {
             AxoModelGenerator.Instance.Generate(id, avatar => { LoadAxo(avatar); });
         }
@@ -49,7 +47,7 @@ public class AvatarGrid : MonoBehaviour
     private void LoadAxo(AxoInfo info)
     {
         ownedAxos.Add(info);
-        if (ownedAxos.Count == _placeholderWallet.Length) LoadGrid();
+        if (ownedAxos.Count == _axoWallet.Length) LoadGrid();
     }
 
     private void LoadGrid()
