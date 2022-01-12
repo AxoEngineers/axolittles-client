@@ -126,7 +126,7 @@ public class SceneManager : Mingleton<SceneManager>
             }
         }
         
-        if (MetamaskAuth.Instance.Wallet.avatars.Length < 1) // 1 avatar required at least
+        if (MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars.Length < 1) // 1 avatar required at least
         {
             SetLoadingScreen(false);
             _MetamaskConnectBtn.interactable = true;

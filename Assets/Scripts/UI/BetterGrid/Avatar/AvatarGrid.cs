@@ -29,7 +29,7 @@ public class AvatarGrid : MonoBehaviour
     {
         var targetWallet = _placeholderWallet;
         
-        if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet.avatars != null)
+        if (MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)
         {
             List<int> avatars = new List<int>();
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
