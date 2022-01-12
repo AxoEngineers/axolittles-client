@@ -3,7 +3,12 @@ guid: b9dc741b1f9cfc745a67af45538b5907
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cutehat Blue
+    second: {fileID: 2100000, guid: 2f3f0bed0e00c1f4b84e7305819315c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,12 @@ guid: 4f81de2832681d448b5cef07067dc461
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sunhead Blue
+    second: {fileID: 2100000, guid: 9d1fc47b73556eb4e919de2e0cc98a0a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

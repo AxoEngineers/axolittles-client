@@ -26,7 +26,7 @@ public static class Configuration
         }
         else
         {
-            if (url.Contains("testdev.sappyseals.io"))
+            if (url.Contains("axoquarium-test.herokuapp.com"))
             {
                 return BuildEnvironment.Development;
             }
@@ -43,8 +43,7 @@ public static class Configuration
         switch (GetEnv())
         {
             case BuildEnvironment.Local: return "http://localhost:3000/";
-            case BuildEnvironment.Development: return "https://testdev.sappyseals.io/";
-            case BuildEnvironment.Production: return "https://master.sappyseals.io/";
+            case BuildEnvironment.Production: return "https://axoquarium.herokuapp.com/";
         }
 
         return null;
