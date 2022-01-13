@@ -19,9 +19,9 @@ public class AvatarGridElement : BetterGridElement
             
             trigger.AddEvent(EventTriggerType.PointerClick, data =>
             {
-                AxoModelGenerator.Instance.Generate(avatar, arg0 =>
+                AxoModelGenerator.Instance.Generate(avatar, axo =>
                 {
-                    AxoPreview.Instance.SetPreview(avatar);
+                    AxoPreview.Instance.SetPreview(axo);
                 });
                 
             });

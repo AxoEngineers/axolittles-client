@@ -14,16 +14,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 
     public RuntimeAnimatorController animatorController;
 
-    public void Create(int id, UnityAction<AxoInfo> onFinish = null)
-    {
-        StartCoroutine(CreateModel(id, onFinish));
-    }
-    
-    public void Generate(AxoInfo axoObject, UnityAction<AxoInfo> onFinish = null)
-    {
-        StartCoroutine(LoadAssets(axoObject, onFinish));
-    }
-
     public static string[] GetAssetsRequired(int id)
     {
         AxoStruct traits = AxoDatabase.Get(id);
@@ -35,6 +25,16 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             $"Prefab_Hat_{traits.top}"
         };
 
+    }
+    
+    public void Create(int id, UnityAction<AxoInfo> onFinish = null)
+    {
+        StartCoroutine(CreateModel(id, onFinish));
+    }
+    
+    public void Generate(AxoInfo axoObject, UnityAction<AxoInfo> onFinish = null)
+    {
+        StartCoroutine(LoadAssets(axoObject, onFinish));
     }
 
     IEnumerator CreateModel(int id, UnityAction<AxoInfo> onFinish)
@@ -55,6 +55,11 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             AxoInfo axoObject = baseModel.AddComponent<AxoInfo>();
             axoObject.id = id;
             axoObject.name = $"#{id}";
+            
+            NavMeshAgent nav = axoObject.gameObject.AddComponent<NavMeshAgent>();
+            nav.speed = 1.0f;
+            
+            axoObject.gameObject.AddComponent<Axolittle>();
 
             // axolittle avatar icon
             UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{id}.png");
@@ -66,15 +71,12 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                     new Vector2(0.5f, 0.5f));
             }
 
-            if (onFinish != null)
-            {
-                onFinish.Invoke(axoObject);
-            }
+            onFinish?.Invoke(axoObject);
         }
         else
         {
             Debug.LogError(
-                $"#{traits.id} Could not find base model {traits.type}: {assetsRequired[0]}  or {traits.routfit}");
+                $"#{traits.id} Could not find base model {traits.type}: {assetsRequired[0]} or {traits.routfit}");
         }
 
         yield return null;
@@ -92,7 +94,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         var tailNode = "Armature/joint6/joint7/joint26";
 
         var face = traits.face;
-        var outfit = traits.outfit;
         var top = traits.top;
         var color = Color.HSVToRGB(traits.rhue / 360.0f, 0.3f, 1f);
 
@@ -144,8 +145,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             }
             else
             {
-                Debug.LogError($"#{traits.id} Could not find face {assetsRequired[1]}: " + face + " or " +
-                               traits.rface);
+                Debug.LogError($"#{traits.id} Could not find face {assetsRequired[1]}: {face} or {traits.rface}");
             }
         }
 
@@ -167,33 +167,12 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             }
             else
             {
-                Debug.LogError($"#{traits.id} Could not find {assetsRequired[2]}: " + top + " or " + traits.rtop);
+                Debug.LogError($"#{traits.id} Could not find {assetsRequired[2]}: {top} or {traits.rtop}");
             }
         }
 
-        AxoInfo info = axoObject.gameObject.AddComponent<AxoInfo>();
-        NavMeshAgent nav = axoObject.gameObject.AddComponent<NavMeshAgent>();
-        axoObject.gameObject.AddComponent<Axolittle>();
+        onFinish?.Invoke(axoObject);
 
-        info.id = axoObject.id;
-        info.name = $"#{axoObject.id}";
-        nav.speed = 1.0f;
-
-        // axolittle avatar icon
-        UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{axoObject.id}.png");
-        yield return www.SendWebRequest();
-        if (www.result == UnityWebRequest.Result.Success)
-        {
-            Texture2D axoTexture = ((DownloadHandlerTexture) www.downloadHandler).texture;
-            info.sprite = Sprite.Create(axoTexture, Rect.MinMaxRect(0, 0, axoTexture.width, axoTexture.height),
-                new Vector2(0.5f, 0.5f));
-        }
-
-        if (onFinish != null)
-        {
-            onFinish.Invoke(info);
-        }
-        
         yield return null;
     }
 }
