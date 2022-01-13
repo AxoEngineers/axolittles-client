@@ -90,7 +90,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 4c0b4dfade9254842a883a7ef34d120e
-    m_Address: Assets/BundleAssets/Core/None.prefab
+    m_Address: BaseModel_None
     m_ReadOnly: 0
     m_SerializedLabels:
     - default

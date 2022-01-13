@@ -167,14 +167,20 @@ public class SceneManager : Mingleton<SceneManager>
 
         if (MetamaskAuth.Instance.Wallet != null)
         {
+            int preloadInstances = 0;
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
             {
+                if (preloadInstances >= 4) // dont preload more than the first row
+                    break;
+                
                 foreach (var asset in AxoModelGenerator.GetAssetsRequired(avatar.id))
                 {
                     Status = "Loading " + asset;
                     AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(asset);
                     yield return handle;
                 }
+
+                preloadInstances++;
             }
         }
 
