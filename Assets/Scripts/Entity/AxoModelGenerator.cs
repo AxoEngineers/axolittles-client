@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using FIMSpace.FTail;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -14,16 +15,27 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 
     public RuntimeAnimatorController animatorController;
 
-    public static string[] GetAssetsRequired(int id)
+    public static Dictionary<string, string> GetAssetsRequired(int id)
     {
         AxoStruct traits = AxoDatabase.Get(id);
 
-        return new string[]
+        Dictionary<string, string> keyMap = new Dictionary<string, string>();
+
+        keyMap.Add("base", $"BaseModel_{traits.outfit}");
+        keyMap.Add("face", $"Prefab_Face_{traits.face}");
+        keyMap.Add("hat", $"Prefab_Hat_{traits.top}");
+        keyMap["material"] = null;
+        
+        if (traits.type == "Robot")
         {
-            $"BaseModel_{traits.outfit}",
-            $"Prefab_Face_{traits.face}",
-            $"Prefab_Hat_{traits.top}"
-        };
+            keyMap["material"] = "Robot Material";
+        }
+        else if (traits.type == "Cosmic")
+        {
+            keyMap["material"] = "Cosmic Material";
+        }
+
+        return keyMap;
     }
     
     public void GetImage(NftAddress avatar, UnityAction<Sprite> onFinish = null)
@@ -66,7 +78,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 
         var assetsRequired = GetAssetsRequired(avatar.id);
 
-        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[0]);
+        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired["base"]);
         yield return handle;
 
         if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -78,7 +90,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             AxoInfo axoObject = baseModel.AddComponent<AxoInfo>();
             axoObject.id = avatar.id;
             axoObject.name = $"#{avatar.id}";
-
 
             var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
             var tailNode = "Armature/joint6/joint7/joint26";
@@ -97,14 +108,16 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             // ADJUST TO ROBOT/COSMIC?
             if (traits.type == "Robot")
             {
-                meshRenderer.sharedMaterial =
-                    Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Robot/Body/Material"));
+                AsyncOperationHandle<Material> materialHandle = Addressables.LoadAssetAsync<Material>(assetsRequired["material"]);
+                yield return materialHandle;
+                meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
                 meshRenderer.sharedMaterial.color = Color.white;
             }
             else if (traits.type == "Cosmic")
             {
-                meshRenderer.sharedMaterial =
-                    Instantiate(Resources.Load<Material>("Models/Axolittles/Faces/Cosmic/Body/Material"));
+                AsyncOperationHandle<Material> materialHandle = Addressables.LoadAssetAsync<Material>(assetsRequired["material"]);
+                yield return materialHandle;
+                meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
                 meshRenderer.sharedMaterial.color = Color.white;
             }
             else
@@ -113,14 +126,12 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 meshRenderer.sharedMaterial.color = color;
             }
 
-            bool useInverseScale = axoObject.gameObject.transform.Find("Armature") &&
-                                   axoObject.gameObject.transform.Find("Armature").localScale.x != 1;
-
+            bool useInverseScale = axoObject.gameObject.transform.Find("Armature") && axoObject.gameObject.transform.Find("Armature").localScale.x != 1;
 
             // CREATE FACE
             if (face.Length > 0 && face != "None")
             {
-                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[1]);
+                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired["face"]);
                 yield return handle;
 
                 if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -135,14 +146,14 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 }
                 else
                 {
-                    Debug.LogError($"#{traits.id} Could not find face {assetsRequired[1]}: {face} or {traits.rface}");
+                    Debug.LogError($"#{traits.id} Could not find face {assetsRequired["face"]}: {face} or {traits.rface}");
                 }
             }
 
             // CREATE HAT
             if (top.Length > 0 && top != "None")
             {
-                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired[2]);
+                handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired["hat"]);
                 yield return handle;
 
                 if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -157,7 +168,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 }
                 else
                 {
-                    Debug.LogError($"#{traits.id} Could not find {assetsRequired[2]}: {top} or {traits.rtop}");
+                    Debug.LogError($"#{traits.id} Could not find {assetsRequired["hat"]}: {top} or {traits.rtop}");
                 }
             }
 

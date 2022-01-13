@@ -52,6 +52,7 @@ public class SceneManager : Mingleton<SceneManager>
         if (!urlRunOnce)
         {
             urlRunOnce = true;
+            #if !UNITY_EDITOR
             string url = Configuration.GetURL();
             var parameters = new Uri(url).DecodeQueryParameters();
             if (parameters.ContainsKey("address"))
@@ -61,6 +62,7 @@ public class SceneManager : Mingleton<SceneManager>
                 StartCoroutine(WaitForLogin(parameters["address"]));
                 return;
             }
+            #endif
         }
 
         MetamaskAuth.Instance.onLoginData.AddListener(wallet =>
@@ -120,6 +122,7 @@ public class SceneManager : Mingleton<SceneManager>
             {
                 Status = "Metamask Authentication Failed";
                 _MetamaskConnectBtn.interactable = true;
+                _ViewEthAddressBtn.interactable = true;
                 _PixelverseBackground.gameObject.SetActive(true);
                 SetLoadingScreen(false);
                 ConnectPanel.SetActive(true);
@@ -134,6 +137,7 @@ public class SceneManager : Mingleton<SceneManager>
                 SetLoadingScreen(false);
                 _PixelverseBackground.gameObject.SetActive(true);
                 _MetamaskConnectBtn.interactable = true;
+                _ViewEthAddressBtn.interactable = true;
                 Status = $"Invalid eth address";
                 _WalletConnectText.text = Status;
                 ConnectPanel.SetActive(true);
@@ -153,6 +157,7 @@ public class SceneManager : Mingleton<SceneManager>
             SetLoadingScreen(false);
             _PixelverseBackground.gameObject.SetActive(true);
             _MetamaskConnectBtn.interactable = true;
+            _ViewEthAddressBtn.interactable = true;
             Status =
                 $"That address doesn't own any axolittles. Try another.";
             _WalletConnectText.text = Status;
@@ -175,8 +180,10 @@ public class SceneManager : Mingleton<SceneManager>
                 
                 foreach (var asset in AxoModelGenerator.GetAssetsRequired(avatar.id))
                 {
-                    Status = "Loading " + asset;
-                    AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(asset);
+                    if (asset.Value == null)
+                        continue;
+                    Status = "Loading " + asset.Value;
+                    AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(asset.Value);
                     yield return handle;
                 }
 
