@@ -82,7 +82,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
     
     IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)
     {
-        Transform existing = transform.Find($"{id}");
+        Transform existing = transform.Find($"#{id}");
 
         if (existing)
         {
