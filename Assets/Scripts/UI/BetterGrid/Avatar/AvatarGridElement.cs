@@ -37,9 +37,12 @@ public class AvatarGridElement : BetterGridElement
                 {
                     AxoModelGenerator.Instance.GetImage(nftAddress, image =>
                     {
-                        AvatarGrid.Instance.spriteCache.Add(nftAddress.id, image);
                         Icon.sprite = image;
                         Icon.color = Color.white;
+                        if (!AvatarGrid.Instance.spriteCache.ContainsKey(nftAddress.id))
+                        {
+                            AvatarGrid.Instance.spriteCache.Add(nftAddress.id, image);
+                        }
                     });
                 }
                 catch (Exception)
