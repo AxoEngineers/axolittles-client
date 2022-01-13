@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AxoInfo : MonoBehaviour
 {
-    public string name;
+    public string axoName;
     public int id;
     public Sprite sprite;
 }

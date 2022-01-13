@@ -25,8 +25,10 @@ public class AvatarGrid : Mingleton<AvatarGrid>
     public NftAddress[] ownedAxos => MetamaskAuth.Instance.Wallet.avatars;
     public List<NftAddress> itemData;
 
-    private void Awake()
+    new void Awake()
     {
+        base.Awake();
+        
         spriteCache = new Dictionary<int, Sprite>();
         
         if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)

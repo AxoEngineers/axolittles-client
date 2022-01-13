@@ -403,7 +403,7 @@ namespace UiParticles
 						frame = Mathf.Clamp(Mathf.Floor(frame01 * textureSheetAnimationModule.numTilesX), 0,
 							textureSheetAnimationModule.numTilesX - 1);
 						int row = textureSheetAnimationModule.rowIndex;
-						if (textureSheetAnimationModule.useRandomRow)
+						if (textureSheetAnimationModule.rowMode == ParticleSystemAnimationRowMode.Random)
 						{
 							Random.InitState((int) particle.randomSeed);
 							row = Random.Range(0, textureSheetAnimationModule.numTilesY);
