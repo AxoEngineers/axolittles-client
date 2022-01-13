@@ -1,5 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class AvatarGridElement : BetterGridElement
@@ -8,15 +12,26 @@ public class AvatarGridElement : BetterGridElement
     
     public override void SetData(params object[] args)
     {
-        if (args[0] is AxoInfo)
+        if (args[0] is NftAddress)
         {
-            AxoInfo avatar = (AxoInfo) args[0];
-            trigger = GetComponent<EventTrigger>();
+            NftAddress avatar = (NftAddress) args[0];
 
-            Text.text = avatar.name;
-            Icon.sprite = avatar.sprite;
-            Icon.color = Icon.sprite ? Color.white : new Color(0, 0, 0, 0);
+            if (avatar.Equals(NftAddress.Null))
+            {
+                gameObject.SetActive(false);
+                return;
+            }
             
+            Text.text = $"{avatar.id}";
+            Icon.color = Icon.sprite ? Color.white : Color.clear;
+            
+            AxoModelGenerator.Instance.GetImage(avatar, image =>
+            {
+                Icon.sprite = image;
+                Icon.color = Color.white;
+            });
+
+            trigger = GetComponent<EventTrigger>();
             trigger.AddEvent(EventTriggerType.PointerClick, data =>
             {
                 AxoModelGenerator.Instance.Generate(avatar, axo =>
@@ -33,4 +48,17 @@ public class AvatarGridElement : BetterGridElement
             gameObject.SetActive(false);
         }
     }
+
+    public IEnumerator GetImage(int id, UnityAction<Sprite> callback = null)
+    {
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{id}.png");
+        yield return www.SendWebRequest();
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            Texture2D axoTexture = ((DownloadHandlerTexture) www.downloadHandler).texture;
+            callback?.Invoke(Sprite.Create(axoTexture, Rect.MinMaxRect(0, 0, axoTexture.width, axoTexture.height),
+                new Vector2(0.5f, 0.5f)));
+        }
+    }
+    
 }

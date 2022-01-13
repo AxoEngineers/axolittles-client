@@ -20,40 +20,31 @@ public class AvatarGrid : MonoBehaviour
     private bool CanUsePreviousPage => _startIndex - IterAmt >= 0;
     private string SearchValue => searchText.text.ToLower();
 
-    private int[] _axoWallet = { 541, 3718, 46, 2740, 5192, 3849, 1937, 3841, 391, 6810 };
-    
-    public List<AxoInfo> ownedAxos;
-    public List<AxoInfo> itemData;
+    public NftAddress[] ownedAxos => MetamaskAuth.Instance.Wallet.avatars;
+    public List<NftAddress> itemData;
 
     private void Awake()
     {
         if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)
         {
-            List<int> avatars = new List<int>();
+            List<NftAddress> avatars = new List<NftAddress>();
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
             {
-                avatars.Add(avatar.id);
+                avatars.Add(avatar);
             }
 
-            _axoWallet = avatars.ToArray();
+            itemData = avatars;
+            LoadGrid();
         }
         
-        foreach (var id in _axoWallet)
+        /*foreach (var id in _axoWallet)
         {
             AxoModelGenerator.Instance.Create(id, avatar => { LoadAxo(avatar); });
-        }
-    }
-
-    private void LoadAxo(AxoInfo info)
-    {
-        ownedAxos.Add(info);
-        if (ownedAxos.Count == _axoWallet.Length) LoadGrid();
+        }*/
     }
 
     private void LoadGrid()
     {
-        itemData = ownedAxos;
-        
         for (int i = 0; i < _map.GetLength(0) * _map.GetLength(1); i++)
         {
             CreateElement(i % _map.GetLength(0), i / _map.GetLength(0));
@@ -75,7 +66,7 @@ public class AvatarGrid : MonoBehaviour
             for (int x = 0; x < _map.GetLength(0); x++)
             {
                 int i = _startIndex + ((x % _map.GetLength(0)) + (y * _map.GetLength(0)));
-                _map[x, y].SetData(i >= 0 && i < itemData.Count ? itemData[i] : null);
+                _map[x, y].SetData(i >= 0 && i < itemData.Count ? itemData[i] : NftAddress.Null);
             }
         }
 
@@ -118,12 +109,12 @@ public class AvatarGrid : MonoBehaviour
         RefreshGrid();
     }
 
-    private List<AxoInfo> GetAll()
+    private List<NftAddress> GetAll()
     {
-        var newData = new List<AxoInfo>();
+        var newData = new List<NftAddress>();
         foreach (var avatar in ownedAxos)
         {
-            if (avatar.name.ToLower().Contains(SearchValue))
+            if ($"{avatar.id}".ToLower().Contains(SearchValue))
             {
                 newData.Add(avatar);
             }
