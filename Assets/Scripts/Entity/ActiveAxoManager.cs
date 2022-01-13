@@ -13,7 +13,7 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
     
     private int maxActive => gridItems.Length;
 
-    public AvatarGridElement[] gridItems;
+    public ActiveAvatarGridElement[] gridItems;
     
     new void Awake()
     {
