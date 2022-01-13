@@ -55,14 +55,14 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         }
     }
 
-    public void Generate(NftAddress avatar, UnityAction<AxoInfo> onFinish = null)
+    public void Generate(int id, UnityAction<AxoInfo> onFinish = null)
     {
-        StartCoroutine(LoadAssets(avatar, onFinish));
+        StartCoroutine(LoadAssets(id, onFinish));
     }
     
-    IEnumerator LoadAssets(NftAddress avatar, UnityAction<AxoInfo> onFinish)
+    IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)
     {
-        Transform existing = transform.Find($"{avatar.id}");
+        Transform existing = transform.Find($"{id}");
 
         if (existing)
         {
@@ -74,11 +74,11 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             }
         }
         
-        AxoStruct traits = AxoDatabase.Get(avatar.id);
+        AxoStruct traits = AxoDatabase.Get(id);
 
         // Debug.Log(traits.ToString());
         
-        var assetsRequired = GetAssetsRequired(avatar.id);
+        var assetsRequired = GetAssetsRequired(id);
 
         AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired["base"]);
         yield return handle;
@@ -90,8 +90,8 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             baseModel.name = traits.id;
 
             AxoInfo axoObject = baseModel.AddComponent<AxoInfo>();
-            axoObject.id = avatar.id;
-            axoObject.name = $"#{avatar.id}";
+            axoObject.id = id;
+            axoObject.name = $"#{id}";
 
             var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
             var tailNode = "Armature/joint6/joint7/joint26";
@@ -188,7 +188,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             axoObject.gameObject.AddComponent<Axolittle>();
 
             // axolittle avatar icon
-            UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{avatar.id}.png");
+            UnityWebRequest www = UnityWebRequestTexture.GetTexture($"{Configuration.GetWeb3URL()}avatar/{id}.png");
             yield return www.SendWebRequest();
             if (www.result == UnityWebRequest.Result.Success)
             {

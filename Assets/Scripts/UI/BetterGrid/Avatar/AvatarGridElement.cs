@@ -56,7 +56,7 @@ public class AvatarGridElement : BetterGridElement
             trigger.AddEvent(EventTriggerType.PointerClick,
                 data =>
                 {
-                    AxoModelGenerator.Instance.Generate(nftAddress, axo => { AxoPreview.Instance.SetPreview(axo); });
+                    ActiveAxoManager.Instance.Set(nftAddress.id);
                 });
 
             gameObject.SetActive(true);
