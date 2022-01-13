@@ -63,7 +63,7 @@ public class Axolittle : MonoBehaviour
         ani.SetBool("Moving", false);
         
         ani.SetTrigger("Wave");
-        Debug.Log($"{gameObject.name} is waving!");
+        // Debug.Log($"{gameObject.name} is waving!");
         transform.LookAt(Camera.main.transform.position);
     }
 }
