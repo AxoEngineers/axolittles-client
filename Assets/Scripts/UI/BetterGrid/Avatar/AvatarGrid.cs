@@ -40,7 +40,7 @@ public class AvatarGrid : MonoBehaviour
         
         foreach (var id in _axoWallet)
         {
-            AxoModelGenerator.Instance.Generate(id, avatar => { LoadAxo(avatar); });
+            AxoModelGenerator.Instance.Create(id, avatar => { LoadAxo(avatar); });
         }
     }
 
