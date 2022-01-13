@@ -90,12 +90,14 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             baseModel.name = traits.id;
 
             AxoInfo axoObject = baseModel.AddComponent<AxoInfo>();
+            Animator ani = axoObject.gameObject.GetComponent<Animator>();
             axoObject.id = avatar.id;
             axoObject.name = $"#{avatar.id}";
 
             var baseNode = baseModel.transform.Find("Armature") ? (baseModel.transform.Find("Armature").name + "/") : "";
             
             var rootFaceNode = baseNode + "joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
+            
             var tailNode = baseNode + "joint6/joint7/joint26";
 
             var face = traits.face;
@@ -103,8 +105,19 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             var color = Color.HSVToRGB(traits.rhue / 360.0f, 0.3f, 1f);
 
             Transform rootFaceBone = baseModel.transform.Find(rootFaceNode);
+
+            // create a joint24_end bone on top of the head if it doesnt exist
+            if (!rootFaceBone)
+            {
+                rootFaceBone = baseModel.transform.Find(baseNode + "joint6/joint7/joint8/joint9/joint10/joint24");
+                GameObject newRootFaceBone = new GameObject("joint24_end");
+                newRootFaceBone.transform.SetParent(rootFaceBone, false);
+                newRootFaceBone.transform.localPosition = new Vector3(0, 0.584521f, 0);
+                rootFaceBone = newRootFaceBone.transform;
+            }
+            
             //baseModel.transform.localPosition = new Vector3(instanceCount++ * -1.0f, 0, 0);
-            axoObject.gameObject.GetComponent<Animator>().runtimeAnimatorController = animatorController;
+            ani.runtimeAnimatorController = animatorController;
             var meshRenderer = axoObject.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
 
             Transform tailBone = axoObject.gameObject.transform.Find(tailNode);
