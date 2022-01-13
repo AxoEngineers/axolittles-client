@@ -17,6 +17,7 @@ public class SceneManager : Mingleton<SceneManager>
     }
     
     // OPTIONS
+    public Camera menuCamera;
     
     // PANELS
     public GameObject LoadingPanel;
@@ -86,6 +87,7 @@ public class SceneManager : Mingleton<SceneManager>
         SetLoadingScreen(true);
         yield return new WaitForSeconds(0.5f);
         SetLoadingScreen(false);
+        menuCamera.gameObject.SetActive(false);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main", LoadSceneMode.Additive);
     }
 
@@ -201,27 +203,9 @@ public class SceneManager : Mingleton<SceneManager>
         StartCoroutine(GoToMainMenu());
     }
 
-    // the best time to know we're securely connected is by the player id (For now)
-    IEnumerator LoginProtocolCoroutine(string address, string room, string gameName, UnityAction<string> failAction=null)
-    {
-        identity = AvatarIdentity.Null;
-        SetLoadingScreen(true);
-        
-        string ip = address;
-        Status = "Connecting to\r\n " + gameName;
-        yield return new WaitForSeconds(0.25f);
-
-        Status = "Entering Game...";
-        yield return new WaitForSeconds(0.25f);
-
-        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Main", LoadSceneMode.Additive);
-
-        Debug.Log("Creating new Main Scene instance");
-        SetLoadingScreen(false);
-    }
-
     public void ExitGame(IEnumerator beginAction=null)
     {
+        menuCamera.gameObject.SetActive(true);
         SetLoadingScreen(true);
         StartCoroutine(UnloadOperation(beginAction));
     }

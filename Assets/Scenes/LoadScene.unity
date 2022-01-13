@@ -548,6 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1627ce81bb89b41b2fa24a4d7a1571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuCamera: {fileID: 519420031}
   LoadingPanel: {fileID: 1696885247}
   ConnectPanel: {fileID: 1996416580}
   _PixelverseBackground: {fileID: 331091871}
