@@ -12,8 +12,9 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
     private List<AxoInfo> active;
     private bool generating;
     
-    void Awake()
+    new void Awake()
     {
+        base.Awake();
         active = new List<AxoInfo>();
     }
     

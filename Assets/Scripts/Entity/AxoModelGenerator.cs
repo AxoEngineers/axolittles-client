@@ -15,6 +15,26 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 
     public RuntimeAnimatorController animatorController;
 
+    public static Dictionary<string, Color> colorCodes = new Dictionary<string, Color>()
+    {
+        {"Orange", new Color(255/255.0f,172/255.0f,131/255.0f)},
+        {"Purple", new Color(128/255.0f, 0/255.0f, 128/255.0f)},
+        {"Fuchsia", new Color(255/255.0f,0/255.0f,255/255.0f)},
+        {"Yellow", new Color(255/255.0f,255/255.0f,0/255.0f)},
+        {"Blue", new Color(135/255.0f,206/255.0f,250/255.0f)},
+        {"Cyan", new Color(0/255.0f,255/255.0f,255/255.0f)},
+        {"St Patrick", new Color(0/255.0f,128/255.0f,0/255.0f)},
+        {"Magenta", new Color(255/255.0f,0/255.0f,255/255.0f)}
+    };
+
+    private void Start()
+    {
+        for (int i = 0; i < 9999; i++)
+        {
+            GetAssetsRequired(i);
+        }
+    }
+
     public static Dictionary<string, string> GetAssetsRequired(int id)
     {
         AxoStruct traits = AxoDatabase.Get(id);
@@ -158,9 +178,30 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                         faceModel.transform.localRotation = handle.Result.transform.localRotation;
                     }
 
+                    var faceMeshRenderer = faceModel.GetComponent<MeshRenderer>();
+                    
+                    var bgSync = faceModel.GetComponent<BackgroundColorSync>();
+                    if (bgSync)
+                    {
+                        for (int i=0; i < faceMeshRenderer.sharedMaterials.Length; i++)
+                        {
+                            if (bgSync.targetMaterial.name == faceMeshRenderer.sharedMaterials[i].name)
+                            {
+                                // Debug.Log(bgSync.targetMaterial.name + " - " + faceMeshRenderer.sharedMaterials[i].name);
+                                // Debug.Log("SETTING COLOR TO " + colorCodes[traits.background]);
+                                var newFaceMat = faceMeshRenderer.materials[i];
+                                newFaceMat.color = colorCodes[traits.background];
+                                if (newFaceMat.IsKeywordEnabled("_EMISSION"))
+                                {
+                                    newFaceMat.SetColor("_EmissionColor", colorCodes[traits.background]);
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    
                     if (traits.type == "Robot")
                     {
-                        var faceMeshRenderer = faceModel.GetComponent<MeshRenderer>();
                         faceMeshRenderer.sharedMaterial = Instantiate(faceMeshRenderer.sharedMaterial);
                         faceMeshRenderer.sharedMaterial.color = Color.HSVToRGB((146 + traits.rhue) / 360.0f, 50f / 100.0f, 75f / 100.0f);
                     }
