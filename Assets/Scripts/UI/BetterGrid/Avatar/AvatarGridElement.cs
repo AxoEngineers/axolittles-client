@@ -9,23 +9,24 @@ using UnityEngine.UI;
 public class AvatarGridElement : BetterGridElement
 {
     private EventTrigger trigger;
-    
+    private NftAddress nftAddress;
+
     public override void SetData(params object[] args)
     {
         if (args[0] is NftAddress)
         {
-            NftAddress avatar = (NftAddress) args[0];
+            nftAddress = (NftAddress) args[0];
 
-            if (avatar.Equals(NftAddress.Null))
+            if (nftAddress.Equals(NftAddress.Null))
             {
                 gameObject.SetActive(false);
                 return;
             }
             
-            Text.text = $"{avatar.id}";
+            Text.text = $"{nftAddress.id}";
             Icon.color = Icon.sprite ? Color.white : Color.clear;
             
-            AxoModelGenerator.Instance.GetImage(avatar, image =>
+            AxoModelGenerator.Instance.GetImage(nftAddress, image =>
             {
                 Icon.sprite = image;
                 Icon.color = Color.white;
@@ -34,11 +35,17 @@ public class AvatarGridElement : BetterGridElement
             trigger = GetComponent<EventTrigger>();
             trigger.AddEvent(EventTriggerType.PointerClick, data =>
             {
-                AxoModelGenerator.Instance.Generate(avatar, axo =>
+                try 
                 {
-                    AxoPreview.Instance.SetPreview(axo);
-                });
-                
+                    AxoModelGenerator.Instance.Generate(nftAddress, axo =>
+                    {
+                        AxoPreview.Instance.SetPreview(axo);
+                    });
+                }
+                catch (Exception)
+                {
+                    Debug.LogError($"Failed to retrieve sprite for NFT #{nftAddress.id}");
+                }
             });
 
             gameObject.SetActive(true);
@@ -60,5 +67,4 @@ public class AvatarGridElement : BetterGridElement
                 new Vector2(0.5f, 0.5f)));
         }
     }
-    
 }
