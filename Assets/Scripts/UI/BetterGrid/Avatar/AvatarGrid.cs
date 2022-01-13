@@ -33,6 +33,12 @@ public class AvatarGrid : MonoBehaviour
                 avatars.Add(avatar);
             }
 
+            // For debugging
+            /*for (int i = 0; i < 300; i++)
+            {
+                avatars.Add(new NftAddress("0x0", $"{Random.Range(1, 7800)}"));
+            }*/
+
             itemData = avatars;
             LoadGrid();
         }
