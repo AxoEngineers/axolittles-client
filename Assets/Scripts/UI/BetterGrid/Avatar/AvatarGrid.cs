@@ -35,7 +35,7 @@ public class AvatarGrid : Mingleton<AvatarGrid>
         {
             List<NftAddress> avatars = new List<NftAddress>();
             
-            // For debugging
+            /*// For debugging
             for (int i = 0; i < 9999; i++)
             {
                 var traits = AxoDatabase.Get(i);
@@ -43,7 +43,7 @@ public class AvatarGrid : Mingleton<AvatarGrid>
                 {
                     avatars.Add(new NftAddress("0x0", $"{traits.id}"));
                 }
-            }
+            }*/
             
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
             {
