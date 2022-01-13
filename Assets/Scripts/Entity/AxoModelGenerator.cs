@@ -93,8 +93,10 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             axoObject.id = avatar.id;
             axoObject.name = $"#{avatar.id}";
 
-            var rootFaceNode = "Armature/joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
-            var tailNode = "Armature/joint6/joint7/joint26";
+            var baseNode = baseModel.transform.Find("Armature") ? (baseModel.transform.Find("Armature").name + "/") : "";
+            
+            var rootFaceNode = baseNode + "joint6/joint7/joint8/joint9/joint10/joint24/joint24_end";
+            var tailNode = baseNode + "joint6/joint7/joint26";
 
             var face = traits.face;
             var top = traits.top;
@@ -105,22 +107,19 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             axoObject.gameObject.GetComponent<Animator>().runtimeAnimatorController = animatorController;
             var meshRenderer = axoObject.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
 
-            TailAnimator2 tail = axoObject.gameObject.transform.Find(tailNode).gameObject.AddComponent<TailAnimator2>();
+            Transform tailBone = axoObject.gameObject.transform.Find(tailNode);
+            TailAnimator2 tail = tailBone.gameObject.AddComponent<TailAnimator2>();
 
             // ADJUST TO ROBOT/COSMIC?
-            if (traits.type == "Robot")
+            if (traits.type == "Robot" || traits.type == "Cosmic")
             {
                 AsyncOperationHandle<Material> materialHandle = Addressables.LoadAssetAsync<Material>(assetsRequired["material"]);
                 yield return materialHandle;
-                meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
-                meshRenderer.sharedMaterial.color = Color.white;
-            }
-            else if (traits.type == "Cosmic")
-            {
-                AsyncOperationHandle<Material> materialHandle = Addressables.LoadAssetAsync<Material>(assetsRequired["material"]);
-                yield return materialHandle;
-                meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
-                meshRenderer.sharedMaterial.color = Color.white;
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
+                    meshRenderer.sharedMaterial.color = Color.white;
+                }
             }
             else
             {
