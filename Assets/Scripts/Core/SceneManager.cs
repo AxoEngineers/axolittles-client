@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
@@ -28,11 +26,13 @@ public class SceneManager : Mingleton<SceneManager>
     public Image _PixelverseBackground;
     public Text _AuthInformationTxt;
     public Button _MetamaskConnectBtn;
+    public Button _ViewEthAddressBtn;
     public Text _LoadingText;
     public Text _WalletConnectText;
     public InputField _EthAddressInputField;
     
     // temporary variabes
+    private static bool urlRunOnce = false;
     private bool loginFailed = false;
     private bool pleaseWait = true;
     private bool errorShown = false;
@@ -47,7 +47,22 @@ public class SceneManager : Mingleton<SceneManager>
     private void Start()
     {
         Application.runInBackground = true;
-        
+
+        // SUPPORT DIRECT ADDRESS IN URL (&ADDRESS={val})
+        if (!urlRunOnce)
+        {
+            urlRunOnce = true;
+            string url = Configuration.GetURL();
+            var parameters = new Uri(url).DecodeQueryParameters();
+            if (parameters.ContainsKey("address"))
+            {
+                ConnectPanel.SetActive(false);
+                SetLoadingScreen(true);
+                StartCoroutine(WaitForLogin(parameters["address"]));
+                return;
+            }
+        }
+
         MetamaskAuth.Instance.onLoginData.AddListener(wallet =>
         {
             _AuthInformationTxt.text = $"LOGGED INTO {Configuration.GetEnvName()}\r\nETH-ADDRESS: {wallet.eth_address}\r\nAXOLITTLES OWNED: {MetamaskAuth.Instance.Wallet.avatars.Length}";
@@ -70,6 +85,8 @@ public class SceneManager : Mingleton<SceneManager>
 
     public void ViewRoomByEthAddress()
     {
+        if (_EthAddressInputField.text == null)
+            return;
         ConnectPanel.SetActive(false);
         SetLoadingScreen(true);
         StartCoroutine(WaitForLogin(_EthAddressInputField.text));
@@ -85,6 +102,7 @@ public class SceneManager : Mingleton<SceneManager>
     IEnumerator WaitForLogin(string ethAddress)
     {
         _MetamaskConnectBtn.interactable = false;
+        _ViewEthAddressBtn.interactable = false;
         _WalletConnectText.text = "";
 
         var auth = MetamaskAuth.Instance;
@@ -111,7 +129,7 @@ public class SceneManager : Mingleton<SceneManager>
         }
         else // auth by eth address
         {
-            if (_EthAddressInputField.text == null || _EthAddressInputField.text.Length != 42)
+            if (ethAddress.Length != 42)
             {
                 SetLoadingScreen(false);
                 _PixelverseBackground.gameObject.SetActive(true);
@@ -122,7 +140,7 @@ public class SceneManager : Mingleton<SceneManager>
                 yield break;
             }
             
-            // axolittle avatar icon
+            // get all axolittles
             UnityWebRequest www = UnityWebRequest.Get($"{Configuration.GetWeb3URL()}all/{ethAddress}");
             yield return www.SendWebRequest();
             if (www.result == UnityWebRequest.Result.Success) {

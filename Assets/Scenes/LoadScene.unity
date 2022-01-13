@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 64588054}
   - component: {fileID: 64588053}
   m_Layer: 5
-  m_Name: MetamaskConnect
+  m_Name: ConnectByAddressBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -553,6 +553,7 @@ MonoBehaviour:
   _PixelverseBackground: {fileID: 331091871}
   _AuthInformationTxt: {fileID: 1358379863}
   _MetamaskConnectBtn: {fileID: 1084854833}
+  _ViewEthAddressBtn: {fileID: 64588053}
   _LoadingText: {fileID: 1035217319}
   _WalletConnectText: {fileID: 1228332838}
   _EthAddressInputField: {fileID: 790211373}
