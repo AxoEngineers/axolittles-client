@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class ActiveAvatarGridElement : BetterGridElement
 {
+    public Button WaveBtn;
+    
     private EventTrigger trigger;
     private NftAddress nftAddress;
 
@@ -20,5 +22,19 @@ public class ActiveAvatarGridElement : BetterGridElement
             {
                 ActiveAxoManager.Instance.Set(int.Parse(Text.text));
             });
+        
+        WaveBtn.onClick.RemoveAllListeners();
+        WaveBtn.onClick.AddListener(() =>
+        {
+            AxoModelGenerator.Instance.Generate(int.Parse(Text.text), arg0 =>
+            {
+                var entity = arg0.GetComponent<Axolittle>();
+                if (entity)
+                {
+                    entity.Wave();
+                }
+            } );
+            // wave here
+        });
     }
 }

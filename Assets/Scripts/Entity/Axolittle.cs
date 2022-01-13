@@ -16,8 +16,9 @@ public class Axolittle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = gameObject.AddComponent<NavMeshAgent>();
         ani = GetComponent<Animator>();
+        agent.speed = 1.0f;
     }
 
     // Update is called once per frame

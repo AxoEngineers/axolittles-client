@@ -235,9 +235,6 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 }
             }
 
-            NavMeshAgent nav = axoObject.gameObject.AddComponent<NavMeshAgent>();
-            nav.speed = 1.0f;
-
             axoObject.gameObject.AddComponent<Axolittle>();
 
             // axolittle avatar icon
