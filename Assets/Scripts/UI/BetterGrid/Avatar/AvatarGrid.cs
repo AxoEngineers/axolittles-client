@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AvatarGrid : MonoBehaviour
+public class AvatarGrid : Mingleton<AvatarGrid>
 {
     private readonly BetterGridElement[,] _map = new BetterGridElement[5, 1];
     private int _startIndex;
@@ -15,6 +15,8 @@ public class AvatarGrid : MonoBehaviour
     public Text pageNumber;
     public InputField searchText;
 
+    public Dictionary<int, Sprite> spriteCache;
+
     private int IterAmt => _map.GetLength(0) * _map.GetLength(1);
     private bool CanUseNextPage => _startIndex + IterAmt < itemData.Count;
     private bool CanUsePreviousPage => _startIndex - IterAmt >= 0;
@@ -25,6 +27,8 @@ public class AvatarGrid : MonoBehaviour
 
     private void Awake()
     {
+        spriteCache = new Dictionary<int, Sprite>();
+        
         if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)
         {
             List<NftAddress> avatars = new List<NftAddress>();

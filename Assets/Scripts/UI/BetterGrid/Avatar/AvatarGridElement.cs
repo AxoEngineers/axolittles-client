@@ -22,31 +22,38 @@ public class AvatarGridElement : BetterGridElement
                 gameObject.SetActive(false);
                 return;
             }
-            
+
             Text.text = $"{nftAddress.id}";
             Icon.color = Icon.sprite ? Color.white : Color.clear;
             
-            AxoModelGenerator.Instance.GetImage(nftAddress, image =>
+            if (AvatarGrid.Instance.spriteCache.ContainsKey(nftAddress.id))
             {
-                Icon.sprite = image;
+                Icon.sprite = AvatarGrid.Instance.spriteCache[nftAddress.id];
                 Icon.color = Color.white;
-            });
-
-            trigger = GetComponent<EventTrigger>();
-            trigger.AddEvent(EventTriggerType.PointerClick, data =>
+            }
+            else
             {
-                try 
+                try
                 {
-                    AxoModelGenerator.Instance.Generate(nftAddress, axo =>
+                    AxoModelGenerator.Instance.GetImage(nftAddress, image =>
                     {
-                        AxoPreview.Instance.SetPreview(axo);
+                        AvatarGrid.Instance.spriteCache.Add(nftAddress.id, image);
+                        Icon.sprite = image;
+                        Icon.color = Color.white;
                     });
                 }
                 catch (Exception)
                 {
                     Debug.LogError($"Failed to retrieve sprite for NFT #{nftAddress.id}");
                 }
-            });
+            }
+
+            trigger = GetComponent<EventTrigger>();
+            trigger.AddEvent(EventTriggerType.PointerClick,
+                data =>
+                {
+                    AxoModelGenerator.Instance.Generate(nftAddress, axo => { AxoPreview.Instance.SetPreview(axo); });
+                });
 
             gameObject.SetActive(true);
         }
