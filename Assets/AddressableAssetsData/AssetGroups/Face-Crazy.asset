@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: fedf11b57057af34199b141713d5f441
   m_SerializeEntries:
   - m_GUID: c77af433283d3f841a763c2b1ca5aa0b
-    m_Address: Prefab_Face_Crazy
+    m_Address: Prefab_Face_Crazy Eyes
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 6621780696602251156, guid: c77af433283d3f841a763c2b1ca5aa0b, type: 3}
