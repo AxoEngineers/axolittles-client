@@ -49,6 +49,7 @@ public class AvatarGridElement : BetterGridElement
             }
 
             trigger = GetComponent<EventTrigger>();
+            trigger.triggers.Clear();
             trigger.AddEvent(EventTriggerType.PointerClick,
                 data =>
                 {

@@ -22,10 +22,10 @@ MonoBehaviour:
       Face.fbx
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 919132149155446097, guid: 6338cc54566c95940a992831760cdcf8, type: 3}
+    m_TargetAsset: {fileID: 919132149155446097, guid: 6338cc54566c95940a992831760cdcf8, type: 3}
   - m_GUID: aa82a60f30a166445b6c5e7fb2facdbc
-    m_Address: Prefab_Face_Smile And Eyelashes
+    m_Address: Prefab_Face_Smile and Eyelashes
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 5289918533916035628, guid: aa82a60f30a166445b6c5e7fb2facdbc, type: 3}

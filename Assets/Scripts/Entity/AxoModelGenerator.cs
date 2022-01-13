@@ -76,6 +76,8 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         
         AxoStruct traits = AxoDatabase.Get(avatar.id);
 
+        // Debug.Log(traits.ToString());
+        
         var assetsRequired = GetAssetsRequired(avatar.id);
 
         AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetsRequired["base"]);
@@ -143,6 +145,14 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                                                             handle.Result.transform.localScale.x;
                         faceModel.transform.localRotation = handle.Result.transform.localRotation;
                     }
+
+                    if (traits.type == "Robot")
+                    {
+                        var faceMeshRenderer = faceModel.GetComponent<MeshRenderer>();
+                        faceMeshRenderer.sharedMaterial = Instantiate(faceMeshRenderer.sharedMaterial);
+                        faceMeshRenderer.sharedMaterial.color = Color.HSVToRGB((146 + traits.rhue) / 360.0f, 50f / 100.0f, 75f / 100.0f);
+                    }
+
                 }
                 else
                 {
