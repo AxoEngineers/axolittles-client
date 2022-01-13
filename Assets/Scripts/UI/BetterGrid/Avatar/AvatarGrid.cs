@@ -34,16 +34,21 @@ public class AvatarGrid : Mingleton<AvatarGrid>
         if (MetamaskAuth.Instance && MetamaskAuth.Instance.Wallet != null && MetamaskAuth.Instance.Wallet.avatars != null)
         {
             List<NftAddress> avatars = new List<NftAddress>();
+            
+            // For debugging
+            for (int i = 0; i < 9999; i++)
+            {
+                var traits = AxoDatabase.Get(i);
+                if (traits.type == "Cosmic")
+                {
+                    avatars.Add(new NftAddress("0x0", $"{traits.id}"));
+                }
+            }
+            
             foreach (var avatar in MetamaskAuth.Instance.Wallet.avatars)
             {
                 avatars.Add(avatar);
             }
-
-            // For debugging
-            /*for (int i = 0; i < 300; i++)
-            {
-                avatars.Add(new NftAddress("0x0", $"{Random.Range(1, 7800)}"));
-            }*/
 
             itemData = avatars;
             LoadGrid();

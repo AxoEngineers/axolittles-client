@@ -125,9 +125,14 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             var color = Color.HSVToRGB(traits.rhue / 360.0f, 0.3f, 1f);
 
             Transform rootFaceBone = baseModel.transform.Find(rootFaceNode);
+            Transform noneRootFaceBone = baseModel.transform.Find(baseNode + "joint6/joint7/joint8/joint9/joint10/joint24/joint25");
 
+            if (noneRootFaceBone)
+            {
+                rootFaceBone = noneRootFaceBone;
+            }
             // create a joint24_end bone on top of the head if it doesnt exist
-            if (!rootFaceBone)
+            else if (!rootFaceBone)
             {
                 rootFaceBone = baseModel.transform.Find(baseNode + "joint6/joint7/joint8/joint9/joint10/joint24");
                 GameObject newRootFaceBone = new GameObject("joint24_end");
@@ -148,10 +153,17 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             {
                 AsyncOperationHandle<Material> materialHandle = Addressables.LoadAssetAsync<Material>(assetsRequired["material"]);
                 yield return materialHandle;
-                if (handle.Status == AsyncOperationStatus.Succeeded)
+                if (materialHandle.Status == AsyncOperationStatus.Succeeded)
                 {
                     meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
-                    meshRenderer.sharedMaterial.color = Color.white;
+                    if (traits.type == "Cosmic")
+                    {
+                        meshRenderer.sharedMaterial.color = color;
+                    }
+                    else
+                    {
+                        meshRenderer.sharedMaterial.color = Color.white;
+                    }
                 }
             }
             else
@@ -205,6 +217,22 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                         faceMeshRenderer.sharedMaterial = Instantiate(faceMeshRenderer.sharedMaterial);
                         faceMeshRenderer.sharedMaterial.color = Color.HSVToRGB((146 + traits.rhue) / 360.0f, 50f / 100.0f, 75f / 100.0f);
                     }
+                    else if (traits.type == "Cosmic")
+                    {
+                        AsyncOperationHandle<Material> cosmicFaceHandle = Addressables.LoadAssetAsync<Material>("Cosmic Face");
+                        yield return cosmicFaceHandle;
+                        if (cosmicFaceHandle.Status == AsyncOperationStatus.Succeeded)
+                        {
+                            for (int i=0; i < faceMeshRenderer.sharedMaterials.Length; i++)
+                            {
+                                if (faceMeshRenderer.sharedMaterials[i].name.StartsWith("Faces"))
+                                {
+                                    faceMeshRenderer.sharedMaterials[i] = cosmicFaceHandle.Result;
+                                    Debug.Log("SET " + faceMeshRenderer.sharedMaterials[i].name);
+                                }
+                            }
+                        }
+                    }
 
                 }
                 else
@@ -233,6 +261,11 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                 {
                     Debug.LogError($"#{traits.id} Could not find {assetsRequired["hat"]}: {top} or {traits.rtop}");
                 }
+            }
+
+            if (noneRootFaceBone)
+            {
+                noneRootFaceBone.localRotation = Quaternion.Euler(180, 0f, 90f);
             }
 
             axoObject.gameObject.AddComponent<Axolittle>();
