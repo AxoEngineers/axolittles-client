@@ -58,9 +58,9 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         return keyMap;
     }
     
-    public void GetImage(NftAddress avatar, UnityAction<Sprite> onFinish = null)
+    public Coroutine GetImage(NftAddress avatar, UnityAction<Sprite> onFinish = null)
     {
-        StartCoroutine(DownloadSprite(avatar.id, onFinish));
+        return StartCoroutine(DownloadSprite(avatar.id, onFinish));
     }
     
     IEnumerator DownloadSprite(int id, UnityAction<Sprite> onFinish = null)
@@ -75,9 +75,9 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         }
     }
 
-    public void Generate(int id, UnityAction<AxoInfo> onFinish = null)
+    public Coroutine Generate(int id, UnityAction<AxoInfo> onFinish = null)
     {
-        StartCoroutine(LoadAssets(id, onFinish));
+        return StartCoroutine(LoadAssets(id, onFinish));
     }
     
     IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)

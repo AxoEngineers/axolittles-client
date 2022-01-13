@@ -10,11 +10,18 @@ public class AvatarGridElement : BetterGridElement
 {
     private EventTrigger trigger;
     private NftAddress nftAddress;
+    
+    private Coroutine loadSprite;
 
     public override void SetData(params object[] args)
     {
         if (args[0] is NftAddress)
         {
+            if (loadSprite != null)
+            {
+                StopCoroutine(loadSprite);
+            }
+
             nftAddress = (NftAddress) args[0];
 
             if (nftAddress.Equals(NftAddress.Null))
@@ -35,7 +42,7 @@ public class AvatarGridElement : BetterGridElement
             {
                 try
                 {
-                    AxoModelGenerator.Instance.GetImage(nftAddress, image =>
+                    loadSprite = AxoModelGenerator.Instance.GetImage(nftAddress, image =>
                     {
                         Icon.sprite = image;
                         Icon.color = Color.white;
@@ -43,6 +50,8 @@ public class AvatarGridElement : BetterGridElement
                         {
                             AvatarGrid.Instance.spriteCache.Add(nftAddress.id, image);
                         }
+
+                        loadSprite = null;
                     });
                 }
                 catch (Exception)
