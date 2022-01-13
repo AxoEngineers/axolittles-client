@@ -31,7 +31,7 @@ public class AvatarGridElement : BetterGridElement
             }
 
             Text.text = $"{nftAddress.id}";
-            Icon.color = Icon.sprite ? Color.white : Color.clear;
+            Icon.color = Color.clear;
             
             if (AvatarGrid.Instance.spriteCache.ContainsKey(nftAddress.id))
             {
