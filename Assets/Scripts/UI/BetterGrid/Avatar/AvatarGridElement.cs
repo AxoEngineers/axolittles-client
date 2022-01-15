@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEditor.Experimental;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -17,10 +18,7 @@ public class AvatarGridElement : BetterGridElement
     {
         if (args[0] is NftAddress)
         {
-            if (loadSprite != null)
-            {
-                StopCoroutine(loadSprite);
-            }
+            if (loadSprite != null) StopCoroutine(loadSprite);
 
             nftAddress = (NftAddress) args[0];
 
