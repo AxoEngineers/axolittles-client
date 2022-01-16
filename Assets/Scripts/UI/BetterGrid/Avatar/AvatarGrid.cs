@@ -23,7 +23,7 @@ public class AvatarGrid : Mingleton<AvatarGrid>
     private string SearchValue => searchText.text.ToLower();
 
     public NftAddress[] ownedAxos => MetamaskAuth.Instance.Wallet.avatars;
-    public List<NftAddress> itemData;
+    public List<NftAddress> itemData = new List<NftAddress>();
 
     new void Awake()
     {
