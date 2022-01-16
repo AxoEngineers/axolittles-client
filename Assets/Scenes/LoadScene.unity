@@ -644,7 +644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Access your own Axoquarium, requires metamask approval to view your eth
+  m_Text: Access your own Axoquarium. Requires Metamask approval to view your Ethereum
     address
 --- !u!222 &406519944
 CanvasRenderer:
@@ -856,7 +856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<color=grey><b>1</b></color> CONNECT YOUR WALLET
+  m_Text: '<color=grey><b>1</b></color> VIEW YOUR AXOQUARIUM
 
 '
 --- !u!222 &588317083
@@ -1341,7 +1341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'View someones room by entering their ethereum address below:'
+  m_Text: 'View someones Axoquarium by entering their Ethereum address below:'
 --- !u!222 &840585487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 3, y: -1}
+  m_EffectDistance: {x: 1.9, y: 1.9}
   m_UseGraphicAlpha: 1
 --- !u!114 &946338230
 MonoBehaviour:
@@ -1843,7 +1843,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2afce23f5c761494695cfcc0524f56ae, type: 3}
-    m_FontSize: 15
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2545,7 +2545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <color=grey><b>2</b></color> VIEW AXOQUARIUMS
+  m_Text: <color=grey><b>2</b></color> VIEW OTHER AXOQUARIUMS
 --- !u!222 &1962666441
 CanvasRenderer:
   m_ObjectHideFlags: 0
