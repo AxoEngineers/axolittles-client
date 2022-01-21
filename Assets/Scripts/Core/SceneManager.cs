@@ -221,6 +221,9 @@ public class SceneManager : Mingleton<SceneManager>
         
         SetLoadingScreen(false);
         ConnectPanel.SetActive(true);
+        _MetamaskConnectBtn.interactable = true;
+        _ViewEthAddressBtn.interactable = true;
+        _PixelverseBackground.gameObject.SetActive(true);
     }
 
     public void SetLoadingScreen(bool state)
