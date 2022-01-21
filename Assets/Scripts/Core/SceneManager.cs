@@ -7,6 +7,9 @@ using UnityEngine.Networking;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
+//using Random = System.Random;
 
 public class SceneManager : Mingleton<SceneManager>
 {
@@ -39,10 +42,18 @@ public class SceneManager : Mingleton<SceneManager>
     private bool errorShown = false;
     private AvatarIdentity identity = AvatarIdentity.Null;
     
+    private string[] statusMessages;
+
     public string Status
     {
         get { return _LoadingText.text; }
         set { _LoadingText.text = value; }
+    }
+
+    private string GetRandomStatus()
+    {
+        if (statusMessages.Length == 0) Debug.LogError("No status messages were loaded");
+        return statusMessages[Random.Range(0, statusMessages.Length - 1)];
     }
     
     private void Start()
@@ -80,6 +91,9 @@ public class SceneManager : Mingleton<SceneManager>
             loginFailed = true;
             _WalletConnectText.text = $"An error with Metamask:\r\n {message} ({code})";
         });
+
+        TextAsset messages = Resources.Load<TextAsset>("statusmessages");
+        statusMessages = JsonHelper.FromJson<string>("{\"Items\":" + messages.text + "}");
     }
 
     IEnumerator GoToMainMenu()
@@ -171,10 +185,10 @@ public class SceneManager : Mingleton<SceneManager>
             yield break;
         }
 
-        Status = "Data Retrieval Successful";
+        Status = GetRandomStatus(); //"Data Retrieval Successful";
         yield return new WaitForSeconds(0.5f);
-        
-        Status = "Loading Asset Bundle...";
+
+        Status = GetRandomStatus(); //"Loading Asset Bundle...";
 
         if (MetamaskAuth.Instance.Wallet != null)
         {
@@ -188,7 +202,7 @@ public class SceneManager : Mingleton<SceneManager>
                 {
                     if (asset.Value == null)
                         continue;
-                    Status = "Loading " + asset.Value;
+                    Status = GetRandomStatus(); //this is too fast locally, but should be fine when live //"Loading " + asset.Value;
                     AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(asset.Value);
                     yield return handle;
                 }
@@ -197,7 +211,7 @@ public class SceneManager : Mingleton<SceneManager>
             }
         }
 
-        Status = "Download Complete.. Launching";
+        Status = GetRandomStatus(); //"Download Complete.. Launching";
         yield return new WaitForSeconds(0.5f);
 
         StartCoroutine(GoToMainMenu());
@@ -231,7 +245,7 @@ public class SceneManager : Mingleton<SceneManager>
         pleaseWait = state;
         if (!errorShown)
         {
-            Status = "Please Wait...";
+            Status = "Discovering new ways of making you wait..."; //"Please Wait...";
         }
         _PixelverseBackground.gameObject.SetActive(state);
         LoadingPanel.gameObject.SetActive(state);
