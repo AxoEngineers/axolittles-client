@@ -59,7 +59,7 @@ public class SceneManager : Mingleton<SceneManager>
     private void Start()
     {
         Application.runInBackground = true;
-
+        
         #if UNITY_EDITOR
         _EthAddressInputField.text = "0x1ca6e4643062e67ccd555fb4f64bee603340e0ea";
         #endif
@@ -245,7 +245,7 @@ public class SceneManager : Mingleton<SceneManager>
         pleaseWait = state;
         if (!errorShown)
         {
-            Status = "Discovering new ways of making you wait..."; //"Please Wait...";
+            Status = GetRandomStatus(); //"Please Wait...";
         }
         _PixelverseBackground.gameObject.SetActive(state);
         LoadingPanel.gameObject.SetActive(state);
