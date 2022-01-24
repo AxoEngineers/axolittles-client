@@ -12,6 +12,8 @@ public class Axolittle : MonoBehaviour
 
     private Timestamp walkTimeout = new Timestamp(10.0f);
     private Timestamp walkTs = new Timestamp(3.0f);
+
+    private float nextWaveTime;
     
     // Start is called before the first frame update
     void Start()
@@ -19,11 +21,19 @@ public class Axolittle : MonoBehaviour
         agent = gameObject.AddComponent<NavMeshAgent>();
         ani = GetComponent<Animator>();
         agent.speed = 1.0f;
+
+        nextWaveTime = Time.time + Random.Range(0f, 60f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.time > nextWaveTime)
+        {
+            nextWaveTime = Time.time + Random.Range(30f, 90f);
+            Wave();
+        }
+        
         var pos = transform.position;
 
         if (walkTs.Expired)
