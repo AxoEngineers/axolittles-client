@@ -19,8 +19,6 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
 
     public ActiveAvatarGridElement[] gridItems;
 
-    public Coroutine loadModel;
-    
     new void Awake()
     {
         base.Awake();
@@ -47,7 +45,7 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
             {
                 generating = true;
                 LoadingIndicator.Instance.running++;
-                loadModel = AxoModelGenerator.Instance.Generate(id, axoObject =>
+                AxoModelGenerator.Instance.Generate(id, axoObject =>
                 {
                     active.Add(axoObject);
                     PlaySound(addAxo);

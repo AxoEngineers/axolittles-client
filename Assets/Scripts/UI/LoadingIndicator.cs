@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class LoadingIndicator : Mingleton<LoadingIndicator>
 {
     public Text loadingText;
-    public int running;
+
+    public Coroutine spriteRoutine;
+    public Coroutine modelRoutine;
 
     void Update()
     {
-        loadingText.enabled = running > 0;
+        loadingText.enabled = spriteRoutine != null || modelRoutine != null;
     }
 }

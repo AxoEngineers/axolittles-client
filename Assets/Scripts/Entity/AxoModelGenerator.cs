@@ -77,7 +77,9 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
 
     public Coroutine Generate(int id, UnityAction<AxoInfo> onFinish = null)
     {
-        return StartCoroutine(LoadAssets(id, onFinish));
+        Coroutine routine = StartCoroutine(LoadAssets(id, onFinish));
+        LoadingIndicator.Instance.modelRoutine = routine;
+        return routine;
     }
     
     IEnumerator LoadAssets(int id, UnityAction<AxoInfo> onFinish)
@@ -90,6 +92,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             if (info)
             {
                 onFinish?.Invoke(info);
+                LoadingIndicator.Instance.modelRoutine = null;
                 yield break;
             }
         }
@@ -281,7 +284,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             }
 
             onFinish?.Invoke(axoObject);
-
+            LoadingIndicator.Instance.modelRoutine = null;
             yield return null;
         }
     }
