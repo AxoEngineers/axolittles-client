@@ -18,6 +18,8 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
     private int maxActive => gridItems.Length;
 
     public ActiveAvatarGridElement[] gridItems;
+
+    public Coroutine loadModel;
     
     new void Awake()
     {
@@ -44,13 +46,15 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
             if (!generating)
             {
                 generating = true;
-                AxoModelGenerator.Instance.Generate(id, axoObject =>
+                LoadingIndicator.Instance.running++;
+                loadModel = AxoModelGenerator.Instance.Generate(id, axoObject =>
                 {
                     active.Add(axoObject);
                     PlaySound(addAxo);
                     RefreshGrid();
                     axoObject.gameObject.SetActive(true);
                     generating = false;
+                    LoadingIndicator.Instance.running--;
                 });
             }
         }
