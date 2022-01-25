@@ -44,7 +44,6 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
             if (!generating)
             {
                 generating = true;
-                LoadingIndicator.Instance.running++;
                 AxoModelGenerator.Instance.Generate(id, axoObject =>
                 {
                     active.Add(axoObject);
@@ -52,7 +51,6 @@ public class ActiveAxoManager : Mingleton<ActiveAxoManager>
                     RefreshGrid();
                     axoObject.gameObject.SetActive(true);
                     generating = false;
-                    LoadingIndicator.Instance.running--;
                 });
             }
         }
