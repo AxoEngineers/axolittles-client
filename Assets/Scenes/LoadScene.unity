@@ -703,7 +703,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -1050,6 +1049,7 @@ GameObject:
   - component: {fileID: 790211375}
   - component: {fileID: 790211374}
   - component: {fileID: 790211373}
+  - component: {fileID: 790211376}
   m_Layer: 5
   m_Name: EthAddressInputField
   m_TagString: Untagged
@@ -1181,6 +1181,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790211371}
   m_CullTransparentMesh: 1
+--- !u!114 &790211376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790211371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc33a39070010f94fb1c2dd721c1286d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showHtmlElement: 0
 --- !u!1 &832694051
 GameObject:
   m_ObjectHideFlags: 0
