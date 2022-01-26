@@ -126,6 +126,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             var face = traits.face;
             var top = traits.top;
             var color = Color.HSVToRGB(traits.rhue / 360.0f, 0.3f, 1f);
+            var bgColor = GetColorCode(traits.background);
 
             Transform rootFaceBone = baseModel.transform.Find(rootFaceNode);
             Transform noneRootFaceBone = baseModel.transform.Find(baseNode + "joint6/joint7/joint8/joint9/joint10/joint24/joint25");
@@ -161,7 +162,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                     meshRenderer.sharedMaterial = Instantiate(materialHandle.Result);
                     if (traits.type == "Cosmic")
                     {
-                        meshRenderer.sharedMaterial.color = color;
+                        meshRenderer.sharedMaterial.color = bgColor;
                     }
                     else
                     {
@@ -203,12 +204,17 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                             if (bgSync.targetMaterial.name == faceMeshRenderer.sharedMaterials[i].name)
                             {
                                 // Debug.Log(bgSync.targetMaterial.name + " - " + faceMeshRenderer.sharedMaterials[i].name);
-                                // Debug.Log("SETTING COLOR TO " + colorCodes[traits.background]);
                                 var newFaceMat = faceMeshRenderer.materials[i];
-                                newFaceMat.color = colorCodes[traits.background];
+                                float h, s, v;
+                                Color.RGBToHSV(bgColor, out h, out s, out v);
+                                s /= 1.5f;
+                                v *= 1.25f;
+
+                                Color partBgColor = Color.HSVToRGB(h,s,v);
+                                newFaceMat.color = partBgColor;
                                 if (newFaceMat.IsKeywordEnabled("_EMISSION"))
                                 {
-                                    newFaceMat.SetColor("_EmissionColor", colorCodes[traits.background]);
+                                    newFaceMat.SetColor("_EmissionColor", partBgColor);
                                 }
                                 break;
                             }
@@ -231,7 +237,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
                                 if (faceMeshRenderer.sharedMaterials[i].name.StartsWith("Faces"))
                                 {
                                     faceMeshRenderer.sharedMaterials[i] = cosmicFaceHandle.Result;
-                                    Debug.Log("SET " + faceMeshRenderer.sharedMaterials[i].name);
+                                    // Debug.Log("SET " + faceMeshRenderer.sharedMaterials[i].name);
                                 }
                             }
                         }
@@ -287,5 +293,16 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
             LoadingIndicator.Instance.modelRoutine = null;
             yield return null;
         }
+    }
+
+    public static Color GetColorCode(string background)
+    {
+        if (background.StartsWith("#"))
+        {
+            ColorUtility.TryParseHtmlString(background, out var c);
+            return c;
+        }
+
+        return colorCodes[background];
     }
 }

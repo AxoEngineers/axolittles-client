@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1350813772843755599}
   - component: {fileID: 2670870344650303466}
   - component: {fileID: 212831523514176288}
+  - component: {fileID: -792906768545662305}
   m_Layer: 0
   m_Name: Hearts
   m_TagString: Untagged
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-792906768545662305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870363100977230581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699e6b8c66f04ce4858297b97e5cb7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMaterial: {fileID: 2100000, guid: ef37b3ddbe4ef96418d573867227fa4c, type: 2}
