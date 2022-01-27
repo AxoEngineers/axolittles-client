@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using FIMSpace.FTail;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AI;
@@ -109,6 +110,7 @@ public class AxoModelGenerator : Mingleton<AxoModelGenerator>
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
             GameObject baseModel = Instantiate(handle.Result, transform);
+            baseModel.layer = LayerMask.NameToLayer("Axo");
             baseModel.SetActive(false);
             baseModel.name = traits.id;
 

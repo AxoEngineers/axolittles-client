@@ -9,6 +9,7 @@ public class Axolittle : MonoBehaviour
     private NavMeshAgent agent;
 
     private Vector3 goal;
+    private float collisionTime;
 
     private Timestamp walkTimeout = new Timestamp(10.0f);
     private Timestamp walkTs = new Timestamp(3.0f);
@@ -20,9 +21,30 @@ public class Axolittle : MonoBehaviour
     {
         agent = gameObject.AddComponent<NavMeshAgent>();
         ani = GetComponent<Animator>();
-        agent.speed = 1.0f;
+        gameObject.AddComponent<Rigidbody>();
+        var collider = gameObject.AddComponent<CapsuleCollider>();
+        collider.isTrigger = true;
+        agent.speed = 0.5f;
+        agent.radius = 0.4f;
+        agent.stoppingDistance = 0.1f;
 
         nextWaveTime = Time.time + Random.Range(0f, 60f);
+        NavMesh.avoidancePredictionTime = 5f;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        collisionTime = Time.time;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Time.time - collisionTime > 3.0f)
+        {
+            goal = transform.position + (transform.position - other.transform.position);
+            agent.SetDestination(goal);
+            collisionTime = Time.time;
+        }
     }
 
     // Update is called once per frame
@@ -40,36 +62,35 @@ public class Axolittle : MonoBehaviour
         {
             if (goal == Vector3.zero)
             {
-                Vector3 randomPoint = pos + Random.insideUnitSphere * 5.0f;
+                Vector3 randomPoint = pos + Random.insideUnitSphere * 20.0f;
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomPoint, out hit, 3.0f, NavMesh.AllAreas))
                 {
                     goal = hit.position;
                     agent.SetDestination(goal);
                     ani.SetBool("Moving", true);
                 }
             }
-            else if (!agent.pathPending)
+
+            if (!agent.pathPending)
             {
                 if (agent.remainingDistance <= agent.stoppingDistance)
                 {
                     if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                     {
                         goal = Vector3.zero;
-                        walkTs.Reset(Random.Range(3.5f, 6.0f));
                         ani.SetBool("Moving", false);
                     }
                 }
             }
         }
-
     }
 
     public void Wave()
     {
         agent.ResetPath();
         goal = Vector3.zero;
-        walkTs.Reset(3.0f);
+        walkTs.Reset(2.0f);
         ani.SetBool("Moving", false);
         
         ani.SetTrigger("Wave");
